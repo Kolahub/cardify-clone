@@ -1,0 +1,46 @@
+.tooltipp {
+  padding: 2rem 1rem;
+  display: none;
+  &__lists {
+    padding: 1rem 6rem 1rem 3rem;
+  }
+  &__links {
+    text-decoration: none;
+    color: $color-black;
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+    &:hover {
+      color: $green;
+    }
+  }
+
+  @include respond(md) {
+    display: block;
+    background-color: $color-white !important;
+    box-shadow: none !important;
+    position: static !important;
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: all 1s;
+
+    &__links {
+      font-size: 2rem;
+    }
+    &__lists {
+      padding: 1.7rem 2rem;
+    }
+  }
+}
+
+@include respond(md) {
+  .navigation__lists.active .tooltipp {
+    max-height: 35rem;
+  }
+.navigation__toggle img {
+    transition: all .6s;
+  }
+  .navigation__lists.active .navigation__toggle img {
+    transform: rotate(180deg);
+  }
+}

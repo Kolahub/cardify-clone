@@ -1,0 +1,22 @@
+.infotips {
+  font-size: 1.35rem;
+  top: 7rem;
+  left: 15%;
+  transform: translateX(-15%);
+  width: calc(100% - 14rem);
+
+  &__items {
+    width: 30rem;
+    padding: 0.4rem;
+    text-align: start;
+
+    img {
+      width: 6rem;
+    }
+  }
+
+  h2 {
+    color: $green;
+    font-weight: bolder;
+  }
+}

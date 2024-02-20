@@ -1,0 +1,171 @@
+.navigation {
+  @include respond(xs) {
+    align-items: center;
+  }
+  &__toggle {
+    width: 1rem;
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__button {
+    display: none;
+    @include respond(md) {
+      display: block;
+      height: 8rem;
+      width: 8rem;
+      transform: scale(0.7);
+      text-align: center;
+      z-index: 2000;
+      cursor: pointer;
+    }
+
+    @include respond(sm) {
+      transform: scale(0.6);
+    }
+  }
+
+  &__background {
+    @include respond(md) {
+      position: fixed;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+  &__nav {
+    @include respond(md) {
+      position: fixed;
+      width: 100vw;
+      top: 0;
+      left: 0;
+      z-index: 1500;
+      visibility: hidden;
+      opacity: 0;
+      background-color: $color-white;
+      transform: translateY(-60%);
+      transition: all 0.25s ease-out;
+    }
+  }
+
+  &__items {
+    @include respond(md) {
+      width: 100%;
+      padding: 1.8rem 0 1.3rem 0;
+    }
+  }
+
+  &__lists {
+    cursor: pointer;
+    @include respond(md) {
+      flex-grow: 1;
+      width: 100%;
+      padding: 2.5rem;
+    }
+  }
+
+  &__links {
+    border: none;
+    font-weight: 600;
+    background-color: transparent;
+
+    @include respond(md) {
+      color: $blue !important;
+      font-size: 2.3rem;
+      line-height: 1.4;
+      color: $color-black;
+      text-decoration: none;
+      transition: all 0.4s;
+    }
+  }
+
+  &__btnMenu {
+    border: none;
+    background-color: green;
+    width: 90%;
+    transform: translateX(-1rem);
+    height: 5rem;
+    font-size: 2.4rem;
+  }
+
+  @media only screen and (min-width: 48em) {
+    &__links:focus &__infotips {
+      display: flex !important;
+    }
+
+    &__lists:nth-of-type(4):hover &__tooltipp {
+      display: block;
+    }
+  }
+
+  @include respond(md) {
+    &__checkbox:checked ~ &__button {
+      position: fixed;
+      top: 1px;
+    }
+    &__checkbox:checked ~ &__background {
+      display: block !important;
+    }
+    &__checkbox:checked ~ &__nav {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    &__icon {
+      position: relative;
+      margin-top: 40%;
+      width: 6rem;
+      &,
+      &::before,
+      &::after {
+        height: 1.5rem;
+        background-color: $dark-green;
+        display: inline-block;
+        border-radius: 0.5rem;
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        transition: all 0.4s;
+      }
+      &::before {
+        top: -2.2rem;
+        width: 8rem;
+      }
+      &::after {
+        top: 2.2rem;
+        width: 4rem;
+      }
+    }
+
+    &__button:hover &__icon::before {
+      top: -2.5rem;
+    }
+
+    &__button:hover &__icon::after {
+      top: 2.5rem;
+    }
+
+    &__checkbox:checked + &__button &__icon {
+      background-color: transparent;
+    }
+
+    &__checkbox:checked + &__button &__icon::before {
+      top: 1rem;
+      transform: rotate(360deg);
+    }
+
+    &__checkbox:checked + &__button &__icon::after {
+      top: 1rem;
+      transform: rotate(-360deg);
+    }
+  }
+}

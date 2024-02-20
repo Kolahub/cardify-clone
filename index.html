@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cardify Clone</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header position-relative container-md py-3 px-4 my-5">
+      <div class="header__content row align-items-center">
+        <div class="header__logo col-4">
+          <a href="/"
+            ><img
+              src="images/Cardify Logo Variant.png"
+              alt=""
+              class="header__logo--pic"
+          /></a>
+        </div>
+        <nav
+          class="navigation col-8 d-flex justify-content-end justify-content-md-between align-items-md-center col-md-8 fw-semibold"
+        >
+          <input
+            type="checkbox"
+            class="navigation__checkbox"
+            id="navi-toggle"
+          />
+          <label for="navi-toggle" class="navigation__button order-last">
+            <span class="navigation__icon">&nbsp;</span>
+          </label>
+
+          <div class="navigation__background d-none"></div>
+          <div class="navigation__nav">
+            <ul
+              class="navigation__items list-unstyled d-flex flex-column flex-md-row align-items-center gap-md-5"
+            >
+              <li class="navigation__lists order-0">
+                <a
+                  href="/"
+                  class="navigation__links text-decoration-none text-black"
+                  >Home</a
+                >
+              </li>
+
+              <li class="navigation__lists order-3 order-md-1">
+                <button class="navigation__links d-flex gap-2">
+                  Systems
+                  <span class="navigation__toggle">
+                    <img src="images/arrow down.svg" alt=""
+                  /></span>
+
+                  <div
+                    class="navigation__infotips infotips d-none flex-wrap position-absolute bg-white shadow p-5 fw-medium"
+                  >
+                    <div class="infotips__items d-flex gap-4">
+                      <div class="">
+                        <img src="images/1 (1).png" alt="" />
+                      </div>
+                      <div class="">
+                        <h2>Wallets</h2>
+                        <p>
+                          Leverage the different digital wallets on Cardify to
+                          maximize your spending potentials.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="infotips__items d-flex gap-4">
+                      <div class="">
+                        <img src="images/2 (1).png" alt="" />
+                      </div>
+                      <div class="">
+                        <h2>Virtual Cards</h2>
+                        <p>
+                          Make payments the way you want with virtual cards made
+                          just for you.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="infotips__items d-flex gap-4">
+                      <div class="">
+                        <img src="images/3 (1).png" alt="" />
+                      </div>
+                      <div class="">
+                        <h2>Swap</h2>
+                        <p>
+                          Swap across various currencies at best market rates.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="infotips__items d-flex gap-4">
+                      <div class="">
+                        <img src="images/4.png" alt="" />
+                      </div>
+                      <div class="">
+                        <h2>Bills</h2>
+                        <p>
+                          Buy vouchers and load your bills leveraging your
+                          digital wallets.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="infotips__items d-flex gap-4">
+                      <div class="">
+                        <img src="images/4.png" alt="" />
+                      </div>
+                      <div class="">
+                        <h2>Digital Business Cards</h2>
+                        <p>
+                          Create, customize, and instantly share digital
+                          business cards with anyone, anywhere with a tap or
+                          scan.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+
+                <ul
+                  class="navigation__tooltipp tooltipp position-absolute list-unstyled bg-white shadow"
+                >
+                  <li class="tooltipp__lists">
+                    <a href="/" class="tooltipp__links">Wallets</a>
+                  </li>
+                  <li class="tooltipp__lists">
+                    <a href="/" class="tooltipp__links">Virtual cards</a>
+                  </li>
+                  <li class="tooltipp__lists">
+                    <a href="/" class="tooltipp__links">Bills</a>
+                  </li>
+                  <li class="tooltipp__lists">
+                    <a href="/" class="tooltipp__links">Swap</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="navigation__lists order-1 order-md-2">
+                <button class="navigation__links d-flex gap-2">
+                  Learn
+                  <span class="navigation__toggle">
+                    <img src="images/arrow down.svg" alt=""
+                  /></span>
+
+                  <div
+                    class="navigation__infotips infotips d-none flex-wrap position-absolute bg-white shadow p-5 fw-medium"
+                  >
+                    <div class="infotips__items d-flex gap-4">
+                      <div class="">
+                        <img src="images/2 (1).png" alt="" />
+                      </div>
+                      <div class="">
+                        <h2>Academy</h2>
+                        <p>
+                          Leverage the different digital wallets on Cardify to
+                          maximize your spending potentials.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="infotips__items d-flex gap-4">
+                      <div class="">
+                        <img src="images/2 (1).png" alt="" />
+                      </div>
+                      <div class="">
+                        <h2>Knowledgebase</h2>
+                        <p>Learn about several Cardify offerings.</p>
+                      </div>
+                    </div>
+                    <div class="infotips__items d-flex gap-4">
+                      <div class="">
+                        <img src="images/2 (1).png" alt="" />
+                      </div>
+                      <div class="">
+                        <h2>How To's</h2>
+                        <p>
+                          With how to guides on different usage of the system,
+                          get vibing!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="infotips__items d-flex gap-4">
+                      <div class="">
+                        <img src="images/2 (1).png" alt="" />
+                      </div>
+                      <div class="">
+                        <h2>Blog</h2>
+                        <p>
+                          Our blog features the most up to date news and
+                          articles across the industry.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+                <ul
+                  class="navigation__tooltipp tooltipp position-absolute list-unstyled bg-white shadow"
+                >
+                  <li class="tooltipp__lists">
+                    <a href="/" class="tooltipp__links">Academy</a>
+                  </li>
+                  <li class="tooltipp__lists">
+                    <a href="/" class="tooltipp__links">Knowledgebase</a>
+                  </li>
+                  <li class="tooltipp__lists">
+                    <a href="/" class="tooltipp__links">How to</a>
+                  </li>
+                  <li class="tooltipp__lists">
+                    <a href="/" class="tooltipp__links">Blog</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="navigation__lists order-2 order-md-3">
+                <button
+                  class="navigation__links text-decoration-none text-black d-flex gap-2"
+                >
+                  Company
+                  <span class="navigation__toggle">
+                    <img src="images/arrow down.svg" alt=""
+                  /></span>
+                </button>
+
+                <ul
+                  class="navigation__tooltipp tooltipp position-absolute list-unstyled bg-white shadow"
+                >
+                  <li class="tooltipp__lists">
+                    <a href="/" class="tooltipp__links">About us</a>
+                  </li>
+                  <li class="tooltipp__lists">
+                    <a href="/" class="tooltipp__links">Contact us</a>
+                  </li>
+                  <li class="tooltipp__lists">
+                    <a href="/" class="tooltipp__links">Careers</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="navigation__lists d-md-none order-4">
+                <a href="/" class="navigation__links text-decoration-none"
+                  >Log in</a
+                >
+              </li>
+
+              <button
+                class="navigation__btnMenu order-5 fw-bold text-white d-md-none"
+              >
+                Create an account
+              </button>
+            </ul>
+          </div>
+
+          <div class="header__form d-flex justify-content-end">
+            <button class="btn fw-semibold d-none d-md-block">Log in</button>
+            <button class="btn fw-semibold text-white flex-grow-1">
+              Sign up
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="home">
+      <div
+        class="home__content container-md gx-0 d-flex flex-column flex-md-row align-items-center"
+      >
+        <div class="home__content--left w-100 w-md-50 d-flex flex-column gap-5">
+          <div class="home__content--left__heading">
+            <h1 class="heading-1">
+              <div class="">Unlock more ways to</div>
+              <span class="auto-type"></span>
+            </h1>
+          </div>
+
+          <div class="home__content--left__typo pb-0 pb-mb-4">
+            <p class="fs-3">
+              Cardify Africa lets you exchange, spend and save money across
+              several digital wallets with NGN -Exchange, Buy vouchers, Pay
+              utility bills leveraging fiat and other digital wallets
+              seamlessly.
+            </p>
+          </div>
+
+          <div
+            class="home__content--left__download d-flex justify-content-between gap-5 w-75 pt-0 pt-md-2"
+          >
+            <div class="">
+              <img src="images/google play.svg" alt="" class="w-100" />
+            </div>
+            <div class="">
+              <img src="images/Apple store.svg" alt="" class="w-100" />
+            </div>
+          </div>
+
+          <div
+            class="home__content--left__service d-flex flex-column flex-md-row justify-content-md-between w-75"
+          >
+            <div class="col-6 col-md-5">
+              <span class="d-block">
+                <img src="images/messages.svg" alt="" />
+              </span>
+              <p class="mt-4">24/7 human customer service</p>
+            </div>
+
+            <div class="col-6 col-md-5 mt-4">
+              <span class="d-block">
+                <img src="images/reverse.svg" alt="" />
+              </span>
+              <p class="mt-4">Transactions at no extra fees</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="home__content--right w-100 w-md-50">
+          <img src="images/phoneCard.svg" alt="" class="w-100" />
+        </div>
+      </div>
+    </section>
+
+    <section class="cadifytribe">
+      <div class="cadifytribe__content text-center">
+        <div class="cadifytribe__content--headings">
+          <h1 class="heading-2">Join the cardify tribe</h1>
+          <p class="">
+            Exchange, Save and Spend across digital wallets. We seek to be your
+            one stop shop for convenient inter-wallet transactions using best
+            technologies.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script defer src="script.js"></script>
+  </body>
+</html>

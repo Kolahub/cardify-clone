@@ -1,0 +1,25 @@
+@mixin fullWidthMargin {
+    max-width: calc(100% - 5rem);
+    margin: 0 2.5rem;
+  }
+  
+@mixin respond($breakpoint) {
+    @if $breakpoint == xs {
+      @media only screen and (max-width:28.125em) {@content};
+    }
+    @if $breakpoint == sm {
+        @media only screen and (max-width: 36em) {@content};
+      }
+    @if $breakpoint == md {
+      @media only screen and (max-width:48em) {@content};
+    }
+    @if $breakpoint == lg {
+      @media only screen and (max-width:62em) {@content};
+    }
+    @if $breakpoint == tab-land {
+      @media only screen and (max-width:75em) {@content};
+    }
+    @if $breakpoint == big-desktop {
+      @media only screen and (min-width:112.5em) {@content};
+    }
+  }

@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 62em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+dl, ol, ul {
+  margin: 0; }
+
+body {
+  box-sizing: inherit; }
+
+body {
+  font-family: "Manrope", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.heading-1 {
+  font-size: 5rem;
+  font-weight: bolder; }
+  @media only screen and (max-width: 48em) {
+    .heading-1 {
+      font-size: 6rem; } }
+
+.heading-2 {
+  font-size: 4.6rem;
+  font-family: "Hind", sans-serif;
+  font-weight: 600; }
+  @media only screen and (max-width: 48em) {
+    .heading-2 {
+      font-size: 4.2rem; } }
+
+.infotips {
+  font-size: 1.35rem;
+  top: 7rem;
+  left: 15%;
+  transform: translateX(-15%);
+  width: calc(100% - 14rem); }
+  .infotips__items {
+    width: 30rem;
+    padding: 0.4rem;
+    text-align: start; }
+    .infotips__items img {
+      width: 6rem; }
+  .infotips h2 {
+    color: #18cc3f;
+    font-weight: bolder; }
+
+.tooltipp {
+  padding: 2rem 1rem;
+  display: none; }
+  .tooltipp__lists {
+    padding: 1rem 6rem 1rem 3rem; }
+  .tooltipp__links {
+    text-decoration: none;
+    color: black;
+    font-size: 1.6rem;
+    transition: all 0.3s ease; }
+    .tooltipp__links:hover {
+      color: #18cc3f; }
+  @media only screen and (max-width: 48em) {
+    .tooltipp {
+      display: block;
+      background-color: white !important;
+      box-shadow: none !important;
+      position: static !important;
+      max-height: 0;
+      padding: 0;
+      overflow: hidden;
+      transition: all 1s; }
+      .tooltipp__links {
+        font-size: 2rem; }
+      .tooltipp__lists {
+        padding: 1.7rem 2rem; } }
+
+@media only screen and (max-width: 48em) {
+  .navigation__lists.active .tooltipp {
+    max-height: 35rem; }
+  .navigation__toggle img {
+    transition: all .6s; }
+  .navigation__lists.active .navigation__toggle img {
+    transform: rotate(180deg); } }
+
+.header {
+  background-color: #eefdf8;
+  font-size: 1.7rem;
+  border-radius: 1.6rem; }
+  .header__logo img {
+    width: 130px; }
+    @media only screen and (max-width: 28.125em) {
+      .header__logo img {
+        width: 100%; } }
+  .header__form button {
+    font-size: 1.9rem;
+    padding: 1.58rem 0;
+    width: 10rem; }
+    @media only screen and (max-width: 48em) {
+      .header__form button {
+        width: 15rem;
+        font-size: 2.2rem; } }
+    @media only screen and (max-width: 36em) {
+      .header__form button {
+        width: 12rem; } }
+  .header__form button:nth-child(2) {
+    background-color: #18cc3f; }
+  @media only screen and (max-width: 48em) {
+    .header {
+      max-width: calc(100% - 5rem);
+      margin: 0 2.5rem; } }
+
+@media only screen and (max-width: 28.125em) {
+  .navigation {
+    align-items: center; } }
+
+.navigation__toggle {
+  width: 1rem; }
+
+.navigation__checkbox {
+  display: none; }
+
+.navigation__button {
+  display: none; }
+  @media only screen and (max-width: 48em) {
+    .navigation__button {
+      display: block;
+      height: 8rem;
+      width: 8rem;
+      transform: scale(0.7);
+      text-align: center;
+      z-index: 2000;
+      cursor: pointer; } }
+  @media only screen and (max-width: 36em) {
+    .navigation__button {
+      transform: scale(0.6); } }
+
+@media only screen and (max-width: 48em) {
+  .navigation__background {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); } }
+
+@media only screen and (max-width: 48em) {
+  .navigation__nav {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 1500;
+    visibility: hidden;
+    opacity: 0;
+    background-color: white;
+    transform: translateY(-60%);
+    transition: all 0.25s ease-out; } }
+
+@media only screen and (max-width: 48em) {
+  .navigation__items {
+    width: 100%;
+    padding: 1.8rem 0 1.3rem 0; } }
+
+.navigation__lists {
+  cursor: pointer; }
+  @media only screen and (max-width: 48em) {
+    .navigation__lists {
+      flex-grow: 1;
+      width: 100%;
+      padding: 2.5rem; } }
+
+.navigation__links {
+  border: none;
+  font-weight: 600;
+  background-color: transparent; }
+  @media only screen and (max-width: 48em) {
+    .navigation__links {
+      color: #145af8 !important;
+      font-size: 2.3rem;
+      line-height: 1.4;
+      color: black;
+      text-decoration: none;
+      transition: all 0.4s; } }
+
+.navigation__btnMenu {
+  border: none;
+  background-color: green;
+  width: 90%;
+  transform: translateX(-1rem);
+  height: 5rem;
+  font-size: 2.4rem; }
+
+@media only screen and (min-width: 48em) {
+  .navigation__links:focus .navigation__infotips {
+    display: flex !important; }
+  .navigation__lists:nth-of-type(4):hover .navigation__tooltipp {
+    display: block; } }
+
+@media only screen and (max-width: 48em) {
+  .navigation__checkbox:checked ~ .navigation__button {
+    position: fixed;
+    top: 1px; }
+  .navigation__checkbox:checked ~ .navigation__background {
+    display: block !important; }
+  .navigation__checkbox:checked ~ .navigation__nav {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0); }
+  .navigation__icon {
+    position: relative;
+    margin-top: 40%;
+    width: 6rem; }
+    .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+      height: 1.5rem;
+      background-color: #12a733;
+      display: inline-block;
+      border-radius: 0.5rem; }
+    .navigation__icon::before, .navigation__icon::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.4s; }
+    .navigation__icon::before {
+      top: -2.2rem;
+      width: 8rem; }
+    .navigation__icon::after {
+      top: 2.2rem;
+      width: 4rem; }
+  .navigation__button:hover .navigation__icon::before {
+    top: -2.5rem; }
+  .navigation__button:hover .navigation__icon::after {
+    top: 2.5rem; }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon {
+    background-color: transparent; }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+    top: 1rem;
+    transform: rotate(360deg); }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+    top: 1rem;
+    transform: rotate(-360deg); } }
+
+.home {
+  padding: 3rem 0; }
+  .home__content--left__heading {
+    padding-top: 6rem; }
+    @media only screen and (max-width: 48em) {
+      .home__content--left__heading {
+        padding-top: 0; } }
+    .home__content--left__heading span {
+      color: #18cc3f !important; }
+    .home__content--left__heading span.typed-cursor {
+      color: black !important; }
+  @media only screen and (max-width: 48em) {
+    .home__content--left__typo p {
+      font-size: 2.1rem !important; } }
+  @media only screen and (max-width: 48em) {
+    .home__content--left__download {
+      width: 88% !important;
+      gap: 5rem !important; } }
+  @media only screen and (max-width: 36em) {
+    .home__content--left__download {
+      width: 98%;
+      gap: 2rem !important; } }
+  .home__content--left__service {
+    font-size: 1.8rem;
+    margin-top: 4rem; }
+    @media only screen and (max-width: 48em) {
+      .home__content--left__service {
+        margin: 3rem 0;
+        font-size: 2.2rem; } }
+  @media only screen and (max-width: 48em) {
+    .home {
+      max-width: calc(100% - 5rem);
+      margin: 0 2.5rem; } }
+
+.cadifytribe {
+  padding: 14rem 0;
+  max-width: 77rem;
+  margin: 0 auto; }
+  .cadifytribe__content--headings p {
+    font-size: 1.9rem; }
+  @media only screen and (max-width: 48em) {
+    .cadifytribe__content--headings p {
+      font-size: 2.2rem; } }
+  @media only screen and (max-width: 48em) {
+    .cadifytribe {
+      max-width: calc(100% - 5rem);
+      margin: 0 2.5rem; } }
+  @media only screen and (max-width: 36em) {
+    .cadifytribe {
+      padding: 8rem 0; } }
