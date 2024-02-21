@@ -19,6 +19,7 @@
         @include respond(md) {
           p {
             font-size: 2.1rem !important;
+            text-align: justify;
           }
         }
       }
@@ -39,7 +40,7 @@
 
         @include respond(md) {
           margin: 3rem 0;
-          font-size: 2.2rem;
+          font-size: 2.3rem;
         }
       }
     }
@@ -170,5 +171,27 @@
     @include respond(md) {
       @include fullWidthMargin;
     }
+  }
+}
+
+.experience {
+  &--heading {
+    font-size: 3.3rem;
+    font-weight: 900;
+  }
+  @include respond(md) {
+    max-width: calc(100% - 10rem);
+    margin: 0 5rem;
+  }
+}
+
+.epay {
+  margin: 14rem auto;
+  padding: 0 5rem;
+  background-color: $grey-light-2;
+
+  @include respond(md) {
+    max-width: calc(100% - 10rem);
+    margin: 8rem 5rem;
   }
 }

@@ -27,6 +27,9 @@ body {
 }
 .text-medium {
   font-size: 45px;
+  @include respond(md) { 
+    font-size: 38px;
+  }
 }
 .text-big {
   font-size: 65px;

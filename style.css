@@ -46,6 +46,9 @@ body {
 
 .text-medium {
   font-size: 45px; }
+  @media only screen and (max-width: 48em) {
+    .text-medium {
+      font-size: 38px; } }
 
 .text-big {
   font-size: 65px;
@@ -117,10 +120,10 @@ body {
   stroke: white; }
 
 .btn-tertiary {
-  font-size: 2.2rem;
+  font-size: 2rem;
   text-decoration: none;
   color: black;
-  padding: 2rem 3rem;
+  padding: 1.5rem 2rem;
   text-align: center;
   background-color: #ececec;
   display: inline-block;
@@ -139,7 +142,7 @@ body {
     content: '';
     top: 100%;
     left: 5%;
-    height: 10px;
+    height: 15px;
     width: 90%;
     opacity: 0;
     background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
@@ -213,22 +216,107 @@ body {
   .navigation__lists.active .navigation__toggle img {
     transform: rotate(180deg); } }
 
-.goto-wallets {
-  margin: 10rem auto;
+.goto {
   gap: 8rem; }
-  .goto-wallets__typo--box {
+  .goto:nth-of-type(1) {
+    padding-top: 9rem; }
+  .goto:not(:first-child) {
+    padding-bottom: 16rem; }
+  .goto__typo--box {
     max-width: 60rem; }
-  .goto-wallets__typo--text {
+    @media only screen and (max-width: 48em) {
+      .goto__typo--box {
+        max-width: 100%; } }
+  .goto__typo--heading {
+    margin-bottom: 4rem; }
+  .goto__typo--text {
     font-size: 1.6rem;
     margin: 0; }
     @media only screen and (max-width: 48em) {
-      .goto-wallets__typo--text {
+      .goto__typo--text {
         font-size: 1.9rem; } }
   @media only screen and (max-width: 48em) {
-    .goto-wallets {
-      max-width: calc(100% - 5rem);
-      margin: 0 2.5rem;
-      margin-top: 10rem; } }
+    .goto {
+      max-width: calc(100% - 10rem);
+      margin: 0 5rem;
+      margin-top: 10rem;
+      gap: 3rem; }
+      .goto:nth-of-type(1) {
+        padding-top: 4rem; }
+      .goto:not(:first-child) {
+        padding-bottom: 8rem; }
+      .goto:nth-of-type(3) {
+        margin-bottom: 10rem; } }
+  @media only screen and (max-width: 36em) {
+    .goto:nth-of-type(1) {
+      padding-top: 0; }
+    .goto:not(:first-child) {
+      padding-bottom: 0; } }
+
+.experience-layout {
+  row-gap: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 0; }
+  .experience-layout__card {
+    gap: 2rem; }
+    .experience-layout__card h1 {
+      font-size: 2.5rem;
+      font-weight: 800; }
+    .experience-layout__card p {
+      font-size: 1.6rem; }
+    .experience-layout__card--icon {
+      border-radius: 2.5rem; }
+    .experience-layout__card--box {
+      padding: 2rem 2.3rem;
+      width: 75%; }
+      @media only screen and (max-width: 62em) {
+        .experience-layout__card--box {
+          width: 100%; } }
+  @media only screen and (max-width: 48em) {
+    .experience-layout__card {
+      flex-direction: column; }
+      .experience-layout__card h1 {
+        font-size: 2.9rem; }
+      .experience-layout__card p {
+        font-size: 1.9rem; }
+      .experience-layout__card--box {
+        padding: 2.5rem 2.8rem; } }
+
+.epay {
+  position: relative; }
+  .epay__content {
+    row-gap: 4rem;
+    padding: 11rem 0 9rem 0; }
+    @media only screen and (max-width: 62em) {
+      .epay__content {
+        padding: 6rem 0 3rem 0; } }
+    .epay__content--typo__heading {
+      font-size: 3.2rem; }
+    .epay__content--typo__text {
+      font-size: 1.6rem;
+      margin-top: 3rem; }
+    .epay__content--btn {
+      padding: 1rem 3rem;
+      background-color: #12a733;
+      display: inline-block;
+      font-size: 1.5rem;
+      color: white;
+      border-radius: .6rem;
+      margin-top: 1.6rem;
+      transition: background-color 0.3s;
+      cursor: pointer; }
+      .epay__content--btn:hover {
+        background-color: #026102; }
+    .epay__content--pic {
+      max-width: 60rem;
+      position: absolute;
+      right: 0;
+      top: -40%; }
+      @media only screen and (max-width: 62em) {
+        .epay__content--pic {
+          position: static;
+          width: 100%; } }
 
 .header {
   background-color: #eefdf8;
@@ -400,7 +488,8 @@ body {
       color: black !important; }
   @media only screen and (max-width: 48em) {
     .home__content--left__typo p {
-      font-size: 2.1rem !important; } }
+      font-size: 2.1rem !important;
+      text-align: justify; } }
   @media only screen and (max-width: 48em) {
     .home__content--left__download {
       width: 88% !important;
@@ -415,7 +504,7 @@ body {
     @media only screen and (max-width: 48em) {
       .home__content--left__service {
         margin: 3rem 0;
-        font-size: 2.2rem; } }
+        font-size: 2.3rem; } }
   @media only screen and (max-width: 48em) {
     .home {
       max-width: calc(100% - 5rem);
@@ -508,3 +597,21 @@ body {
     .wallets__content {
       max-width: calc(100% - 5rem);
       margin: 0 2.5rem; } }
+
+.experience--heading {
+  font-size: 3.3rem;
+  font-weight: 900; }
+
+@media only screen and (max-width: 48em) {
+  .experience {
+    max-width: calc(100% - 10rem);
+    margin: 0 5rem; } }
+
+.epay {
+  margin: 14rem auto;
+  padding: 0 5rem;
+  background-color: #fafafa; }
+  @media only screen and (max-width: 48em) {
+    .epay {
+      max-width: calc(100% - 10rem);
+      margin: 8rem 5rem; } }
