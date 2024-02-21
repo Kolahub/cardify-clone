@@ -21,8 +21,8 @@
       font-size: 1.6rem;
       margin: 0;
 
-      @include respond(md) {
-        font-size: 1.9rem;
+      @include respond(lg) {
+        font-size: 2rem;
       }
     }
   }
@@ -56,7 +56,6 @@
 
 .experience {
   &-layout {
-    //   gap: 3rem;
     row-gap: 4rem;
     justify-content: space-between;
     align-items: center;
@@ -66,10 +65,16 @@
       h1 {
         font-size: 2.5rem;
         font-weight: 700;
+        @include respond(lg) {
+          font-size: 2.9rem;
+        }
       }
 
       p {
         font-size: 1.6rem;
+        @include respond(lg) {
+          font-size: 2rem;
+        }
       }
       &--icon {
         border-radius: 2.5rem;
@@ -87,13 +92,6 @@
     @include respond(md) {
       &__card {
         flex-direction: column;
-        h1 {
-          font-size: 2.9rem;
-        }
-
-        p {
-          font-size: 2rem;
-        }
 
         &--box {
           padding: 2.5rem 2.8rem;
@@ -108,21 +106,21 @@
   &__content {
     row-gap: 4rem;
     padding: 11rem 0 9rem 0;
-    @include respond (lg) { 
-        padding: 6rem 0 3rem 0;
-      }
+    @include respond(lg) {
+      padding: 6rem 0 3rem 0;
+    }
     &--typo {
       &__heading {
         font-size: 3.2rem;
-        @include respond (md) { 
-            font-size: 3.5rem;
+        @include respond(lg) {
+          font-size: 3.5rem;
         }
       }
       &__text {
         font-size: 1.6rem;
         margin-top: 3rem;
-        @include respond (md) {
-            font-size: 2rem;
+        @include respond(lg) {
+          font-size: 2rem;
         }
       }
     }
@@ -133,7 +131,7 @@
       display: inline-block;
       font-size: 1.5rem;
       color: $color-white;
-      border-radius: .6rem;
+      border-radius: 0.6rem;
       margin-top: 1.6rem;
       transition: background-color 0.3s;
       cursor: pointer;
@@ -142,23 +140,105 @@
         background-color: rgb(2, 97, 2);
       }
 
-      @include respond (md) {
+      @include respond(lg) {
         font-size: 1.9rem;
         padding: 1.5rem 3.5rem;
-    }
+      }
     }
 
     &--pic {
-      max-width: 60rem;
+      max-width: 55rem;
       position: absolute;
       right: 0;
-      top: -40%;
+      bottom: 0.1rem;
 
-      @include respond (lg) {
+      @include respond(lg) {
         position: static;
         width: 100%;
       }
     }
   }
+}
 
+.faq {
+  &__content {
+    column-gap: 5rem;
+    padding: 0 1.5rem;
+    h1 {
+      font-size: 3.2rem;
+      @include respond(lg) {
+        font-size: 3rem;
+      }
+    }
+
+    span {
+      font-size: 1.6rem;
+      margin-top: 1.5rem;
+      margin-bottom: 4rem;
+      @include respond(lg) {
+        font-size: 2rem;
+      }
+      
+    }
+    &--context {
+      iframe {
+        width: 93%;
+        aspect-ratio: 16/9;
+        border-radius: 8px 0 0 8px;
+        @include respond(lg) {
+          width: 85%;
+        }
+        @media only screen and (max-width: 38em) {
+          width: 100%;
+          border-radius: 8px;
+        }
+      }
+      margin-right: 1.5rem;
+    }
+
+    &--accordion {
+      --bs-accordion-bg: transparent;
+      --bs-accordion-btn-icon-width: 2.2rem;
+      --bs-accordion-border-color: none;
+      --bs-accordion-border-width: none;
+      --bs-accordion-border-radius: none;
+      --bs-accordion-inner-border-radius: none;
+      --bs-accordion-btn-padding-x: 1.6rem;
+      --bs-accordion-btn-padding-y: 1.6rem;
+      --bs-accordion-btn-focus-border-color: none;
+      --bs-accordion-btn-focus-box-shadow: none;
+
+      &__item:not(:last-child) &__button {
+        border-bottom: 2px solid $grey-light;
+      }
+      &__button {
+        font-size: 1.55rem;
+        font-weight: 500;
+        &:focus {
+          border-bottom: 2px solid $grey-light;
+        }
+        &:not(.collapsed) {
+          color: $blue;
+        }
+
+        @include respond(lg) {
+          font-size: 2.2rem;
+        }
+      }
+
+      &__body {
+        padding: 2rem;
+        font-size: 1.48rem;
+        font-weight: 500;
+
+        @include respond(lg) {
+          font-size: 1.9rem;
+        }
+      }
+    }
+
+    @include respond(lg) {
+      row-gap: 5rem;
+    }
+  }
 }
