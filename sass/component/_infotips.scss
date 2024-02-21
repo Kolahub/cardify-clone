@@ -4,6 +4,7 @@
   left: 15%;
   transform: translateX(-15%);
   width: calc(100% - 14rem);
+  z-index: 5000;
 
   &__items {
     width: 30rem;

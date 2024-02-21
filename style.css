@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 *,
 *::after,
 *::before {
@@ -37,19 +37,137 @@ body {
       font-size: 6rem; } }
 
 .heading-2 {
-  font-size: 4.6rem;
-  font-family: "Hind", sans-serif;
-  font-weight: 600; }
+  font-size: 5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500; }
   @media only screen and (max-width: 48em) {
     .heading-2 {
-      font-size: 4.2rem; } }
+      font-size: 5rem; } }
+
+.text-medium {
+  font-size: 45px; }
+
+.text-big {
+  font-size: 65px;
+  font-family: "Roboto", sans-serif; }
+
+.btn-secondary, .btn-secondary:visited {
+  font-size: 2.2rem;
+  text-decoration: none;
+  color: #145aff;
+  padding: 2rem 3rem;
+  text-align: center;
+  background-color: #161616;
+  display: inline-block;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+
+.btn-secondary:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #145aff;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  backface-visibility: hidden;
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; }
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+  color: white; }
+
+.btn-secondary:hover::before, .btn-secondary:focus:before, .btn-secondary:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1); }
+
+.btn-secondary svg {
+  transform: rotate(-35deg);
+  margin-left: 1rem; }
+
+.btn-secondary svg .svg1 {
+  stroke: #145aff;
+  transition: stroke 0.3s; }
+
+.btn-secondary svg .svg2 {
+  stroke: #145aff;
+  transition: stroke 0.3s; }
+
+.btn-secondary:hover svg {
+  transform: rotate(0); }
+
+.btn-secondary:hover svg .svg1 {
+  stroke: white; }
+
+.btn-secondary:hover svg .svg2 {
+  stroke: white; }
+
+.btn-tertiary {
+  font-size: 2.2rem;
+  text-decoration: none;
+  color: black;
+  padding: 2rem 3rem;
+  text-align: center;
+  background-color: #ececec;
+  display: inline-block;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform; }
+  .btn-tertiary::before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    /* W3C */
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform, opacity;
+    transition-property: transform, opacity; }
+  .btn-tertiary:hover, .btn-tertiary:focus, .btn-tertiary:active {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    /* move the element up by 5px */ }
+  .btn-tertiary:hover:before, .btn-tertiary:focus:before, .btn-tertiary:active:before {
+    opacity: 1;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */ }
+  .btn-tertiary:hover svg {
+    transform: rotate(-35deg); }
 
 .infotips {
   font-size: 1.35rem;
   top: 7rem;
   left: 15%;
   transform: translateX(-15%);
-  width: calc(100% - 14rem); }
+  width: calc(100% - 14rem);
+  z-index: 5000; }
   .infotips__items {
     width: 30rem;
     padding: 0.4rem;
@@ -94,6 +212,23 @@ body {
     transition: all .6s; }
   .navigation__lists.active .navigation__toggle img {
     transform: rotate(180deg); } }
+
+.goto-wallets {
+  margin: 10rem auto;
+  gap: 8rem; }
+  .goto-wallets__typo--box {
+    max-width: 60rem; }
+  .goto-wallets__typo--text {
+    font-size: 1.6rem;
+    margin: 0; }
+    @media only screen and (max-width: 48em) {
+      .goto-wallets__typo--text {
+        font-size: 1.9rem; } }
+  @media only screen and (max-width: 48em) {
+    .goto-wallets {
+      max-width: calc(100% - 5rem);
+      margin: 0 2.5rem;
+      margin-top: 10rem; } }
 
 .header {
   background-color: #eefdf8;
@@ -188,7 +323,7 @@ body {
   background-color: transparent; }
   @media only screen and (max-width: 48em) {
     .navigation__links {
-      color: #145af8 !important;
+      color: #145aff !important;
       font-size: 2.3rem;
       line-height: 1.4;
       color: black;
@@ -197,7 +332,7 @@ body {
 
 .navigation__btnMenu {
   border: none;
-  background-color: green;
+  background-color: #18cc3f;
   width: 90%;
   transform: translateX(-1rem);
   height: 5rem;
@@ -287,18 +422,89 @@ body {
       margin: 0 2.5rem; } }
 
 .cadifytribe {
-  padding: 14rem 0;
-  max-width: 77rem;
-  margin: 0 auto; }
-  .cadifytribe__content--headings p {
-    font-size: 1.9rem; }
-  @media only screen and (max-width: 48em) {
+  padding: 14rem 0; }
+  .cadifytribe__content--headings {
+    max-width: 77rem;
+    margin: 0 auto; }
     .cadifytribe__content--headings p {
-      font-size: 2.2rem; } }
+      font-size: 2rem; }
+  .cadifytribe__content--cards {
+    border-top: 2px solid #ececec; }
+    .cadifytribe__content--cards__1 {
+      border-right: 2px solid #ececec; }
+    .cadifytribe__content--cards__2 {
+      border-right: 2px solid #ececec; }
+    @media only screen and (max-width: 48em) {
+      .cadifytribe__content--cards {
+        border: none; }
+        .cadifytribe__content--cards > * {
+          border: none; } }
   @media only screen and (max-width: 48em) {
-    .cadifytribe {
+    .cadifytribe__content {
       max-width: calc(100% - 5rem);
-      margin: 0 2.5rem; } }
+      margin: 0 2.5rem; }
+      .cadifytribe__content p {
+        font-size: 2.2rem !important; } }
   @media only screen and (max-width: 36em) {
     .cadifytribe {
       padding: 8rem 0; } }
+
+.wallets--icons {
+  width: 20px; }
+
+.wallets__content {
+  padding: 14rem 0 6rem 0; }
+  .wallets__content--typo {
+    max-width: 70rem;
+    margin: 0 auto; }
+    .wallets__content--typo h3 {
+      letter-spacing: 0.3rem;
+      color: #12a733; }
+    .wallets__content--typo p {
+      font-size: 19px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+      @media only screen and (max-width: 48em) {
+        .wallets__content--typo p {
+          font-size: 2.2rem; } }
+    @media only screen and (max-width: 36em) {
+      .wallets__content--typo {
+        max-width: calc(100% - 5rem);
+        margin: 0 2.5rem; } }
+  .wallets__content--box {
+    max-width: calc(100% - 12rem);
+    margin: 5rem 6rem; }
+    .wallets__content--box span {
+      font-size: 19px;
+      color: #145aff; }
+    .wallets__content--box p {
+      font-size: 17px; }
+    .wallets__content--box-typo {
+      gap: 4rem;
+      width: 37%; }
+      .wallets__content--box-typo > * {
+        background-color: #161616;
+        padding: 3rem;
+        border-radius: 1rem; }
+      @media only screen and (max-width: 48em) {
+        .wallets__content--box-typo {
+          width: 100%; } }
+    .wallets__content--box--2 {
+      width: 56%; }
+      @media only screen and (max-width: 48em) {
+        .wallets__content--box--2 {
+          width: 100%;
+          margin-top: 4rem; } }
+    .wallets__content--box--gif {
+      padding: 4.7rem 3.2rem;
+      background-color: #161616; }
+      .wallets__content--box--gif img {
+        width: 100%;
+        border-radius: 3rem; }
+    @media only screen and (max-width: 48em) {
+      .wallets__content--box {
+        max-width: calc(100% - 5rem);
+        margin: 0 2.5rem; } }
+  @media only screen and (max-width: 48em) {
+    .wallets__content {
+      max-width: calc(100% - 5rem);
+      margin: 0 2.5rem; } }

@@ -1,0 +1,174 @@
+.home {
+  padding: 3rem 0;
+  &__content {
+    &--left {
+      &__heading {
+        padding-top: 6rem;
+        @include respond(md) {
+          padding-top: 0;
+        }
+        span {
+          color: $green !important;
+        }
+
+        span.typed-cursor {
+          color: black !important;
+        }
+      }
+      &__typo {
+        @include respond(md) {
+          p {
+            font-size: 2.1rem !important;
+          }
+        }
+      }
+      &__download {
+        @include respond(md) {
+          width: 88% !important;
+          gap: 5rem !important;
+        }
+
+        @include respond(sm) {
+          width: 98%;
+          gap: 2rem !important;
+        }
+      }
+      &__service {
+        font-size: 1.8rem;
+        margin-top: 4rem;
+
+        @include respond(md) {
+          margin: 3rem 0;
+          font-size: 2.2rem;
+        }
+      }
+    }
+  }
+
+  @include respond(md) {
+    @include fullWidthMargin;
+  }
+}
+
+.cadifytribe {
+  padding: 14rem 0;
+
+  &__content {
+    &--headings {
+      max-width: 77rem;
+      margin: 0 auto;
+      p {
+        font-size: 2rem;
+      }
+    }
+
+    &--cards {
+      border-top: 2px solid $grey-light;
+      &__1 {
+        border-right: 2px solid $grey-light;
+      }
+      &__2 {
+        border-right: 2px solid $grey-light;
+      }
+
+      @include respond(md) {
+        border: none;
+        & > * {
+          border: none;
+        }
+      }
+    }
+
+    @include respond(md) {
+      @include fullWidthMargin;
+      p {
+        font-size: 2.2rem !important;
+      }
+    }
+  }
+  @include respond(sm) {
+    padding: 8rem 0;
+  }
+}
+
+.wallets {
+  &--icons {
+    width: 20px;
+  }
+
+  &__content {
+    padding: 14rem 0 6rem 0;
+
+    &--typo {
+      max-width: 70rem;
+      margin: 0 auto;
+      h3 {
+        letter-spacing: 0.3rem;
+        color: $dark-green;
+      }
+
+      p {
+        font-size: 19px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        @include respond(md) {
+          font-size: 2.2rem;
+        }
+      }
+
+      @include respond(sm) {
+        @include fullWidthMargin;
+      }
+    }
+
+    &--box {
+      max-width: calc(100% - 12rem);
+      margin: 5rem 6rem;
+      span {
+        font-size: 19px;
+        color: $blue;
+      }
+      p {
+        font-size: 17px;
+      }
+      &-typo {
+        gap: 4rem;
+        width: 37%;
+        & > * {
+          background-color: $grey-dark-2;
+          padding: 3rem;
+          border-radius: 1rem;
+        }
+        @include respond(md) {
+          width: 100%;
+        }
+      }
+
+      &--2 {
+        width: 56%;
+
+        @include respond(md) {
+          width: 100%;
+          margin-top: 4rem;
+        }
+      }
+      &--gif {
+        padding: 4.7rem 3.2rem;
+        background-color: $grey-dark-2;
+        img {
+          width: 100%;
+          border-radius: 3rem;
+        }
+      }
+
+      @include respond(md) {
+        @include fullWidthMargin;
+      }
+    }
+
+    @include respond(md) {
+      @include fullWidthMargin;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.goto-wallets {
+    margin: 10rem auto;
+    gap: 8rem;
+
+    &__typo {
+        &--box {
+            max-width: 60rem;
+        }
+        &--text {
+            font-size: 1.6rem;
+            margin: 0;
+
+            @include respond(md) { 
+                font-size: 1.9rem;
+            }
+        }
+    }
+
+
+    @include respond(md) {
+        @include fullWidthMargin;
+        margin-top: 10rem;
+    }
+}
