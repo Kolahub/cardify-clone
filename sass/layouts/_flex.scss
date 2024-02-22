@@ -28,8 +28,8 @@
   }
 
   @include respond(md) {
-    max-width: calc(100% - 10rem);
-    margin: 0 5rem;
+    max-width: calc(100% - 9rem);
+    margin: 0 4.5rem;
     margin-top: 10rem;
     gap: 3rem;
     &:nth-of-type(1) {
@@ -178,8 +178,8 @@
       @include respond(lg) {
         font-size: 2rem;
       }
-      
     }
+    
     &--context {
       iframe {
         width: 93%;
@@ -210,13 +210,13 @@
 
       &__item:not(:last-child) &__button {
         border-bottom: 2px solid $grey-light;
+        &:focus {
+          border-bottom: 2px solid $grey-light;
+        }
       }
       &__button {
         font-size: 1.55rem;
         font-weight: 500;
-        &:focus {
-          border-bottom: 2px solid $grey-light;
-        }
         &:not(.collapsed) {
           color: $blue;
         }

@@ -1,0 +1,193 @@
+.footer {
+  padding-bottom: 1.3rem;
+  &__card {
+    transform: translateY(-40%);
+    background-image: url(/images/background.png);
+    background-size: cover;
+    padding: 8rem 0;
+    margin-top: 22rem;
+    border-radius: 1rem;
+    &--heading {
+      font-size: 4.2rem;
+      font-weight: 700;
+      @include respond(lg) {
+        font-size: 4rem;
+      }
+    }
+    &--text {
+      font-size: 2.1rem;
+      font-family: "Roboto", sans-serif;
+      margin-top: 1.5rem;
+      @include respond(lg) {
+        font-size: 2rem;
+      }
+    }
+
+    &--icons {
+      margin-top: 5rem;
+      @media only screen and (max-width: 20em) {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 3rem !important;
+        align-items: center;
+        align-content: center;
+      }
+    }
+
+    &--social {
+      @media only screen and (max-width: 22em) {
+        width: 5rem !important;
+      }
+
+      @media only screen and (max-width: 20em) { 
+        margin:0 auto;
+      }
+    }
+
+    @include respond(md) {
+      @include fullWidthMargin;
+      margin-top: 22rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -9rem;
+    padding: 0;
+
+    &--form {
+      width: 50%;
+      max-width: 60rem;
+      margin-right: auto;
+      font-size: 1.56rem;
+      font-weight: 500;
+      @include respond(lg) {
+        font-size: 1.8rem;
+      }
+      &--text {
+        margin: 6rem 0 3rem 0;
+      }
+
+      &--input {
+        height: 63px;
+        width: 94%;
+        padding: 1.2rem 1.8rem;
+        color: $color-white;
+        background-color: $grey-dark-2;
+        border: none;
+        border-radius: 0.5rem;
+        &:focus {
+          outline: none;
+        }
+        &::placeholder {
+          color: $color-white;
+        }
+        @include respond(sm) {
+          width: 100%;
+        }
+      }
+
+      &--btn {
+        // width: 15rem;
+        border: none;
+        background-color: $green;
+        font-size: 1.7rem;
+        font-weight: 500;
+        color: $color-white;
+
+        @include respond(lg) {
+          font-size: 1.9rem;
+        }
+
+        @include respond(sm) {
+          height: 7rem;
+          width: 16rem;
+          margin-top: 3rem;
+        }
+      }
+    }
+
+    &--nav {
+      width: 50%;
+      display: flex;
+      gap: 3rem;
+      @include respond(tab-land) {
+        gap: 0;
+      }
+      @include respond(md) {
+        flex-direction: column;
+      }
+    }
+
+    &--items {
+      list-style-type: none;
+      font-weight: 500;
+
+      &__heading {
+        font-size: 1.8rem;
+        line-height: 4.4rem;
+        @include respond(lg) {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    &--lists {
+      line-height: 4rem;
+    }
+    &--links {
+      &,
+      &:visited {
+        color: $color-white;
+        text-decoration: none;
+        font-size: 1.6rem;
+        transition: color 0.2s;
+        @include respond(lg) {
+          font-size: 1.8rem;
+        }
+      }
+
+      &:hover {
+        color: $green;
+      }
+    }
+    @include respond(lg) {
+      flex-direction: column;
+      gap: 5rem;
+
+      &--form {
+        width: 100%;
+        max-width: 60rem;
+      }
+
+      &--nav {
+        width: 100%;
+        gap: 5rem;
+        ul {
+          padding-left: 0 !important;
+        }
+      }
+    }
+
+    @include respond(md) {
+      max-width: calc(100% - 8rem);
+      margin: 0 4rem;
+      margin-top: -9rem;
+    }
+  }
+
+  &__disclaimer {
+    padding-top: 4rem;
+    margin-top: 6rem;
+    border-top: 1.5px solid rgb(122, 122, 122);
+    font-size: 1.5rem;
+    @include respond(lg) {
+      font-size: 1.9rem;
+    }
+
+    @include respond(md) {
+      @include fullWidthMargin;
+    }
+  }
+}
