@@ -1,3 +1,5 @@
+// FOR SECTIONS FROM SECTION FOUR (GOTO WALLETS) TO THE FOOTER
+
 .goto {
   &:nth-of-type(1) {
     padding-top: 9rem;
@@ -28,8 +30,8 @@
   }
 
   @include respond(md) {
-    max-width: calc(100% - 9rem);
-    margin: 0 4.5rem;
+    max-width: calc(100% - 7rem);
+    margin: 0 3.5rem;
     margin-top: 10rem;
     gap: 3rem;
     &:nth-of-type(1) {
@@ -111,16 +113,16 @@
     }
     &--typo {
       &__heading {
-        font-size: 3.2rem;
+        font-size: 3rem;
         @include respond(lg) {
-          font-size: 3.5rem;
+          font-size: 3.2rem;
         }
       }
       &__text {
         font-size: 1.6rem;
         margin-top: 3rem;
         @include respond(lg) {
-          font-size: 2rem;
+          font-size: 1.9rem;
         }
       }
     }
@@ -165,9 +167,9 @@
     column-gap: 5rem;
     padding: 0 1.5rem;
     h1 {
-      font-size: 3.2rem;
+      font-size: 3rem;
       @include respond(lg) {
-        font-size: 3rem;
+        font-size: 3.2rem;
       }
     }
 

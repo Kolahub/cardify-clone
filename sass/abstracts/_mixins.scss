@@ -1,6 +1,6 @@
 @mixin fullWidthMargin {
-    max-width: calc(100% - 5rem);
-    margin: 0 2.5rem;
+    max-width: calc(100% - 4rem);
+    margin: 0 2rem;
   }
   
 @mixin respond($breakpoint) {

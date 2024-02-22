@@ -12,7 +12,7 @@ body {
   font-weight: bolder;
 
   @include respond(md) {
-    font-size: 6.2rem;
+    font-size: 6rem;
   }
 }
 

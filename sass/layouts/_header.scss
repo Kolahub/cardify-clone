@@ -2,6 +2,9 @@
   background-color: $lighter-green;
   font-size: 1.7rem;
   border-radius: 1.6rem;
+  @include respond(lg) { 
+    font-size: 2.1rem;
+  }
   &__logo {
     img {
       width: 130px;
@@ -12,15 +15,23 @@
   }
 
   &__form {
+    &--login {
+      @include respond (md) {
+        display: none;
+      }
+    }
     button {
       font-size: 1.9rem;
       padding: 1.58rem 0;
       width: 10rem;
-
-      @include respond (md) { 
+      @include respond(lg) { 
+        font-size: 2.3rem;
         width: 15rem;
-        font-size: 2.2rem;
       }
+      // @include respond (md) { 
+      //   width: 15rem;
+      //   font-size: 2.2rem;
+      // }
 
       @include respond (sm) { 
         width: 12rem;

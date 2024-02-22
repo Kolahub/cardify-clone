@@ -63,7 +63,7 @@
       font-size: 1.56rem;
       font-weight: 500;
       @include respond(lg) {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
       }
       &--text {
         margin: 6rem 0 3rem 0;
@@ -89,7 +89,6 @@
       }
 
       &--btn {
-        // width: 15rem;
         border: none;
         background-color: $green;
         font-size: 1.7rem;
@@ -97,7 +96,7 @@
         color: $color-white;
 
         @include respond(lg) {
-          font-size: 1.9rem;
+          font-size: 2rem;
         }
 
         @include respond(sm) {
@@ -128,7 +127,7 @@
         font-size: 1.8rem;
         line-height: 4.4rem;
         @include respond(lg) {
-          font-size: 2rem;
+          font-size: 2.1rem;
         }
       }
     }
@@ -136,6 +135,7 @@
     &--lists {
       line-height: 4rem;
     }
+
     &--links {
       &,
       &:visited {
@@ -144,7 +144,7 @@
         font-size: 1.6rem;
         transition: color 0.2s;
         @include respond(lg) {
-          font-size: 1.8rem;
+          font-size: 1.9rem;
         }
       }
 
@@ -171,8 +171,8 @@
     }
 
     @include respond(md) {
-      max-width: calc(100% - 8rem);
-      margin: 0 4rem;
+      max-width: calc(100% - 6rem);
+      margin: 0 3rem;
       margin-top: -9rem;
     }
   }

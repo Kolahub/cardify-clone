@@ -49,6 +49,10 @@
   @include respond(md) {
     @include fullWidthMargin;
   }
+
+  @include respond(sm) { 
+    padding: 0;
+  }
 }
 
 .cadifytribe {
@@ -93,10 +97,6 @@
 }
 
 .wallets {
-  &--icons {
-    width: 20px;
-  }
-
   &__content {
     padding: 14rem 0 6rem 0;
 
@@ -116,9 +116,6 @@
         font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
           Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
           sans-serif;
-        @include respond(sm) {
-          font-size: 17px;
-        }
       }
 
       @include respond(md) {
@@ -163,6 +160,7 @@
           margin-top: 4rem;
         }
       }
+
       &--gif {
         padding: 4.7rem 3.2rem;
         background-color: $grey-dark-2;
@@ -181,6 +179,11 @@
       @include fullWidthMargin;
     }
   }
+
+  &--icons {
+    width: 30px;
+
+  }
 }
 
 .experience {
@@ -189,8 +192,8 @@
     font-weight: 900;
   }
   @include respond(md) {
-    max-width: calc(100% - 9rem);
-    margin: 0 4.5rem;
+    max-width: calc(100% - 7rem);
+    margin: 0 3.5rem;
     &--heading {
       font-size: 3.09rem;
     }
