@@ -65,10 +65,10 @@
     &__card {
       gap: 2rem;
       h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
         font-weight: 700;
         @include respond(lg) {
-          font-size: 2.9rem;
+          font-size: 3.3rem;
         }
       }
 
@@ -115,14 +115,14 @@
       &__heading {
         font-size: 3rem;
         @include respond(lg) {
-          font-size: 3.2rem;
+          font-size: 3.3rem;
         }
       }
       &__text {
         font-size: 1.6rem;
         margin-top: 3rem;
         @include respond(lg) {
-          font-size: 1.9rem;
+          font-size: 2rem;
         }
       }
     }
@@ -143,7 +143,7 @@
       }
 
       @include respond(lg) {
-        font-size: 1.9rem;
+        font-size: 2rem;
         padding: 1.5rem 3.5rem;
       }
     }

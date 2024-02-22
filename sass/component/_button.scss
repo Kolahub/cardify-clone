@@ -1,3 +1,11 @@
+.btn-download {
+  cursor: pointer !important;
+  transition: all .5s ease;
+  &:hover {
+    transform: scale(1.2) rotate(-5deg);
+  }
+}
+
 .btn-secondary {
   &,
   &:visited {
@@ -95,14 +103,23 @@
     pointer-events: none;
     position: absolute;
     z-index: -1;
-    content: '';
+    content: "";
     top: 100%;
     left: 5%;
     height: 15px;
     width: 90%;
     opacity: 0;
-    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
-    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    background: -webkit-radial-gradient(
+      center,
+      ellipse,
+      rgba(0, 0, 0, 0.35) 0%,
+      rgba(0, 0, 0, 0) 80%
+    );
+    background: radial-gradient(
+      ellipse at center,
+      rgba(0, 0, 0, 0.35) 0%,
+      rgba(0, 0, 0, 0) 80%
+    );
     /* W3C */
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
@@ -110,13 +127,17 @@
     transition-property: transform, opacity;
   }
 
-  &:hover, &:focus, &:active {
+  &:hover,
+  &:focus,
+  &:active {
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
     /* move the element up by 5px */
   }
 
-  &:hover:before, &:focus:before, &:active:before {
+  &:hover:before,
+  &:focus:before,
+  &:active:before {
     opacity: 1;
     -webkit-transform: translateY(5px);
     transform: translateY(5px);
@@ -128,7 +149,7 @@
   }
 }
 
-/* Wobble Horizontal */
+/* Wobble Horizontal Btn */
 @-webkit-keyframes hvr-wobble-horizontal {
   16.65% {
     -webkit-transform: translateX(8px);
@@ -186,7 +207,9 @@
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 
-  &:hover, &:focus, &:active {
+  &:hover,
+  &:focus,
+  &:active {
     -webkit-animation-name: hvr-wobble-horizontal;
     animation-name: hvr-wobble-horizontal;
     -webkit-animation-duration: 1s;
@@ -197,5 +220,3 @@
     animation-iteration-count: 1;
   }
 }
-
-

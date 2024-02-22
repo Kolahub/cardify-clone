@@ -31,9 +31,7 @@
               class="header__logo--pic"
           /></a>
         </div>
-        <nav
-          class="navigation col-7 col-sm-9 col-lg-8 d-flex fw-semibold"
-        >
+        <nav class="navigation col-7 col-sm-9 col-lg-8 d-flex fw-semibold">
           <input
             type="checkbox"
             class="navigation__checkbox"
@@ -57,13 +55,18 @@
               </li>
 
               <li class="navigation__lists order-3 order-md-1">
-                <button onclick="this.focus()" class="navigation__links d-flex gap-2">
+                <button
+                  onclick="this.focus()"
+                  class="navigation__links d-flex gap-2"
+                >
                   Systems
                   <span class="navigation__toggle">
                     <img src="images/arrow down.svg" alt=""
                   /></span>
 
-                  <div class="navigation__infotips infotips d-none flex-wrap position-absolute bg-white shadow p-5 fw-medium">
+                  <div
+                    class="navigation__infotips infotips d-none flex-wrap position-absolute bg-white p-5 fw-medium"
+                  >
                     <div class="infotips__items d-flex gap-4">
                       <div class="">
                         <img src="images/1 (1).png" alt="" />
@@ -128,7 +131,7 @@
                 </button>
 
                 <ul
-                  class="navigation__tooltipp tooltipp position-absolute list-unstyled bg-white shadow-sm-sm"
+                  class="navigation__tooltipp tooltipp position-absolute list-unstyled bg-white"
                 >
                   <li class="tooltipp__lists">
                     <a href="/" class="tooltipp__links">Wallets</a>
@@ -146,14 +149,17 @@
               </li>
 
               <li class="navigation__lists order-1 order-md-2">
-                <button onclick="this.focus()" class="navigation__links d-flex gap-2">
+                <button
+                  onclick="this.focus()"
+                  class="navigation__links d-flex gap-2"
+                >
                   Learn
                   <span class="navigation__toggle">
                     <img src="images/arrow down.svg" alt=""
                   /></span>
 
                   <div
-                    class="navigation__infotips infotips d-none flex-wrap position-absolute bg-white shadow-sm-sm p-5 fw-medium"
+                    class="navigation__infotips infotips d-none flex-wrap position-absolute bg-white -sm-sm p-5 fw-medium"
                   >
                     <div class="infotips__items d-flex gap-4">
                       <div class="">
@@ -203,7 +209,7 @@
                   </div>
                 </button>
                 <ul
-                  class="navigation__tooltipp tooltipp position-absolute list-unstyled bg-white shadow-sm"
+                  class="navigation__tooltipp tooltipp position-absolute list-unstyled bg-white -sm"
                 >
                   <li class="tooltipp__lists">
                     <a href="/" class="tooltipp__links">Academy</a>
@@ -231,7 +237,7 @@
                 </button>
 
                 <ul
-                  class="navigation__tooltipp tooltipp position-absolute list-unstyled bg-white shadow-sm"
+                  class="navigation__tooltipp tooltipp position-absolute list-unstyled bg-white"
                 >
                   <li class="tooltipp__lists">
                     <a href="/" class="tooltipp__links">About us</a>
@@ -260,10 +266,10 @@
           </div>
 
           <div class="header__form d-flex justify-content-end">
-            <button class="header__form--login text-black fw-semibold">Log in</button>
-            <button class="fw-semibold text-white flex-grow-1">
-              Sign up
+            <button class="header__form--login text-black fw-semibold">
+              Log in
             </button>
+            <button class="fw-semibold text-white flex-grow-1">Sign up</button>
           </div>
         </nav>
       </div>
@@ -293,10 +299,10 @@
           <div
             class="home__content--left__download d-flex justify-content-between gap-5 w-75 pt-0 pt-md-2"
           >
-            <div class="">
+            <div class="btn-download">
               <img src="images/google play.svg" alt="" class="w-100" />
             </div>
-            <div class="">
+            <div class="btn-download">
               <img src="images/Apple store.svg" alt="" class="w-100" />
             </div>
           </div>
@@ -369,9 +375,7 @@
           </p>
         </div>
 
-        <div
-          class="wallets__content--box d-flex flex-column flex-md-row justify-content-between"
-        >
+        <div class="wallets__content--box d-flex flex-column flex-md-row justify-content-between">
           <div class="wallets__content--box-typo d-flex flex-column">
             <div class="">
               <div class="d-flex align-items-center gap-4 py-5">
@@ -430,8 +434,7 @@
               <img src="images/Cardifyapp.gif" alt="" class="h-100" />
             </div>
 
-            <a href="#" class="btn-secondary wallets--btn my-5 fw-bold"
-              >Get Started
+            <a href="#" class="btn-secondary wallets--btn my-5 fw-bold">Get Started
               <svg
                 width="19"
                 height="16"
@@ -753,7 +756,10 @@
           ></iframe> -->
         </div>
 
-        <div class="faq__content--accordion accordion w-100 w-lg-50" id="accordionExample">
+        <div
+          class="faq__content--accordion accordion w-100 w-lg-50"
+          id="accordionExample"
+        >
           <div class="faq__content--accordion__item accordion-item">
             <h2 class="accordion-header">
               <button
@@ -764,7 +770,7 @@
                 aria-expanded="false"
                 aria-controls="collapseOne"
               >
-              What is Cardify Bills?
+                What is Cardify Bills?
               </button>
             </h2>
             <div
@@ -896,73 +902,160 @@
     <section class="footer bg-black">
       <div class="footer__card container text-center text-white">
         <h1 class="footer__card--heading">Join the Cardify Tribe</h1>
-        <p class="footer__card--text">You get to know the latest in our ecosystem first</p>
-        <div class="footer__card--icons d-flex gap-4 align-items-center justify-content-center">
-          <img src="images/ig.svg" alt="" class="footer__card--social hvr-wobble-horizontal">
-          <img src="images/facebook.svg" alt="" class="footer__card--social hvr-wobble-horizontal">
-          <img src="images/twitter.svg" alt="" class="footer__card--social hvr-wobble-horizontal">
-          <img src="images/telegram.svg" alt="" class="footer__card--social hvr-wobble-horizontal">
-          <img src="images/youtube.svg" alt="" class="footer__card--social hvr-wobble-horizontal">
+        <p class="footer__card--text">
+          You get to know the latest in our ecosystem first
+        </p>
+        <div
+          class="footer__card--icons d-flex gap-4 align-items-center justify-content-center"
+        >
+          <img
+            src="images/ig.svg"
+            alt=""
+            class="footer__card--social hvr-wobble-horizontal"
+          />
+          <img
+            src="images/facebook.svg"
+            alt=""
+            class="footer__card--social hvr-wobble-horizontal"
+          />
+          <img
+            src="images/twitter.svg"
+            alt=""
+            class="footer__card--social hvr-wobble-horizontal"
+          />
+          <img
+            src="images/telegram.svg"
+            alt=""
+            class="footer__card--social hvr-wobble-horizontal"
+          />
+          <img
+            src="images/youtube.svg"
+            alt=""
+            class="footer__card--social hvr-wobble-horizontal"
+          />
         </div>
       </div>
 
       <div class="footer__content container text-white">
         <div class="footer__content--form">
-          <img src="images/thumb2.png" alt="" class="footer__content--form--thumb">
+          <img
+            src="images/thumb2.png"
+            alt=""
+            class="footer__content--form--thumb"
+          />
           <p class="footer__content--form--text">
             Subscribe to Cardify's newsletter
           </p>
           <div class="d-flex justify-content-between flex-column flex-sm-row">
-            <div class="col-12 col-sm-9"><input type="email" placeholder="Enter your email address" class="footer__content--form--input"></div>
-          <button class="footer__content--form--btn col-12 col-sm-3">Subscribe</button>
+            <div class="col-12 col-sm-9">
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                class="footer__content--form--input"
+              />
+            </div>
+            <button class="footer__content--form--btn col-12 col-sm-3">
+              Subscribe
+            </button>
           </div>
         </div>
         <div class="footer__content--nav">
           <ul class="footer__content--items">
             <p class="footer__content--items__heading">Systems</p>
-            <li class="footer__content--lists"><a href="" class="footer__content--links">Wallet</a></li>
-            <li class="footer__content--lists"><a href="" class="footer__content--links">Virtual Cards Page</a></li>
-            <li class="footer__content--lists"><a href="" class="footer__content--links">Bills Page</a></li>
-            <li class="footer__content--lists"><a href="" class="footer__content--links">Swap</a></li>
-            <li class="footer__content--lists"><a href="" class="footer__content--links">Gifts (Coming soon)</a></li>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links">Wallet</a>
+            </li>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links">Virtual Cards Page</a>
+            </li>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links">Bills Page</a>
+            </li>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links">Swap</a>
+            </li>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links">Gifts (Coming soon)</a>
+            </li>
           </ul>
 
           <ul class="footer__content--items">
             <p class="footer__content--items__heading">Support</p>
-            <li class="footer__content--lists"><a href="" class="footer__content--links">Cardify Academy</a></li>
-            <li class="footer__content--lists"><a href="" class="footer__content--links">Knowledgebase</a></li>
-            <li class="footer__content--lists"><a href="" class="footer__content--links">How to's/System Updates</a></li>
-            <li class="footer__content--lists"><a href="" class="footer__content--links">Blog</a></li>
-            <li class="footer__content--lists"><a href="" class="footer__content--links">Support Linktr.ee</a></li>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links">Cardify Academy</a>
+            </li>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links">Knowledgebase</a>
+            </li>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links"
+                >How to's/System Updates</a
+              >
+            </li>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links">Blog</a>
+            </li>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links">Support Linktr.ee</a>
+            </li>
           </ul>
 
           <ul class="footer__content--items">
             <p class="footer__content--items__heading">Legal & Policies</p>
-            <li class="footer__content--lists"><a href="" class="footer__content--links">Privacy Policy</a></li>
-            <li class="footer__content--lists"><a href="" class="footer__content--links">Terms of use</a></li>
-            <li class="footer__content--lists"><a href="" class="footer__content--links">API Policy</a></li>
-            <li class="footer__content--lists"><a href="" class="footer__content--links">AML & KYC Policy</a></li>
-            <li class="footer__content--lists"><a href="" class="footer__content--links">Risk Warning</a></li>
-            <li class="footer__content--lists"><a href="" class="footer__content--links">Cookie Policy
-            </a></li>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links">Privacy Policy</a>
+            </li>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links">Terms of use</a>
+            </li>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links">API Policy</a>
+            </li>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links">AML & KYC Policy</a>
+            </li>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links">Risk Warning</a>
+            </li>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links">Cookie Policy </a>
+            </li>
           </ul>
         </div>
       </div>
 
       <div class="footer__disclaimer text-white container-md">
-        &#169; 2022-2023 Cardify Africa. All rights reserved. Disclaimer: Cardify Africa is not a bank and does not hold depositor's funds. Cardify Africa acts solely as a financial technology company facilitating its offerings in partnership with licensed transmitters in their respective jurisdictions. We do not engage in banking activities or provide traditional banking services. By using the Cardify Africa website and its associated services, you acknowledge and accept that Cardify Africa is not a bank and that any financial transactions or services are provided by third-party partners. <br> <br>
-        "Cardify Africa" is a trading name of CARDIFY TECHNOLOGY LIMITED, a private limited company registered in the United Kingdom with company number 14295286 under the 'Other financial service activities' classification. <br><br>
-        "Cardify Africa" is registered as "CARDIFY COMPANY LTD" in Nigeria. <br><br>
-        "Cardify Africa" is registered in the United States of America as "Cardify Africa Technology Inc" in the city of Dover, County of Kent, Code 19901. <br><br>
-        Copyright &#169;  2023 Cardify Africa. All rights reserved." <br><br><br>
+        &#169; 2022-2023 Cardify Africa. All rights reserved. Disclaimer:
+        Cardify Africa is not a bank and does not hold depositor's funds.
+        Cardify Africa acts solely as a financial technology company
+        facilitating its offerings in partnership with licensed transmitters in
+        their respective jurisdictions. We do not engage in banking activities
+        or provide traditional banking services. By using the Cardify Africa
+        website and its associated services, you acknowledge and accept that
+        Cardify Africa is not a bank and that any financial transactions or
+        services are provided by third-party partners. <br />
+        <br />
+        "Cardify Africa" is a trading name of CARDIFY TECHNOLOGY LIMITED, a
+        private limited company registered in the United Kingdom with company
+        number 14295286 under the 'Other financial service activities'
+        classification. <br /><br />
+        "Cardify Africa" is registered as "CARDIFY COMPANY LTD" in Nigeria.
+        <br /><br />
+        "Cardify Africa" is registered in the United States of America as
+        "Cardify Africa Technology Inc" in the city of Dover, County of Kent,
+        Code 19901. <br /><br />
+        Copyright &#169; 2023 Cardify Africa. All rights reserved."
+        <br /><br /><br />
         <p class="text-center">Coded by Faheez Adekola</p>
       </div>
     </section>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script defer src="script.js"></script>
   </body>

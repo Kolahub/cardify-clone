@@ -2,7 +2,7 @@
   padding-bottom: 1.3rem;
   &__card {
     transform: translateY(-40%);
-    background-image: url(/images/background.png);
+    background-image: url(images/background.png);
     background-size: cover;
     padding: 8rem 0;
     margin-top: 22rem;
@@ -19,7 +19,7 @@
       font-family: "Roboto", sans-serif;
       margin-top: 1.5rem;
       @include respond(lg) {
-        font-size: 2rem;
+        font-size: 2.08rem;
       }
     }
 

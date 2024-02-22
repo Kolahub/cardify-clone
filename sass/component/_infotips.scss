@@ -4,6 +4,7 @@
   left: 15%;
   transform: translateX(-15%);
   width: calc(100% - 14rem);
+  box-shadow: 0 .6rem 2rem rgba(0, 0, 0, 0.1);
   z-index: 5000;
 
   &__items {
@@ -21,7 +22,7 @@
     font-weight: bolder;
   }
 
-  @include respond (lg) {
+  @include respond(lg) {
     font-size: 1.8rem;
   }
 }
