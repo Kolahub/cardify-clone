@@ -24,18 +24,18 @@
       font-size: 1.9rem;
       padding: 1.58rem 0;
       width: 10rem;
+      border: none;
       @include respond(lg) { 
         font-size: 2.3rem;
         width: 15rem;
       }
-      // @include respond (md) { 
-      //   width: 15rem;
-      //   font-size: 2.2rem;
-      // }
 
       @include respond (sm) { 
         width: 12rem;
       }
+    }
+    button:nth-child(1) { 
+      background-color: transparent;
     }
     button:nth-child(2) {
       background-color: $green;

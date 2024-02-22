@@ -1,5 +1,5 @@
 .infotips {
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   top: 7rem;
   left: 15%;
   transform: translateX(-15%);
@@ -19,5 +19,9 @@
   h2 {
     color: $green;
     font-weight: bolder;
+  }
+
+  @include respond (lg) {
+    font-size: 1.8rem;
   }
 }

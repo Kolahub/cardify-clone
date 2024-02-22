@@ -220,7 +220,7 @@ body {
     animation-iteration-count: 1; }
 
 .infotips {
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   top: 7rem;
   left: 15%;
   transform: translateX(-15%);
@@ -235,6 +235,9 @@ body {
   .infotips h2 {
     color: #18cc3f;
     font-weight: bolder; }
+  @media only screen and (max-width: 62em) {
+    .infotips {
+      font-size: 1.8rem; } }
 
 .tooltipp {
   padding: 2rem 1rem;
@@ -613,7 +616,8 @@ body {
   .header__form button {
     font-size: 1.9rem;
     padding: 1.58rem 0;
-    width: 10rem; }
+    width: 10rem;
+    border: none; }
     @media only screen and (max-width: 62em) {
       .header__form button {
         font-size: 2.3rem;
@@ -621,6 +625,8 @@ body {
     @media only screen and (max-width: 36em) {
       .header__form button {
         width: 12rem; } }
+  .header__form button:nth-child(1) {
+    background-color: transparent; }
   .header__form button:nth-child(2) {
     background-color: #18cc3f; }
   @media only screen and (max-width: 48em) {
@@ -680,6 +686,9 @@ body {
       .navigation__lists:nth-of-type(4) {
         display: none; } }
     @media only screen and (max-width: 48em) {
+      .navigation__lists:nth-of-type(4) {
+        display: block; } }
+    @media only screen and (max-width: 48em) {
       .navigation__lists {
         flex-grow: 1;
         width: 100%;
@@ -702,7 +711,7 @@ body {
     transform: translateX(-1rem);
     height: 5rem;
     font-size: 2.4rem; }
-  @media only screen and (min-width: 48em) {
+  @media (min-width: 48em) {
     .navigation__links:focus .navigation__infotips {
       display: flex !important; }
     .navigation__lists:nth-of-type(4):hover .navigation__tooltipp {
@@ -763,7 +772,7 @@ body {
       color: #18cc3f !important; }
     .home__content--left__heading span.typed-cursor {
       color: black !important; }
-  @media only screen and (max-width: 48em) {
+  @media only screen and (max-width: 62em) {
     .home__content--left__typo p {
       font-size: 2.1rem !important;
       text-align: justify; } }

@@ -16,7 +16,7 @@
         }
       }
       &__typo {
-        @include respond(md) {
+        @include respond(lg) {
           p {
             font-size: 2.1rem !important;
             text-align: justify;
