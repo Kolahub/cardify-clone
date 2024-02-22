@@ -625,8 +625,6 @@ body {
     @media only screen and (max-width: 36em) {
       .header__form button {
         width: 12rem; } }
-  .header__form button:nth-child(1) {
-    background-color: transparent; }
   .header__form button:nth-child(2) {
     background-color: #18cc3f; }
   @media only screen and (max-width: 48em) {
