@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet"/>
+    <link rel="icon" type="image/png" href="images/thumb2.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cardify About Us Page</title>
+
+</head>
+<body>
+    <!-- SCROLL UP BUTTON -->
+    <a href="#up" class="btn-scroll"><?xml version="1.0" ?><svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M11.9999 5L17.9999 11M11.9999 5L5.99988 11M11.9999 5L11.9999 19" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></a>
+    <p class="invisible" id="up">Move up header</p>
+     
+  <header class="header position-relative container-md py-3 px-4 mb-5">
+    <div class="header__content row align-items-center">
+      <div class="header__logo col-5 col-sm-3 col-lg-4">
+        <a href="index.html"
+          ><img
+            src="images/Cardify Logo Variant.png"
+            alt=""
+            class="header__logo--pic"
+        /></a>
+      </div>
+      <nav class="navigation col-7 col-sm-9 col-lg-8 d-flex fw-semibold">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle"/>
+        <label for="navi-toggle" class="navigation__button order-last">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background d-none"></div>
+
+        <div class="navigation__nav">
+          <ul class="navigation__items list-unstyled d-flex align-items-center gap-md-5">
+            <li class="navigation__lists order-0">
+              <a
+                href="/"
+                class="navigation__links text-decoration-none text-black">Home</a
+              >
+            </li>
+
+            <li class="navigation__lists order-3 order-md-1">
+              <button
+                onclick="this.focus()"
+                class="navigation__links d-flex gap-2"
+              >
+                Systems
+                <span class="navigation__toggle">
+                  <img src="images/arrow down.svg" alt=""
+                /></span>
+
+                <div
+                  class="navigation__infotips infotips d-none flex-wrap position-absolute bg-white p-5 fw-medium"
+                >
+                  <div class="infotips__items d-flex gap-4">
+                    <div class="">
+                      <img src="images/1 (1).png" alt="" />
+                    </div>
+                    <div class="">
+                      <h2>Wallets</h2>
+                      <p>
+                        Leverage the different digital wallets on Cardify to
+                        maximize your spending potentials.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="infotips__items d-flex gap-4">
+                    <div class="">
+                      <img src="images/2 (1).png" alt="" />
+                    </div>
+                    <div class="">
+                      <h2>Virtual Cards</h2>
+                      <p>
+                        Make payments the way you want with virtual cards made
+                        just for you.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="infotips__items d-flex gap-4">
+                    <div class="">
+                      <img src="images/3 (1).png" alt="" />
+                    </div>
+                    <div class="">
+                      <h2>Swap</h2>
+                      <p>
+                        Swap across various currencies at best market rates.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="infotips__items d-flex gap-4">
+                    <div class="">
+                      <img src="images/4.png" alt="" />
+                    </div>
+                    <div class="">
+                      <h2>Bills</h2>
+                      <p>
+                        Buy vouchers and load your bills leveraging your
+                        digital wallets.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="infotips__items d-flex gap-4">
+                    <div class="">
+                      <img src="images/4.png" alt="" />
+                    </div>
+                    <div class="">
+                      <h2>Digital Business Cards</h2>
+                      <p>
+                        Create, customize, and instantly share digital
+                        business cards with anyone, anywhere with a tap or
+                        scan.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </button>
+
+              <ul
+                class="navigation__tooltipp tooltipp position-absolute list-unstyled bg-white"
+              >
+                <li class="tooltipp__lists">
+                  <a href="/" class="tooltipp__links">Wallets</a>
+                </li>
+                <li class="tooltipp__lists">
+                  <a href="/" class="tooltipp__links">Virtual cards</a>
+                </li>
+                <li class="tooltipp__lists">
+                  <a href="/" class="tooltipp__links">Bills</a>
+                </li>
+                <li class="tooltipp__lists">
+                  <a href="/" class="tooltipp__links">Swap</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="navigation__lists order-1 order-md-2">
+              <button onclick="this.focus()" class="navigation__links d-flex gap-2">Learn<span class="navigation__toggle">
+                  <img src="images/arrow down.svg" alt=""/></span>
+                <div
+                  class="navigation__infotips infotips d-none flex-wrap position-absolute bg-white -sm-sm p-5 fw-medium"
+                >
+                  <div class="infotips__items d-flex gap-4">
+                    <div class="">
+                      <img src="images/2 (1).png" alt="" />
+                    </div>
+                    <div class="">
+                      <h2>Academy</h2>
+                      <p>
+                        Leverage the different digital wallets on Cardify to
+                        maximize your spending potentials.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="infotips__items d-flex gap-4">
+                    <div class="">
+                      <img src="images/2 (1).png" alt="" />
+                    </div>
+                    <div class="">
+                      <h2>Knowledgebase</h2>
+                      <p>Learn about several Cardify offerings.</p>
+                    </div>
+                  </div>
+                  <div class="infotips__items d-flex gap-4">
+                    <div class="">
+                      <img src="images/2 (1).png" alt="" />
+                    </div>
+                    <div class="">
+                      <h2>How To's</h2>
+                      <p>
+                        With how to guides on different usage of the system,
+                        get vibing!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="infotips__items d-flex gap-4">
+                    <div class="">
+                      <img src="images/2 (1).png" alt="" />
+                    </div>
+                    <div class="">
+                      <h2>Blog</h2>
+                      <p>
+                        Our blog features the most up to date news and
+                        articles across the industry.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </button>
+              <ul class="navigation__tooltipp tooltipp position-absolute list-unstyled bg-white -sm">
+                <li class="tooltipp__lists">
+                  <a href="/" class="tooltipp__links">Academy</a>
+                </li>
+                <li class="tooltipp__lists">
+                  <a href="/" class="tooltipp__links">Knowledgebase</a>
+                </li>
+                <li class="tooltipp__lists">
+                  <a href="/" class="tooltipp__links">How to</a>
+                </li>
+                <li class="tooltipp__lists">
+                  <a href="/" class="tooltipp__links">Blog</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="navigation__lists order-2 order-md-3">
+              <button class="navigation__links text-decoration-none text-black d-flex gap-2">
+                Company
+                <span class="navigation__toggle">
+                  <img src="images/arrow down.svg" alt=""
+                /></span>
+              </button>
+
+              <ul class="navigation__tooltipp tooltipp position-absolute list-unstyled bg-white">
+                <li class="tooltipp__lists">
+                  <a href="about.html" class="tooltipp__links">About us</a>
+                </li>
+                <li class="tooltipp__lists">
+                  <a href="/" class="tooltipp__links">Contact us</a>
+                </li>
+                <li class="tooltipp__lists">
+                  <a href="/" class="tooltipp__links">Careers</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="navigation__lists d-md-none order-4">
+              <a href="/" class="navigation__links text-decoration-none"
+                >Log in</a
+              >
+            </li>
+
+            <button
+              class="navigation__btnMenu order-5 fw-bold text-white d-md-none"
+            >
+              Create an account
+            </button>
+          </ul>
+
+        </div>
+        <div class="header__form d-flex justify-content-end">
+          <button class="header__form--login text-black fw-semibold">
+            Log in
+          </button>
+          <button class="fw-semibold text-white flex-grow-1">Sign up</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="cardify-story">
+      <div class="cardify-story__typo">
+        <h1 class="cardify-story__typo--heading">
+          The Cardify story is one that resonates around getting stuffs done in a limitless framework.
+        </h1>
+        <p class="cardify-story__typo--text">
+          Cardify provides users the ability to leverage fiat and digital currencies for everyday payment needs.
+        </p>
+      </div>
+    </section>
+
+    <section class="gtg-done pt-5">
+      <div class="gtg-done__content d-flex container-md flex-column flex-md-row justify-content-md-between">
+        <div class="gtg-done__content--img align-self-center col-12 col-md-6">
+          <img src="images/about.png" alt="" class="w-100 align-self-md-center">
+        </div>
+
+        <div class="gtg-done__content--typo col-12 col-md-5">
+          <h1 class="gtg-done__content--typo__heading">
+            Getting Things Done
+          </h1>
+          <p class="gtg-done__content--typo__text">
+            Cardify Africa is a startup that is revolutionizing the way you manage your digital wallets. With a core focus on flexibility and efficiency, Cardify aims to make spending across various fiat and digital currency wallets as effortless as possible.
+            <span class="d-block mt-4"></span>
+            With Cardify Africa, users have the freedom to deposit money into popular wallets and take advantage of flexible conversion options both within and outside the system. Plus, our platform issues virtual cards for frictionless spending directly from your wallets, making transactions a breeze.
+            <span class="d-block mt-4"></span>
+            But we're not stopping there. Cardify Africa is continuously innovating to provide even more solutions for our customers, offering a flexible channel to receive, sell, and spend money. With our unwavering commitment to our brand values, Cardify is on a mission to redefine the way you manage your digital currencies, paving the way for a seamless and efficient financial future.
+          </p>
+
+          <a href="about.html" class="gtg-done__content--btn btn-tertiary mt-3 fw-semibold">Get Started 
+            <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 7.75H17.5" stroke="#0D0E10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10.75 1L17.5 7.75L10.75 14.5" stroke="#0D0E10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>  
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="mission purpose">
+      <div class="purpose__content container-md">
+        <p class="purpose__content--subheading fw-bolder">Cardify Africa</p>
+        <h1 class="purpose__content--heading fw-bold">Our Mission</h1>
+        <p class="purpose__content--text">
+          At Cardify Africa, our mission is to empower individuals and businesses with a seamless digital wallet platform that enables efficient and flexible fund management across various fiat and digital currency wallets. We are committed to making spending across wallets as easy as possible, providing our users with the tools and resources to leverage their funds in a convenient and secure manner. Our core values revolve around flexibility and efficiency, and we strive to deliver innovative solutions that simplify financial transactions.
+          <span class="d-block mt-4"></span>
+          We aim to provide a user-friendly platform that allows our users to deposit and withdraw funds from popular wallets, while taking advantage of the flexible conversion options available within and outside our system. Additionally, our virtual card issuance feature facilitates frictionless spending directly from our wallets, enabling users to transact globally with ease.
+          <span class="d-block mt-4"></span>
+          We are dedicated to maintaining the highest standards of security and reliability, and we continuously update our systems and services to meet the evolving needs of our users. Our customer-centric approach ensures that we provide exceptional user experiences, and we are committed to building long-term relationships based on trust and satisfaction.
+          <span class="d-block mt-4"></span>
+          As a leading digital wallet platform in Africa, we are passionate about driving financial inclusion, fostering economic growth, and empowering individuals and businesses to thrive in the digital economy. We continuously strive to be at the forefront of innovation in the financial technology industry, delivering cutting-edge solutions that enhance the way our users manage their digital wallets and conduct transactions.
+          <span class="d-block mt-4"></span>
+          Join us at Cardify Africa and experience the power of seamless fund management across digital wallets. Together, we can create a more connected and empowered financial ecosystem in Africa and beyond. Visit us at www.cardify.co to get started today.
+        </p>
+
+        <a href="about.html" class="purpose__content--btn btn-tertiary fw-semibold">Our Links 
+          <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 7.75H17.5" stroke="#0D0E10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10.75 1L17.5 7.75L10.75 14.5" stroke="#0D0E10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>  
+        </a>
+      </div>
+    </section>
+
+    <section class="vision purpose">
+      <div class="purpose__content container-md">
+        <p class="purpose__content--subheading fw-bolder">Cardify Africa</p>
+        <h1 class="purpose__content--heading fw-bold">Vision</h1>
+        <p class="purpose__content--text">
+          "At Cardify Africa, our vision is to revolutionize the way people manage their digital wallets and empower them with seamless and efficient financial flexibility. We envision a future where users can effortlessly leverage their funds between various digital wallets, unlocking the full potential of their digital currencies. Our digital wallet platform is designed to be the go-to solution for individuals and businesses seeking to make spending across fiat and digital wallets as easy as possible.
+          <span class="d-block mt-4"></span>
+          We are committed to providing our users with a cutting-edge platform that offers unparalleled convenience and versatility. Our core values of flexibility and efficiency drive us to constantly innovate and improve our services, ensuring that our users have a seamless experience managing their digital currencies. Whether it's depositing money into popular wallets or utilizing the flexible conversion advantages within and outside our system, we strive to provide our users with the tools they need to fully leverage their funds.
+          <span class="d-block mt-4"></span>
+          In addition, our virtual cards are a key component of our vision to facilitate frictionless spending. We aim to empower our users with virtual cards that enable them to transact effortlessly, both online and offline, directly from our wallets. Our vision is to be the go-to platform for individuals and businesses alike who seek a seamless, secure, and efficient way to manage their digital currencies and unlock the full potential of their financial transactions.
+          <span class="d-block mt-4"></span>
+          As we work towards achieving our vision, we remain dedicated to maintaining the highest standards of security, privacy, and customer satisfaction. We envision a future where Cardify Africa is synonymous with trust, innovation, and excellence in the digital wallet space, serving as a catalyst for financial empowerment and inclusion across Africa and beyond."
+        </p>
+    
+        <a href="about.html" class="purpose__content--btn btn-tertiary fw-semibold">Downlaod Apps 
+          <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 7.75H17.5" stroke="#0D0E10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10.75 1L17.5 7.75L10.75 14.5" stroke="#0D0E10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>  
+        </a>
+      </div>
+    </section>
+
+    <section class="more">
+      <div class="more__content container d-flex justify-content-between">
+        <div class="more__content--1 col-4">
+          <p class="more__content--1--subheading fw-bolder">
+            Cardify Africa
+          </p>
+          <h1 class="more__content--1--heading fw-bold">
+            So much more...
+          </h1>
+          <p class="more__content--1--text">
+            Cardify is registered in the United Kingdom as a private limited company as catdify technology limited with registration number 14295286 and in Nigeria as The Cardify company with registration number 1920698.
+          </p>
+
+          <a href="about.html" class="more__content--btn btn-tertiary fw-semibold">Downlaod Apps 
+            <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 7.75H17.5" stroke="#0D0E10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10.75 1L17.5 7.75L10.75 14.5" stroke="#0D0E10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>  
+          </a>
+        </div>
+        
+        <div class="more__content--2 col-7 d-flex justify-content-md-between align-items-md-end">
+          <div class="col-5 d-flex flex-column gap-5">
+            <div class="more__content--2__box">
+              <img src="images/61802c0e0fc3d1833064421d_time.svg" alt="">
+              <p class="more__content--2--text fw-bolder">Simplicity is of the essence at Cardify.</p>
+            </div>
+  
+            <div class="more__content--2__box">
+              <img src="images/6185b4e8f9e6f5b4a8754a1a_global-customer-base.svg" alt="">
+              <p class="more__content--2--text fw-bolder">Onboarding as simple as a,b,c.</p>
+            </div>
+  
+            <div class="more__content--2__box">
+              <img src="images/6185b4e8f9e6f5b4a8754a1a_global-customer-base.svg" alt="">
+              <p class="more__content--2--text fw-bolder">Feel secured from the start.</p>
+            </div>
+          </div>
+
+          <div class="col-5">
+            <div class="more__content--2__box">
+              <img src="images/6185b6cf4e7a981374daa713_no-risk.svg" alt="">
+              <p class="more__content--2--text fw-bolder">No hidden fees ever, you get what you see.
+              </p>
+            </div>
+  
+            <div class="more__content--2__box">
+              <img src="images/61802c0e0fc3d1fd0c644221_dollar.svg" alt="">
+              <p class="more__content--2--text fw-bolder">Standard integrations through out.</p>
+            </div>
+  
+            <div class="more__content--2__box">
+              <img src="images/61802c0e0fc3d1fd0c644221_dollar.svg" alt="">
+              <p class="more__content--2--text fw-bolder">The Cardify assurance is good for your money!</p>
+            </div>
+          </div>
+          </div>
+      </div>
+    </section>
+    
+  </main>
+
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

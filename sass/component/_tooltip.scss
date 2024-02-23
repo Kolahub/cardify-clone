@@ -2,6 +2,7 @@
   padding: 2rem 1rem;
   display: none;
   box-shadow: 0 .6rem 2rem rgba(0, 0, 0, 0.1);
+  z-index: 1000;
   &__lists {
     padding: 1rem 6rem 1rem 3rem;
   }

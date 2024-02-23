@@ -3,6 +3,40 @@
     margin: 0 2rem;
   }
   
+  @mixin aboutPageTypo {
+    &--subheading {
+      margin: 0;
+      font-size: 13px;
+    }
+
+    &--heading {
+      margin: -1px 0 4.2rem 0;
+      font-size: 4.4rem;
+      @include respond(lg) {
+        font-size: 5.5rem;
+      }
+      @include respond(sm) {
+        font-size: 4.8rem;
+      }
+    }
+
+    &--text {
+      margin: -1px 0 5rem 0;
+      font-size: 1.54rem;
+      font-weight: 500;
+      @include respond(lg) {
+        font-size: 1.9rem;
+      }
+    }
+  }
+
+  @mixin aboutPageBgTemplate {
+    background-image: url(images/background.png);
+    background-size: cover;
+    color: $color-white;
+    padding: 10rem 0;
+  }
+  
 @mixin respond($breakpoint) {
     @if $breakpoint == xs {
       @media only screen and (max-width:28.125em) {@content};

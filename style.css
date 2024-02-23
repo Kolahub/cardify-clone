@@ -262,7 +262,7 @@ body {
   transform: translateX(-15%);
   width: calc(100% - 14rem);
   box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.1);
-  z-index: 5000; }
+  z-index: 500; }
   .infotips__items {
     width: 30rem;
     padding: 0.4rem;
@@ -279,7 +279,8 @@ body {
 .tooltipp {
   padding: 2rem 1rem;
   display: none;
-  box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.1);
+  z-index: 1000; }
   .tooltipp__lists {
     padding: 1rem 6rem 1rem 3rem; }
   .tooltipp__links {
@@ -971,3 +972,128 @@ body {
       max-width: calc(100% - 4rem);
       margin: 0 2rem;
       margin: 10rem auto; } }
+
+.cardify-story {
+  background-color: #f1f3f6;
+  padding: 10rem 0; }
+  .cardify-story__typo {
+    max-width: 93rem;
+    margin: 0 auto;
+    text-align: center; }
+    .cardify-story__typo--heading {
+      font-size: 4rem;
+      font-weight: bold; }
+    .cardify-story__typo--text {
+      font-size: 1.6rem;
+      margin-top: 2rem; }
+  @media only screen and (max-width: 62em) {
+    .cardify-story__typo--text {
+      font-size: 1.9rem; } }
+  @media only screen and (max-width: 48em) {
+    .cardify-story__typo {
+      max-width: calc(100% - 2.6rem);
+      margin: 0 auto;
+      text-align: center; }
+      .cardify-story__typo--heading {
+        font-size: 3.8rem; } }
+  @media only screen and (max-width: 28.125em) {
+    .cardify-story__typo--heading {
+      font-size: 3.3rem; } }
+
+.gtg-done__content--typo__heading {
+  font-size: 4.5rem;
+  font-weight: bold; }
+  @media only screen and (max-width: 62em) {
+    .gtg-done__content--typo__heading {
+      font-size: 5rem; } }
+  @media only screen and (max-width: 28.125em) {
+    .gtg-done__content--typo__heading {
+      font-size: 4rem; } }
+
+.gtg-done__content--typo__text {
+  font-size: 1.9rem;
+  font-weight: 500;
+  text-align: justify;
+  margin-top: 2.8rem; }
+  @media only screen and (max-width: 62em) {
+    .gtg-done__content--typo__text {
+      font-size: 2.3rem; } }
+
+@media only screen and (max-width: 48em) {
+  .gtg-done__content {
+    max-width: calc(100% - 6rem);
+    margin: 0 auto; } }
+
+.purpose {
+  background-image: url(images/background.png);
+  background-size: cover;
+  color: white;
+  padding: 10rem 0; }
+  .purpose__content--subheading {
+    margin: 0;
+    font-size: 13px; }
+  .purpose__content--heading {
+    margin: -1px 0 4.2rem 0;
+    font-size: 4.4rem; }
+    @media only screen and (max-width: 62em) {
+      .purpose__content--heading {
+        font-size: 5.5rem; } }
+    @media only screen and (max-width: 36em) {
+      .purpose__content--heading {
+        font-size: 4.8rem; } }
+  .purpose__content--text {
+    margin: -1px 0 5rem 0;
+    font-size: 1.54rem;
+    font-weight: 500; }
+    @media only screen and (max-width: 62em) {
+      .purpose__content--text {
+        font-size: 1.9rem; } }
+  .purpose__content--btn {
+    margin-top: 18rem; }
+  @media only screen and (max-width: 48em) {
+    .purpose__content {
+      max-width: calc(100% - 4rem);
+      margin: 0 2rem; } }
+
+.mission {
+  margin: 10rem 0 4.5rem 0; }
+
+.vision {
+  margin-bottom: 4.5rem; }
+
+.more {
+  background-image: url(images/background.png);
+  background-size: cover;
+  color: white;
+  padding: 10rem 0; }
+  .more__content--1--subheading {
+    margin: 0;
+    font-size: 13px; }
+  .more__content--1--heading {
+    margin: -1px 0 4.2rem 0;
+    font-size: 4.4rem; }
+    @media only screen and (max-width: 62em) {
+      .more__content--1--heading {
+        font-size: 5.5rem; } }
+    @media only screen and (max-width: 36em) {
+      .more__content--1--heading {
+        font-size: 4.8rem; } }
+  .more__content--1--text {
+    margin: -1px 0 5rem 0;
+    font-size: 1.54rem;
+    font-weight: 500; }
+    @media only screen and (max-width: 62em) {
+      .more__content--1--text {
+        font-size: 1.9rem; } }
+  .more__content--2--text {
+    margin-top: 2rem;
+    font-size: 1.6rem; }
+    @media only screen and (max-width: 62em) {
+      .more__content--2--text {
+        font-size: 1.9rem; } }
+  .more__content--btn {
+    margin-top: 8rem; }
+  @media only screen and (max-width: 48em) {
+    .more__content {
+      max-width: calc(100% - 4rem);
+      margin: 0 2rem; } }
