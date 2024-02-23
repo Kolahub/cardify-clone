@@ -150,58 +150,6 @@
 }
 
 /* Wobble Horizontal Btn */
-@-webkit-keyframes hvr-wobble-horizontal {
-  16.65% {
-    -webkit-transform: translateX(8px);
-    transform: translateX(8px);
-  }
-  33.3% {
-    -webkit-transform: translateX(-6px);
-    transform: translateX(-6px);
-  }
-  49.95% {
-    -webkit-transform: translateX(4px);
-    transform: translateX(4px);
-  }
-  66.6% {
-    -webkit-transform: translateX(-2px);
-    transform: translateX(-2px);
-  }
-  83.25% {
-    -webkit-transform: translateX(1px);
-    transform: translateX(1px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-@keyframes hvr-wobble-horizontal {
-  16.65% {
-    -webkit-transform: translateX(8px);
-    transform: translateX(8px);
-  }
-  33.3% {
-    -webkit-transform: translateX(-6px);
-    transform: translateX(-6px);
-  }
-  49.95% {
-    -webkit-transform: translateX(4px);
-    transform: translateX(4px);
-  }
-  66.6% {
-    -webkit-transform: translateX(-2px);
-    transform: translateX(-2px);
-  }
-  83.25% {
-    -webkit-transform: translateX(1px);
-    transform: translateX(1px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
 .hvr-wobble-horizontal {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -218,5 +166,28 @@
     animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
+  }
+}
+
+.btn-scroll {
+  bottom: 5rem;
+  right: 1.5rem;
+  position: fixed;
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  box-shadow: 0 .6rem 1rem rgba(0, 0, 0, .1);
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2.75rem;
+    transform: translate(-50%, -50%);
+    transition: all .4s ease;
+  }
+
+  &:hover {
+    transform: scale(.9);
   }
 }

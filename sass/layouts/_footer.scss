@@ -1,5 +1,6 @@
 .footer {
   padding-bottom: 1.3rem;
+
   &__card {
     transform: translateY(-40%);
     background-image: url(images/background.png);
@@ -14,12 +15,13 @@
         font-size: 4rem;
       }
     }
+
     &--text {
       font-size: 2.1rem;
       font-family: "Roboto", sans-serif;
       margin-top: 1.5rem;
       @include respond(lg) {
-        font-size: 2.08rem;
+        font-size: 2.3rem;
       }
     }
 
@@ -39,8 +41,8 @@
         width: 5rem !important;
       }
 
-      @media only screen and (max-width: 20em) { 
-        margin:0 auto;
+      @media only screen and (max-width: 20em) {
+        margin: 0 auto;
       }
     }
 
@@ -63,7 +65,7 @@
       font-size: 1.56rem;
       font-weight: 500;
       @include respond(lg) {
-        font-size: 1.9rem;
+        font-size: 2rem;
       }
       &--text {
         margin: 6rem 0 3rem 0;
@@ -96,7 +98,7 @@
         color: $color-white;
 
         @include respond(lg) {
-          font-size: 2rem;
+          font-size: 2.1rem;
         }
 
         @include respond(sm) {
@@ -127,7 +129,7 @@
         font-size: 1.8rem;
         line-height: 4.4rem;
         @include respond(lg) {
-          font-size: 2.1rem;
+          font-size: 2.2rem;
         }
       }
     }
@@ -144,7 +146,7 @@
         font-size: 1.6rem;
         transition: color 0.2s;
         @include respond(lg) {
-          font-size: 1.9rem;
+          font-size: 2rem;
         }
       }
 

@@ -7,6 +7,46 @@
   100% {
     transform: translate(0, 0px); } }
 
+@-webkit-keyframes hvr-wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px); }
+  33.3% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px); }
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px); }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px); }
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
+@keyframes hvr-wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px); }
+  33.3% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px); }
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px); }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px); }
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
 *,
 *::after,
 *::before {
@@ -14,7 +54,8 @@
   padding: 0; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -179,46 +220,6 @@ body {
     transform: rotate(-35deg); }
 
 /* Wobble Horizontal Btn */
-@-webkit-keyframes hvr-wobble-horizontal {
-  16.65% {
-    -webkit-transform: translateX(8px);
-    transform: translateX(8px); }
-  33.3% {
-    -webkit-transform: translateX(-6px);
-    transform: translateX(-6px); }
-  49.95% {
-    -webkit-transform: translateX(4px);
-    transform: translateX(4px); }
-  66.6% {
-    -webkit-transform: translateX(-2px);
-    transform: translateX(-2px); }
-  83.25% {
-    -webkit-transform: translateX(1px);
-    transform: translateX(1px); }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0); } }
-
-@keyframes hvr-wobble-horizontal {
-  16.65% {
-    -webkit-transform: translateX(8px);
-    transform: translateX(8px); }
-  33.3% {
-    -webkit-transform: translateX(-6px);
-    transform: translateX(-6px); }
-  49.95% {
-    -webkit-transform: translateX(4px);
-    transform: translateX(4px); }
-  66.6% {
-    -webkit-transform: translateX(-2px);
-    transform: translateX(-2px); }
-  83.25% {
-    -webkit-transform: translateX(1px);
-    transform: translateX(1px); }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0); } }
-
 .hvr-wobble-horizontal {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -232,6 +233,24 @@ body {
     animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1; }
+
+.btn-scroll {
+  bottom: 5rem;
+  right: 1.5rem;
+  position: fixed;
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.1); }
+  .btn-scroll img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2.75rem;
+    transform: translate(-50%, -50%);
+    transition: all .4s ease; }
+  .btn-scroll:hover {
+    transform: scale(0.9); }
 
 .infotips {
   font-size: 1.5rem;
@@ -487,7 +506,7 @@ body {
       margin-top: 1.5rem; }
       @media only screen and (max-width: 62em) {
         .footer__card--text {
-          font-size: 2.08rem; } }
+          font-size: 2.3rem; } }
     .footer__card--icons {
       margin-top: 5rem; }
       @media only screen and (max-width: 20em) {
@@ -521,7 +540,7 @@ body {
       font-weight: 500; }
       @media only screen and (max-width: 62em) {
         .footer__content--form {
-          font-size: 1.9rem; } }
+          font-size: 2rem; } }
       .footer__content--form--text {
         margin: 6rem 0 3rem 0; }
       .footer__content--form--input {
@@ -547,7 +566,7 @@ body {
         color: white; }
         @media only screen and (max-width: 62em) {
           .footer__content--form--btn {
-            font-size: 2rem; } }
+            font-size: 2.1rem; } }
         @media only screen and (max-width: 36em) {
           .footer__content--form--btn {
             height: 7rem;
@@ -571,7 +590,7 @@ body {
         line-height: 4.4rem; }
         @media only screen and (max-width: 62em) {
           .footer__content--items__heading {
-            font-size: 2.1rem; } }
+            font-size: 2.2rem; } }
     .footer__content--lists {
       line-height: 4rem; }
     .footer__content--links, .footer__content--links:visited {
@@ -581,7 +600,7 @@ body {
       transition: color 0.2s; }
       @media only screen and (max-width: 62em) {
         .footer__content--links, .footer__content--links:visited {
-          font-size: 1.9rem; } }
+          font-size: 2rem; } }
     .footer__content--links:hover {
       color: #18cc3f; }
     @media only screen and (max-width: 62em) {
