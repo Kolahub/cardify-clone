@@ -235,11 +235,11 @@ body {
     animation-iteration-count: 1; }
 
 .btn-scroll {
-  bottom: 5rem;
+  bottom: 3rem;
   right: 12px;
   position: fixed;
-  width: 5.5rem;
-  height: 5.5rem;
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
   background-color: #18cc3f;
   z-index: 1000;
@@ -702,14 +702,16 @@ body {
     @media only screen and (max-width: 36em) {
       .navigation__button {
         transform: scale(0.6); } }
-  @media only screen and (max-width: 48em) {
-    .navigation__background {
-      position: fixed;
-      right: 0;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      background-color: rgba(0, 0, 0, 0.3); } }
+  .navigation__background {
+    display: none; }
+    @media only screen and (max-width: 48em) {
+      .navigation__background {
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.3); } }
   @media only screen and (max-width: 48em) {
     .navigation__nav {
       position: fixed;
@@ -1065,7 +1067,8 @@ body {
   background-image: url(images/background.png);
   background-size: cover;
   color: white;
-  padding: 10rem 0; }
+  padding: 10rem 0;
+  margin-bottom: 10rem; }
   .more__content--1--subheading {
     margin: 0;
     font-size: 13px; }
@@ -1093,7 +1096,41 @@ body {
         font-size: 1.9rem; } }
   .more__content--btn {
     margin-top: 8rem; }
+    @media only screen and (max-width: 48em) {
+      .more__content--btn {
+        margin-bottom: 8.5rem !important; } }
   @media only screen and (max-width: 48em) {
     .more__content {
+      max-width: calc(100% - 4rem);
+      margin: 0 2rem; } }
+
+.about-blog {
+  padding: 12rem 0; }
+  .about-blog__content--typo__subheading {
+    color: #12a733;
+    font-size: 19px;
+    letter-spacing: .3rem; }
+    @media only screen and (max-width: 62em) {
+      .about-blog__content--typo__subheading {
+        font-size: 2.1rem; } }
+  .about-blog__content--typo__heading {
+    font-weight: 700;
+    font-size: 4.2rem; }
+    @media only screen and (max-width: 62em) {
+      .about-blog__content--typo__heading {
+        font-size: 5.2rem; } }
+  .about-blog__content--btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #18cc3f;
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+    transition: all 0.3s ease; }
+    .about-blog__content--btn:hover {
+      transform: scale(1.06);
+      background-color: green; }
+  @media only screen and (max-width: 48em) {
+    .about-blog__content {
       max-width: calc(100% - 4rem);
       margin: 0 2rem; } }

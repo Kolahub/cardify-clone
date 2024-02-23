@@ -354,20 +354,13 @@
 
 .more {
   @include aboutPageBgTemplate;
+  margin-bottom: 10rem;
   &__content {
     &--1 {
       @include aboutPageTypo;
     }
 
     &--2 {
-      // &:not(:last-child) &__box {
-      //   margin-bottom: 4rem;
-      // }
-
-      // &  div &__box {
-      //   margin-bottom: 4rem;
-      // }
-
       &--text {
         margin-top: 2rem;
         font-size: 1.6rem;
@@ -380,7 +373,51 @@
 
     &--btn {
       margin-top: 8rem;
+      @include respond(md) {
+        margin-bottom: 8.5rem !important;
+      }
     }
+    @include respond(md) {
+      @include fullWidthMargin;
+    }
+  }
+}
+
+.about-blog {
+  padding: 12rem 0;
+  &__content {
+    &--typo {
+      &__subheading {
+        color: $dark-green;
+        font-size: 19px;
+        letter-spacing: .3rem;
+        @include respond(lg) {
+          font-size: 2.1rem;
+        }
+      }
+      &__heading {
+        font-weight: 700;
+        font-size: 4.2rem;
+        @include respond(lg) {
+          font-size: 5.2rem;
+        }
+      }
+    }
+
+    &--btn {
+      display: inline-block;
+      padding: 15px 40px;
+      background-color: $green;
+      font-size: 17px;
+      font-weight: 500;
+      color: $color-white;
+      transition: all 0.3s ease;
+      &:hover {
+        transform: scale(1.06);
+        background-color: green;
+      }
+    }
+
     @include respond(md) {
       @include fullWidthMargin;
     }
