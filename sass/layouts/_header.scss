@@ -39,6 +39,11 @@
     }
     button:nth-child(2) {
       background-color: $green;
+      transition: all .3s ease;
+      &:hover {
+        transform: scale(1.06);
+        background-color: green;
+      }
     }
 
   }

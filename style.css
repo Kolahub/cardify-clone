@@ -236,19 +236,22 @@ body {
 
 .btn-scroll {
   bottom: 5rem;
-  right: 1.5rem;
+  right: 12px;
   position: fixed;
   width: 5.5rem;
   height: 5.5rem;
   border-radius: 50%;
-  box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.1); }
-  .btn-scroll img {
+  background-color: #18cc3f;
+  z-index: 1000;
+  box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.2); }
+  .btn-scroll svg {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 2.75rem;
     transform: translate(-50%, -50%);
-    transition: all .4s ease; }
+    transition: all .4s ease;
+    stroke: white; }
   .btn-scroll:hover {
     transform: scale(0.9); }
 
@@ -354,11 +357,11 @@ body {
   .experience-layout__card {
     gap: 2rem; }
     .experience-layout__card h1 {
-      font-size: 3rem;
+      font-size: 2.6rem;
       font-weight: 700; }
       @media only screen and (max-width: 62em) {
         .experience-layout__card h1 {
-          font-size: 3.3rem; } }
+          font-size: 2.9rem; } }
     .experience-layout__card p {
       font-size: 1.6rem; }
       @media only screen and (max-width: 62em) {
@@ -536,11 +539,11 @@ body {
       width: 50%;
       max-width: 60rem;
       margin-right: auto;
-      font-size: 1.56rem;
+      font-size: 16px;
       font-weight: 500; }
       @media only screen and (max-width: 62em) {
         .footer__content--form {
-          font-size: 2rem; } }
+          font-size: 17px; } }
       .footer__content--form--text {
         margin: 6rem 0 3rem 0; }
       .footer__content--form--input {
@@ -563,7 +566,11 @@ body {
         background-color: #18cc3f;
         font-size: 1.7rem;
         font-weight: 500;
-        color: white; }
+        color: white;
+        transition: all 0.3s ease; }
+        .footer__content--form--btn:hover {
+          transform: scale(1.06);
+          background-color: green; }
         @media only screen and (max-width: 62em) {
           .footer__content--form--btn {
             font-size: 2.1rem; } }
@@ -663,7 +670,11 @@ body {
   .header__form button:nth-child(1) {
     background-color: transparent; }
   .header__form button:nth-child(2) {
-    background-color: #18cc3f; }
+    background-color: #18cc3f;
+    transition: all .3s ease; }
+    .header__form button:nth-child(2):hover {
+      transform: scale(1.06);
+      background-color: green; }
   @media only screen and (max-width: 48em) {
     .header {
       max-width: calc(100% - 4rem);
@@ -929,15 +940,16 @@ body {
   width: 30px; }
 
 .experience--heading {
-  font-size: 3.3rem;
+  font-size: 3.2rem !important;
   font-weight: 900; }
+  @media only screen and (max-width: 62em) {
+    .experience--heading {
+      font-size: 3.1rem; } }
 
 @media only screen and (max-width: 48em) {
   .experience {
     max-width: calc(100% - 7rem);
-    margin: 0 3.5rem; }
-    .experience--heading {
-      font-size: 3.09rem; } }
+    margin: 0 3.5rem; } }
 
 .epay {
   margin: 14rem auto 0 auto;
