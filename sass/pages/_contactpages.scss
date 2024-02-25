@@ -60,15 +60,15 @@
       margin-top: 4.5rem;
     }
 
-    @include respond(md) { 
+    @include respond(lg) {
       &--subheading {
         font-size: 2rem;
       }
-  
+
       &--heading {
         font-size: 4rem;
       }
-  
+
       &--text {
         font-size: 1.8rem;
       }
@@ -76,6 +76,13 @@
 
     @include respond(md) {
       @include fullWidthMargin;
+    }
+
+    @include respond(sm) {
+
+      &--heading {
+        font-size: 3.5rem;
+      }
     }
   }
 }

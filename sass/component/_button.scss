@@ -198,10 +198,9 @@
 }
 
 .btn-expandX {
-  display: flex;
   width: 300px;
   @include respond (lg) {
-    width: 240px;
+    width: 250px;
   }
   &--cta {
     display: flex;
@@ -244,22 +243,12 @@
       &-1 {
         transition: 0.4s;
         transform: translateX(-60%);
-        &:hover {
-
-        }
       }
 
       &-2 {
         transition: 0.5s;
         transform: translateX(-30%);
-        &:hover {
-        }
       } 
-
-      &-3 {
-        &:hover {
-        }
-      }
     }
     &:hover &__svg-1{
       transform: translateX(0%);
