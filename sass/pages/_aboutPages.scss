@@ -149,21 +149,6 @@
           }
         }
       }
-  
-      &--btn {
-        // display: inline-block;
-        // padding: 15px 40px;
-        // background-color: $green;
-        // font-size: 17px;
-        // font-weight: 500;
-        // color: $color-white;
-        // transition: all 0.3s ease;
-        // &:hover {
-        //   transform: scale(1.06);
-        //   background-color: green;
-        // }
-      }
-  
       @include respond(md) {
         @include fullWidthMargin;
       }
