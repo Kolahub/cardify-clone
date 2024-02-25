@@ -12,9 +12,6 @@ listBtns.forEach(listBtn => {
     });
     })
 
-var typed = new Typed(".auto-type",{
-        strings : ["Save.", "Spend.", "Exchange."],
-        typeSpeed : 150, 
-        backSpeed : 150,
-        loop : true
-      })
+    var map = L.map('map').setView([7.3870801,3.822658], 13);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+    L.marker([51.5, -0.09]).addTo(map)

@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="images/thumb2.png" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script defer src="script.js"></script>
+    <title>Cardify Clone Contact Us</title>
+  </head>
+
+  <body>
+    <header class="header position-relative container-md py-3 px-4 my-5">
+      <div class="header__content row align-items-center">
+        <div class="header__logo col-5 col-sm-3 col-lg-4">
+          <a href="index.html"
+            ><img
+              src="images/Cardify Logo Variant.png"
+              alt=""
+              class="header__logo--pic"
+          /></a>
+        </div>
+        <nav class="navigation col-7 col-sm-9 col-lg-8 d-flex fw-semibold">
+          <input
+            type="checkbox"
+            class="navigation__checkbox"
+            id="navi-toggle"
+          />
+          <label for="navi-toggle" class="navigation__button order-last">
+            <span class="navigation__icon">&nbsp;</span>
+          </label>
+          <label for="navi-toggle" class="navigation__background"> </label>
+
+          <div class="navigation__nav">
+            <ul
+              class="navigation__items list-unstyled d-flex align-items-center gap-md-5"
+            >
+              <li class="navigation__lists order-0">
+                <a
+                  href="/"
+                  class="navigation__links text-decoration-none text-black"
+                  >Home</a
+                >
+              </li>
+
+              <li class="navigation__lists order-3 order-md-1">
+                <button
+                  onclick="this.focus()"
+                  class="navigation__links d-flex gap-2"
+                >
+                  Systems
+                  <span class="navigation__toggle">
+                    <img src="images/arrow down.svg" alt=""
+                  /></span>
+
+                  <div
+                    class="navigation__infotips infotips d-none flex-wrap position-absolute bg-white p-5 fw-medium"
+                  >
+                    <div class="infotips__items d-flex gap-4">
+                      <div class="">
+                        <img src="images/1 (1).png" alt="" />
+                      </div>
+                      <div class="">
+                        <h2>Wallets</h2>
+                        <p>
+                          Leverage the different digital wallets on Cardify to
+                          maximize your spending potentials.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="infotips__items d-flex gap-4">
+                      <div class="">
+                        <img src="images/2 (1).png" alt="" />
+                      </div>
+                      <div class="">
+                        <h2>Virtual Cards</h2>
+                        <p>
+                          Make payments the way you want with virtual cards made
+                          just for you.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="infotips__items d-flex gap-4">
+                      <div class="">
+                        <img src="images/3 (1).png" alt="" />
+                      </div>
+                      <div class="">
+                        <h2>Swap</h2>
+                        <p>
+                          Swap across various currencies at best market rates.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="infotips__items d-flex gap-4">
+                      <div class="">
+                        <img src="images/4.png" alt="" />
+                      </div>
+                      <div class="">
+                        <h2>Bills</h2>
+                        <p>
+                          Buy vouchers and load your bills leveraging your
+                          digital wallets.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="infotips__items d-flex gap-4">
+                      <div class="">
+                        <img src="images/4.png" alt="" />
+                      </div>
+                      <div class="">
+                        <h2>Digital Business Cards</h2>
+                        <p>
+                          Create, customize, and instantly share digital
+                          business cards with anyone, anywhere with a tap or
+                          scan.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+
+                <ul
+                  class="navigation__tooltipp tooltipp position-absolute list-unstyled bg-white"
+                >
+                  <li class="tooltipp__lists">
+                    <a href="/" class="tooltipp__links">Wallets</a>
+                  </li>
+                  <li class="tooltipp__lists">
+                    <a href="/" class="tooltipp__links">Virtual cards</a>
+                  </li>
+                  <li class="tooltipp__lists">
+                    <a href="/" class="tooltipp__links">Bills</a>
+                  </li>
+                  <li class="tooltipp__lists">
+                    <a href="/" class="tooltipp__links">Swap</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="navigation__lists order-1 order-md-2">
+                <button
+                  onclick="this.focus()"
+                  class="navigation__links d-flex gap-2"
+                >
+                  Learn<span class="navigation__toggle">
+                    <img src="images/arrow down.svg" alt=""
+                  /></span>
+                  <div
+                    class="navigation__infotips infotips d-none flex-wrap position-absolute bg-white -sm-sm p-5 fw-medium"
+                  >
+                    <div class="infotips__items d-flex gap-4">
+                      <div class="">
+                        <img src="images/2 (1).png" alt="" />
+                      </div>
+                      <div class="">
+                        <h2>Academy</h2>
+                        <p>
+                          Leverage the different digital wallets on Cardify to
+                          maximize your spending potentials.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="infotips__items d-flex gap-4">
+                      <div class="">
+                        <img src="images/2 (1).png" alt="" />
+                      </div>
+                      <div class="">
+                        <h2>Knowledgebase</h2>
+                        <p>Learn about several Cardify offerings.</p>
+                      </div>
+                    </div>
+                    <div class="infotips__items d-flex gap-4">
+                      <div class="">
+                        <img src="images/2 (1).png" alt="" />
+                      </div>
+                      <div class="">
+                        <h2>How To's</h2>
+                        <p>
+                          With how to guides on different usage of the system,
+                          get vibing!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="infotips__items d-flex gap-4">
+                      <div class="">
+                        <img src="images/2 (1).png" alt="" />
+                      </div>
+                      <div class="">
+                        <h2>Blog</h2>
+                        <p>
+                          Our blog features the most up to date news and
+                          articles across the industry.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+                <ul
+                  class="navigation__tooltipp tooltipp position-absolute list-unstyled bg-white -sm"
+                >
+                  <li class="tooltipp__lists">
+                    <a href="/" class="tooltipp__links">Academy</a>
+                  </li>
+                  <li class="tooltipp__lists">
+                    <a href="/" class="tooltipp__links">Knowledgebase</a>
+                  </li>
+                  <li class="tooltipp__lists">
+                    <a href="/" class="tooltipp__links">How to</a>
+                  </li>
+                  <li class="tooltipp__lists">
+                    <a href="/" class="tooltipp__links">Blog</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="navigation__lists order-2 order-md-3">
+                <button
+                  class="navigation__links text-decoration-none text-black d-flex gap-2"
+                >
+                  Company
+                  <span class="navigation__toggle">
+                    <img src="images/arrow down.svg" alt=""
+                  /></span>
+                </button>
+
+                <ul
+                  class="navigation__tooltipp tooltipp position-absolute list-unstyled bg-white"
+                >
+                  <li class="tooltipp__lists">
+                    <a href="about.html" class="tooltipp__links">About us</a>
+                  </li>
+                  <li class="tooltipp__lists">
+                    <a href="contact.html" class="tooltipp__links"
+                      >Contact us</a
+                    >
+                  </li>
+                  <li class="tooltipp__lists">
+                    <a href="/" class="tooltipp__links">Careers</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="navigation__lists d-md-none order-4">
+                <a href="/" class="navigation__links text-decoration-none"
+                  >Log in</a
+                >
+              </li>
+
+              <button
+                class="navigation__btnMenu order-5 fw-bold text-white d-md-none"
+              >
+                Create an account
+              </button>
+            </ul>
+          </div>
+          <div class="header__form d-flex justify-content-end">
+            <button class="header__form--login text-black fw-semibold">
+              Log in
+            </button>
+            <button class="fw-semibold text-white flex-grow-1">Sign up</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="cardify-story">
+      <div class="cardify-story__typo">
+        <h1 class="cardify-story__typo--heading">
+          We'd love to hear from you. Get in touch
+        </h1>
+        <p class="cardify-story__typo--text">
+          A member of the team will reach out to you as soon as possible.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div
+        class="contact__content container d-flex flex-column flex-md-row justify-content-evenly h-100"
+      >
+        <div
+          class="contact__content--phone d-flex flex-row flex-md-column align-items-center align-items-md-start justify-content-md-between"
+        >
+          <div class="contact__content__logo align-self-center">
+            <img src="images/phone_call.png" alt="" class="" />
+          </div>
+          <div class="contact__content__typo">
+            <h1 class="display-2 fw-bold">Phone Number</h1>
+            <p class="fs-4 text-center">
+              Call us at: <span class="text-primary">+234 (0) 1229-2722</span>
+            </p>
+          </div>
+        </div>
+        <div
+          class="contact__content--email d-flex flex-row flex-md-column align-items-center align-items-md-start justify-content-md-between"
+        >
+          <div class="contact__content__logo align-self-center">
+            <img
+              src="images/618ad4c4b0b5752694ee98ae_email.svg"
+              alt=""
+              class=""
+            />
+          </div>
+          <div class="ontact__content__typo">
+            <h1 class="display-2 fw-bold">Email Address</h1>
+            <p class="fs-4 text-center">
+              Email us at: <span class="text-primary">support@cardify.co</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="map" class="container"></div>
+
+    <section class="contact-message">
+      <div class="container contact-message__content">
+          <form action="" class="contact-message__form row gap-4">
+          <div class="inputField col-12 col-md">
+              <input type="text" class="inputField--input" placeholder=" " required/>
+            <span class="inputField--input__label">Your Name</span>
+          </div>
+          <div class="inputField col-12 col-md">
+            <input type="email" class="inputField--input" placeholder=" " required/>
+            <span class="inputField--input__label">Your Email</span>
+          </div>
+
+          <div class="inputField">
+            <input type="text" class="inputField--input" placeholder=" " required/>
+            <span class="inputField--input__label">Subject</span>
+          </div>
+
+          <div class="inputField">
+              <textarea name="" id="" rows="5" class="inputField--textarea" placeholder=" " required></textarea>
+            <span class="inputField--textarea__label">Messages</span>
+          </div>
+
+        <div class="btn-expandX">
+          <button type="submit" class="btn-expandX--cta">
+            <span class="btn-expandX--cta__text">Send a message</span>
+            <span class="btn-expandX--cta__img">
+              <svg class="btn-expandX--cta__svg" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <path class="btn-expandX--cta__svg-1" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                  <path class="btn-expandX--cta__svg-2" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                  <path class="btn-expandX--cta__svg-3" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+                </g>
+              </svg>
+            </span> 
+          </button>
+        </div>
+            </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="query">
+      <div class="query__content">
+        <div class="query__content--typo">
+          <p class="query__content--subheading">contact us</p>
+          <h1 class="query__content--heading">If You Have Any Query, Please Contact Us</h1>
+        </div>
+        <p class="query__content--text">The contact form is currently inactive.</p>
+      </div>
+    </section>
+
+    <footer class="footer bg-black">
+      <div class="footer__card container text-center text-white">
+        <h1 class="footer__card--heading text-black">Join the Cardify Tribe</h1>
+        <p class="footer__card--text">
+          You get to know the latest in our ecosystem first
+        </p>
+        <div
+          class="footer__card--icons d-flex gap-4 align-items-center justify-content-center"
+        >
+          <img
+            src="images/ig.svg"
+            alt=""
+            class="footer__card--social hvr-wobble-horizontal"
+          />
+          <img
+            src="images/facebook.svg"
+            alt=""
+            class="footer__card--social hvr-wobble-horizontal"
+          />
+          <img
+            src="images/twitter.svg"
+            alt=""
+            class="footer__card--social hvr-wobble-horizontal"
+          />
+          <img
+            src="images/telegram.svg"
+            alt=""
+            class="footer__card--social hvr-wobble-horizontal"
+          />
+          <img
+            src="images/youtube.svg"
+            alt=""
+            class="footer__card--social hvr-wobble-horizontal"
+          />
+        </div>
+      </div>
+
+      <div class="footer__content container text-white">
+        <div class="footer__content--form">
+          <img
+            src="images/thumb2.png"
+            alt=""
+            class="footer__content--form--thumb"
+          />
+          <p class="footer__content--form--text">
+            Subscribe to Cardify's newsletter
+          </p>
+          <div class="d-flex justify-content-between flex-column flex-sm-row">
+            <div class="col-12 col-sm-9">
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                class="footer__content--form--input"
+              />
+            </div>
+            <button class="footer__content--form--btn col-12 col-sm-3">
+              Subscribe
+            </button>
+          </div>
+        </div>
+        <div class="footer__content--nav">
+          <ul class="footer__content--items">
+            <p class="footer__content--items__heading">Systems</p>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links">Wallet</a>
+            </li>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links">Virtual Cards Page</a>
+            </li>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links">Bills Page</a>
+            </li>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links">Swap</a>
+            </li>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links">Gifts (Coming soon)</a>
+            </li>
+          </ul>
+
+          <ul class="footer__content--items">
+            <p class="footer__content--items__heading">Support</p>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links">Cardify Academy</a>
+            </li>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links">Knowledgebase</a>
+            </li>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links"
+                >How to's/System Updates</a
+              >
+            </li>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links">Blog</a>
+            </li>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links">Support Linktr.ee</a>
+            </li>
+          </ul>
+
+          <ul class="footer__content--items">
+            <p class="footer__content--items__heading">Legal & Policies</p>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links">Privacy Policy</a>
+            </li>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links">Terms of use</a>
+            </li>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links">API Policy</a>
+            </li>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links">AML & KYC Policy</a>
+            </li>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links">Risk Warning</a>
+            </li>
+            <li class="footer__content--lists">
+              <a href="" class="footer__content--links">Cookie Policy </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__disclaimer text-white container-md">
+        &#169; 2022-2023 Cardify Africa. All rights reserved. Disclaimer:
+        Cardify Africa is not a bank and does not hold depositor's funds.
+        Cardify Africa acts solely as a financial technology company
+        facilitating its offerings in partnership with licensed transmitters in
+        their respective jurisdictions. We do not engage in banking activities
+        or provide traditional banking services. By using the Cardify Africa
+        website and its associated services, you acknowledge and accept that
+        Cardify Africa is not a bank and that any financial transactions or
+        services are provided by third-party partners. <br />
+        <br />
+        "Cardify Africa" is a trading name of CARDIFY TECHNOLOGY LIMITED, a
+        private limited company registered in the United Kingdom with company
+        number 14295286 under the 'Other financial service activities'
+        classification. <br /><br />
+        "Cardify Africa" is registered as "CARDIFY COMPANY LTD" in Nigeria.
+        <br /><br />
+        "Cardify Africa" is registered in the United States of America as
+        "Cardify Africa Technology Inc" in the city of Dover, County of Kent,
+        Code 19901. <br /><br />
+        Copyright &#169; 2023 Cardify Africa. All rights reserved."
+        <br /><br /><br />
+        <p class="text-center">Coded by Faheez Adekola</p>
+      </div>
+    </footer>
+
+    <!-- SCROLL TO UP BUTTON -->
+    <a
+      href="#"
+      onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()"
+      class="btn-scroll"
+    >
+      <?xml version="1.0" ?><svg
+        fill="none"
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11.9999 5L17.9999 11M11.9999 5L5.99988 11M11.9999 5L11.9999 19"
+          stroke=""
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+        />
+      </svg>
+    </a>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

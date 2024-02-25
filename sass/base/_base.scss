@@ -22,6 +22,9 @@ html {
 dl, ol, ul {
     margin: 0 !important;
 }
+svg {
+  vertical-align:baseline !important;
+}
 body {
     box-sizing: inherit;
 }

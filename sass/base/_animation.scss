@@ -61,3 +61,16 @@
       transform: translateX(0);
     }
   }
+
+
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+  50% {
+    fill: $grey-dark;
+  }
+  100% {
+    fill: white;
+  }
+}

@@ -6,6 +6,7 @@
 @import "base/typography";
 
 @import "component/button";
+@import "component/contactForms";
 @import "component/infotips";
 @import "component/tooltip";
 
@@ -14,4 +15,6 @@
 @import "layouts/header";
 @import "layouts/navigation";
 
-@import "pages/sections";
+@import "pages/aboutPages";
+@import "pages/contactpages";
+@import "pages/homePages";

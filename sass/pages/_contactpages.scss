@@ -1,0 +1,81 @@
+//CONTACT PAGES
+.contact {
+  height: 40rem;
+  &__content {
+    padding: 7rem 0;
+    &--phone {
+      gap: 5rem;
+    }
+    &--email {
+      gap: 5rem;
+    }
+    @include respond(md) {
+      @include fullWidthMargin;
+    }
+  }
+}
+
+#map {
+  height: 250px;
+  margin: 0 auto 4rem auto;
+  @include respond(md) {
+    @include fullWidthMargin;
+    margin: 0 auto 4rem auto;
+  }
+}
+
+.contact-message {
+  &__content {
+    @include respond(md) {
+      @include fullWidthMargin;
+    }
+  }
+}
+
+.query {
+  &__content {
+    max-width: 55rem;
+    margin: 0 auto;
+    padding: 6rem 0;
+    padding-bottom: 25rem;
+
+    &--typo {
+      border-left: 0.5rem solid $blue;
+      padding-left: 2rem;
+    }
+
+    &--subheading {
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    &--heading {
+      font-size: 3.8rem;
+      text-transform: capitalize;
+    }
+
+    &--text {
+      font-size: 1.6rem;
+      margin-top: 4.5rem;
+    }
+
+    @include respond(md) { 
+      &--subheading {
+        font-size: 2rem;
+      }
+  
+      &--heading {
+        font-size: 4rem;
+      }
+  
+      &--text {
+        font-size: 1.8rem;
+      }
+    }
+
+    @include respond(md) {
+      @include fullWidthMargin;
+    }
+  }
+}

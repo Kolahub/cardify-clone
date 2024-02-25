@@ -1,0 +1,171 @@
+//ABOUT PAGES
+.cardify-story {
+    background-color: $grey-light-3;
+    padding: 10rem 0;
+    &__typo {
+      max-width: 93rem;
+      margin: 0 auto;
+      text-align: center;
+      &--heading {
+        font-size: 4rem;
+        font-weight: bold;
+      }
+      &--text {
+        font-size: 1.6rem;
+        margin-top: 2rem;
+      }
+    }
+    @include respond(lg) {
+      &__typo {
+        &--text {
+          font-size: 2rem;
+        }
+      }
+    }
+    @include respond(md) {
+      &__typo {
+        max-width: calc(100% - 2.6rem);
+        margin: 0 auto;
+        text-align: center;
+        &--heading {
+          font-size: 3.8rem;
+        }
+      }
+    }
+  
+    @include respond(xs) {
+      &__typo {
+        &--heading {
+          font-size: 3.5rem;
+        }
+      }
+    }
+  }
+  
+  .gtg-done {
+    &__content {
+      &--typo {
+        &__heading {
+          font-size: 4.5rem;
+          font-weight: bold;
+          @include respond(lg) {
+            font-size: 5rem;
+          }
+  
+          @include respond(xs) {
+            font-size: 4rem;
+          }
+        }
+  
+        &__text {
+          font-size: 1.9rem;
+          font-weight: 500;
+          text-align: justify;
+          margin-top: 2.8rem;
+          @include respond(lg) {
+            font-size: 2.3rem;
+          }
+        }
+      }
+  
+      @include respond(md) {
+        max-width: calc(100% - 6rem);
+        margin: 0 auto;
+      }
+    }
+  }
+  
+  .purpose {
+    @include aboutPageBgTemplate;
+  
+    &__content {
+      @include aboutPageTypo;
+      &--btn {
+        margin-top: 18rem;
+      }
+  
+      @include respond(md) {
+        @include fullWidthMargin;
+      }
+    }
+  }
+  
+  .mission {
+    margin: 10rem 0 4.5rem 0;
+  }
+  
+  .vision {
+    margin-bottom: 4.5rem;
+  }
+  
+  .more {
+    @include aboutPageBgTemplate;
+    margin-bottom: 10rem;
+    &__content {
+      &--1 {
+        @include aboutPageTypo;
+      }
+  
+      &--2 {
+        &--text {
+          margin-top: 2rem;
+          font-size: 1.6rem;
+  
+          @include respond(lg) {
+            font-size: 1.9rem;
+          }
+        }
+      }
+  
+      &--btn {
+        margin-top: 8rem;
+        @include respond(md) {
+          margin-bottom: 8.5rem !important;
+        }
+      }
+      @include respond(md) {
+        @include fullWidthMargin;
+      }
+    }
+  }
+  
+  .about-blog {
+    padding: 12rem 0;
+    &__content {
+      &--typo {
+        &__subheading {
+          color: $dark-green;
+          font-size: 19px;
+          letter-spacing: 0.3rem;
+          @include respond(lg) {
+            font-size: 2.1rem;
+          }
+        }
+        &__heading {
+          font-weight: 700;
+          font-size: 4.2rem;
+          @include respond(lg) {
+            font-size: 5.2rem;
+          }
+        }
+      }
+  
+      &--btn {
+        // display: inline-block;
+        // padding: 15px 40px;
+        // background-color: $green;
+        // font-size: 17px;
+        // font-weight: 500;
+        // color: $color-white;
+        // transition: all 0.3s ease;
+        // &:hover {
+        //   transform: scale(1.06);
+        //   background-color: green;
+        // }
+      }
+  
+      @include respond(md) {
+        @include fullWidthMargin;
+      }
+    }
+  }

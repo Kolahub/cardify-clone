@@ -1,0 +1,98 @@
+.focusValid {
+  border: 2px solid rgb(16, 214, 214);
+  box-shadow: 0 0 1rem rgba(16, 197, 214, 0.415);
+  outline: none;
+}
+.focusInvalid {
+  border: 2px solid rgb(214, 16, 16);
+  box-shadow: 0 0 1rem rgba(214, 16, 16, 0.415);
+  outline: none;
+}
+.inputbox {
+  border: 2px solid transparent;
+  border-radius: 3px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: $lighter-white;
+}
+.labelbox {
+  pointer-events: none;
+  position: absolute;
+  left: 0.7rem;
+  font-size: 16px;
+  color: $color-black;
+  font-weight: 500;
+}
+.labelShrink {
+  top: 12px;
+  transform: scale(0.8) translateY(-10%) translateX(-8.5px);
+  color: $grey-dark;
+}
+.labelTransition {
+  transition: all 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.inputField {
+  position: relative;
+  padding: 0;
+  &--input {
+    padding: 26px 15px 10px 15px;
+    @extend .inputbox;
+
+    &:focus {
+      @extend .focusValid;
+    }
+
+    &:focus:invalid {
+      @extend .focusInvalid;
+    }
+
+    &__label {
+      @extend .labelbox;
+      padding-left: 9px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:focus + &__label,
+    &:not(:placeholder-shown) + &__label {
+      @extend .labelShrink;
+    }
+
+    &,
+    &__label {
+      @extend .labelTransition;
+    }
+  }
+
+  &--textarea {
+    @extend .inputbox;
+    padding: 26px 16px 15px 16px;
+
+    &:focus {
+      @extend .focusValid;
+    }
+
+    &:focus:invalid {
+      @extend .focusInvalid;
+    }
+
+    &__label {
+      @extend .labelbox;
+      padding-left: 11px;
+      top: 8%;
+      transform: translateY(-8%);
+    }
+
+    &:focus + &__label,
+    &:not(:placeholder-shown) + &__label {
+      @extend .labelShrink;
+    }
+
+    &,
+    &__label {
+      @extend .labelTransition;
+    }
+  }
+}
+
