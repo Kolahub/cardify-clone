@@ -2,11 +2,26 @@
   font-size: 1.5rem;
   top: 7rem;
   left: 15%;
+  display: flex;
+  max-height: 0;
+  overflow: hidden;
+  padding-left: 3rem;
+  padding-right: 3rem;
   transform: translateX(-15%);
   width: calc(100% - 14rem);
-  box-shadow: 0 .6rem 2rem rgba(0, 0, 0, 0.1);
-  z-index: 500;
+  box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+  z-index: 2900;
 
+  &__overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1500;
+    display: none;
+  }
   &__items {
     width: 30rem;
     padding: 0.4rem;
@@ -17,12 +32,37 @@
     }
   }
 
-  h2 {
+  a {
+    font-size: 2rem;
+    text-decoration: none;
     color: $green;
     font-weight: bolder;
+    @include respond(lg) {
+      font-size: 2.1rem;
+    }
   }
-
   @include respond(lg) {
     font-size: 1.8rem;
   }
+  @include respond(md) {
+    display: none;
+  }
+}
+
+@media (min-width: 48em) {
+  .navigation__lists.activeInfo .infotips {
+    max-height: 65rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .navigation__lists.activeInfo .infotips__overlay {
+    display: block;
+  }
+// .navigation__toggle img {
+//     transition: all .6s;
+//   }
+//   .navigation__lists.active .navigation__toggle img {
+//     transform: rotate(180deg);
+//   }
 }

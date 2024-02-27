@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cardify Clone Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" type="image/png" href="images/thumb2.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -24,16 +32,17 @@
           /></a>
         </div>
         <nav class="navigation col-7 col-sm-9 col-lg-8 d-flex fw-semibold">
-          <input type="checkbox" class="navigation__checkbox" id="navi-toggle"/>
+          <input
+            type="checkbox"
+            class="navigation__checkbox"
+            id="navi-toggle"
+          />
           <label for="navi-toggle" class="navigation__button order-last">
             <span class="navigation__icon">&nbsp;</span>
-           </label>
-           <label for="navi-toggle" class="navigation__background">
-           </label>
+          </label>
+          <label for="navi-toggle" class="navigation__background"> </label>
           <div class="navigation__nav">
-            <ul
-              class="navigation__items list-unstyled d-flex align-items-center gap-md-5"
-            >
+            <ul class="navigation__items list-unstyled d-flex align-items-center gap-md-5" >
               <li class="navigation__lists order-0">
                 <a
                   href="/"
@@ -43,86 +52,83 @@
               </li>
 
               <li class="navigation__lists order-3 order-md-1">
-                <button
-                  onclick="this.focus()"
-                  class="navigation__links d-flex gap-2"
-                >
+                <div class="navigation__links d-flex gap-2">
                   Systems
                   <span class="navigation__toggle">
                     <img src="images/arrow down.svg" alt=""
                   /></span>
-
-                  <div
-                    class="navigation__infotips infotips d-none flex-wrap position-absolute bg-white p-5 fw-medium"
-                  >
-                    <div class="infotips__items d-flex gap-4">
-                      <div class="">
-                        <img src="images/1 (1).png" alt="" />
-                      </div>
-                      <div class="">
-                        <h2>Wallets</h2>
-                        <p>
-                          Leverage the different digital wallets on Cardify to
-                          maximize your spending potentials.
-                        </p>
-                      </div>
+                </div>
+                <div class="infotips__overlay"></div>
+                <ul class="navigation__infotips infotips flex-wrap position-absolute bg-white fw-medium">
+                  <div class="infotips__items d-flex gap-4">
+                    <div class="">
+                      <img src="images/1 (1).png" alt="" />
                     </div>
-                    <div class="infotips__items d-flex gap-4">
-                      <div class="">
-                        <img src="images/2 (1).png" alt="" />
-                      </div>
-                      <div class="">
-                        <h2>Virtual Cards</h2>
-                        <p>
-                          Make payments the way you want with virtual cards made
-                          just for you.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="infotips__items d-flex gap-4">
-                      <div class="">
-                        <img src="images/3 (1).png" alt="" />
-                      </div>
-                      <div class="">
-                        <h2>Swap</h2>
-                        <p>
-                          Swap across various currencies at best market rates.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="infotips__items d-flex gap-4">
-                      <div class="">
-                        <img src="images/4.png" alt="" />
-                      </div>
-                      <div class="">
-                        <h2>Bills</h2>
-                        <p>
-                          Buy vouchers and load your bills leveraging your
-                          digital wallets.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="infotips__items d-flex gap-4">
-                      <div class="">
-                        <img src="images/4.png" alt="" />
-                      </div>
-                      <div class="">
-                        <h2>Digital Business Cards</h2>
-                        <p>
-                          Create, customize, and instantly share digital
-                          business cards with anyone, anywhere with a tap or
-                          scan.
-                        </p>
-                      </div>
+                    <div class="">
+                      <a href="reg.html">Wallet</a>
+                      <p>
+                        Leverage the different digital wallets on Cardify to
+                        maximize your spending potentials.
+                      </p>
                     </div>
                   </div>
-                </button>
+                  <div class="infotips__items d-flex gap-4">
+                    <div class="">
+                      <img src="images/2 (1).png" alt="" />
+                    </div>
+                    <div class="">
+                      <a href="/">Virtual Cards</a>
+                      <p>
+                        Make payments the way you want with virtual cards made
+                        just for you.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="infotips__items d-flex gap-4">
+                    <div class="">
+                      <img src="images/3 (1).png" alt="" />
+                    </div>
+                    <div class="">
+                      <a href="/">Swap</a>
+                      <p>
+                        Swap across various currencies at best market rates.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="infotips__items d-flex gap-4">
+                    <div class="">
+                      <img src="images/4.png" alt="" />
+                    </div>
+                    <div class="">
+                      <a href="/">Bills</a>
+                      <p>
+                        Buy vouchers and load your bills leveraging your digital
+                        wallets.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="infotips__items d-flex gap-4">
+                    <div class="">
+                      <img src="images/4.png" alt="" />
+                    </div>
+                    <div class="">
+                      <a href="/">Digital Business Cards</a>
+                      <p>
+                        Create, customize, and instantly share digital business
+                        cards with anyone, anywhere with a tap or scan.
+                      </p>
+                    </div>
+                  </div>
+                </ul>
 
                 <ul
                   class="navigation__tooltipp tooltipp position-absolute list-unstyled bg-white"
                 >
                   <li class="tooltipp__lists">
-                    <a href="/" class="tooltipp__links">Wallets</a>
+                    <a href="reg.html" class="tooltipp__links">Wallets</a>
                   </li>
                   <li class="tooltipp__lists">
                     <a href="/" class="tooltipp__links">Virtual cards</a>
@@ -137,67 +143,64 @@
               </li>
 
               <li class="navigation__lists order-1 order-md-2">
-                <button
-                  onclick="this.focus()"
-                  class="navigation__links d-flex gap-2"
-                >
+                <div class="navigation__links d-flex gap-2">
                   Learn
                   <span class="navigation__toggle">
                     <img src="images/arrow down.svg" alt=""
                   /></span>
+                </div>
 
-                  <div
-                    class="navigation__infotips infotips d-none flex-wrap position-absolute bg-white -sm-sm p-5 fw-medium"
-                  >
-                    <div class="infotips__items d-flex gap-4">
-                      <div class="">
-                        <img src="images/2 (1).png" alt="" />
-                      </div>
-                      <div class="">
-                        <h2>Academy</h2>
-                        <p>
-                          Leverage the different digital wallets on Cardify to
-                          maximize your spending potentials.
-                        </p>
-                      </div>
+                <div class="navigation__infotips infotips flex-wrap position-absolute bg-white fw-medium">
+                  <div class="infotips__items d-flex gap-4">
+                    <div class="">
+                      <img src="images/2 (1).png" alt="" />
                     </div>
-                    <div class="infotips__items d-flex gap-4">
-                      <div class="">
-                        <img src="images/2 (1).png" alt="" />
-                      </div>
-                      <div class="">
-                        <h2>Knowledgebase</h2>
-                        <p>Learn about several Cardify offerings.</p>
-                      </div>
-                    </div>
-                    <div class="infotips__items d-flex gap-4">
-                      <div class="">
-                        <img src="images/2 (1).png" alt="" />
-                      </div>
-                      <div class="">
-                        <h2>How To's</h2>
-                        <p>
-                          With how to guides on different usage of the system,
-                          get vibing!
-                        </p>
-                      </div>
-                    </div>
-                    <div class="infotips__items d-flex gap-4">
-                      <div class="">
-                        <img src="images/2 (1).png" alt="" />
-                      </div>
-                      <div class="">
-                        <h2>Blog</h2>
-                        <p>
-                          Our blog features the most up to date news and
-                          articles across the industry.
-                        </p>
-                      </div>
+                    <div class="">
+                      <a href="/">Academy</a>
+                      <p>
+                        Leverage the different digital wallets on Cardify to
+                        maximize your spending potentials.
+                      </p>
                     </div>
                   </div>
-                </button>
+                  <div class="infotips__items d-flex gap-4">
+                    <div class="">
+                      <img src="images/2 (1).png" alt="" />
+                    </div>
+                    <div class="">
+                      <a href="/">Knowledgebase</a>
+                      <p>Learn about several Cardify offerings.</p>
+                    </div>
+                  </div>
+                  <div class="infotips__items d-flex gap-4">
+                    <div class="">
+                      <img src="images/2 (1).png" alt="" />
+                    </div>
+                    <div class="">
+                      <a href="/">How To's</a>
+                      <p>
+                        With how to guides on different usage of the system,
+                        get vibing!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="infotips__items d-flex gap-4">
+                    <div class="">
+                      <img src="images/2 (1).png" alt="" />
+                    </div>
+                    <div class="">
+                      <a href="/">Blog</a>
+                      <p>
+                        Our blog features the most up to date news and
+                        articles across the industry.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="infotips__overlay"></div>
+
                 <ul
-                  class="navigation__tooltipp tooltipp position-absolute list-unstyled bg-white -sm"
+                  class="navigation__tooltipp tooltipp position-absolute list-unstyled bg-white"
                 >
                   <li class="tooltipp__lists">
                     <a href="/" class="tooltipp__links">Academy</a>
@@ -224,12 +227,16 @@
                   /></span>
                 </button>
 
-                <ul class="navigation__tooltipp tooltipp position-absolute list-unstyled bg-white">
+                <ul
+                  class="navigation__tooltipp tooltipp position-absolute list-unstyled bg-white"
+                >
                   <li class="tooltipp__lists">
                     <a href="about.html" class="tooltipp__links">About us</a>
                   </li>
                   <li class="tooltipp__lists">
-                    <a href="contact.html" class="tooltipp__links">Contact us</a>
+                    <a href="contact.html" class="tooltipp__links"
+                      >Contact us</a
+                    >
                   </li>
                   <li class="tooltipp__lists">
                     <a href="/" class="tooltipp__links">Careers</a>
@@ -261,168 +268,234 @@
       </div>
     </header>
 
-    
     <main>
-    <section class="home">
-      <div
-        class="home__content container-md gx-0 d-flex flex-column flex-md-row align-items-center"
-      >
-        <div class="home__content--left w-100 w-md-50 d-flex flex-column gap-5">
-          <div class="home__content--left__heading">
-            <h1 class="heading-1">
-              <div class="">Unlock more ways to</div>
-              <span class="auto-type"></span>
-            </h1>
+      <section class="home">
+        <div
+          class="home__content container-md gx-0 d-flex flex-column flex-md-row align-items-center"
+        >
+          <div
+            class="home__content--left w-100 w-md-50 d-flex flex-column gap-5"
+          >
+            <div class="home__content--left__heading">
+              <h1 class="heading-1">
+                <div class="">Unlock more ways to</div>
+                <span class="auto-type"></span>
+              </h1>
+            </div>
+
+            <div class="home__content--left__typo pb-0 pb-mb-4">
+              <p class="fs-3">
+                Cardify Africa lets you exchange, spend and save money across
+                several digital wallets with NGN -Exchange, Buy vouchers, Pay
+                utility bills leveraging fiat and other digital wallets
+                seamlessly.
+              </p>
+            </div>
+
+            <div
+              class="home__content--left__download d-flex justify-content-between gap-5 w-75 pt-0 pt-md-2"
+            >
+              <div class="btn-download">
+                <img src="images/google play.svg" alt="" class="w-100" />
+              </div>
+              <div class="btn-download">
+                <img src="images/Apple store.svg" alt="" class="w-100" />
+              </div>
+            </div>
+
+            <div
+              class="home__content--left__service d-flex flex-column flex-md-row justify-content-md-between w-75"
+            >
+              <div class="col-6 col-md-5">
+                <span class="d-block">
+                  <img src="images/messages.svg" alt="" />
+                </span>
+                <p class="mt-4">24/7 human customer service</p>
+              </div>
+
+              <div class="col-6 col-md-5 mt-4">
+                <span class="d-block">
+                  <img src="images/reverse.svg" alt="" />
+                </span>
+                <p class="mt-4">Transactions at no extra fees</p>
+              </div>
+            </div>
           </div>
 
-          <div class="home__content--left__typo pb-0 pb-mb-4">
-            <p class="fs-3">
-              Cardify Africa lets you exchange, spend and save money across
-              several digital wallets with NGN -Exchange, Buy vouchers, Pay
-              utility bills leveraging fiat and other digital wallets
-              seamlessly.
+          <div class="home__content--right w-100 w-md-50">
+            <img src="images/phoneCard.svg" alt="" class="w-100" />
+          </div>
+        </div>
+      </section>
+
+      <section class="cadifytribe">
+        <div class="cadifytribe__content text-center">
+          <div class="cadifytribe__content--headings">
+            <h1 class="heading-2">Join the cardify tribe</h1>
+            <p class="">
+              Exchange, Save and Spend across digital wallets. We seek to be
+              your one stop shop for convenient inter-wallet transactions using
+              best technologies.
             </p>
           </div>
 
           <div
-            class="home__content--left__download d-flex justify-content-between gap-5 w-75 pt-0 pt-md-2"
+            class="cadifytribe__content--cards container-md mt-5 d-flex flex-column flex-md-row align-items-center"
           >
-            <div class="btn-download">
-              <img src="images/google play.svg" alt="" class="w-100" />
+            <div class="cadifytribe__content--cards__1 col-md-4 py-5">
+              <h1 class="text-big">30k+</h1>
+              <p class="fs-3 mt-5">Verified Users</p>
             </div>
-            <div class="btn-download">
-              <img src="images/Apple store.svg" alt="" class="w-100" />
+            <div class="cadifytribe__content--cards__2 col-md-4 py-5">
+              <h1 class="text-big">10+</h1>
+              <p class="fs-3 mt-5">Assets Supported</p>
             </div>
+            <div class="cadifytribe__content--cards__3 col-md-4 py-5">
+              <h1 class="text-big">100k+</h1>
+              <p class="fs-3 mt-5">Executed</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wallets">
+        <div class="wallets__content container bg-black">
+          <div class="wallets__content--typo">
+            <h3 class="text-center fw-bold">CARDIFY AFRICA WALLETS</h3>
+            <h1 class="text-center text-white my-4 fw-bolder">
+              Save, Spend & Exchange
+            </h1>
+            <p class="text-center text-white">
+              Unlock more ways to spend, save and exchange on Cardify Africa
+              wallets.
+            </p>
           </div>
 
           <div
-            class="home__content--left__service d-flex flex-column flex-md-row justify-content-md-between w-75"
+            class="wallets__content--box d-flex flex-column flex-md-row justify-content-between"
           >
-            <div class="col-6 col-md-5">
-              <span class="d-block">
-                <img src="images/messages.svg" alt="" />
-              </span>
-              <p class="mt-4">24/7 human customer service</p>
-            </div>
-
-            <div class="col-6 col-md-5 mt-4">
-              <span class="d-block">
-                <img src="images/reverse.svg" alt="" />
-              </span>
-              <p class="mt-4">Transactions at no extra fees</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="home__content--right w-100 w-md-50">
-          <img src="images/phoneCard.svg" alt="" class="w-100" />
-        </div>
-      </div>
-    </section>
-
-    <section class="cadifytribe">
-      <div class="cadifytribe__content text-center">
-        <div class="cadifytribe__content--headings">
-          <h1 class="heading-2">Join the cardify tribe</h1>
-          <p class="">
-            Exchange, Save and Spend across digital wallets. We seek to be your
-            one stop shop for convenient inter-wallet transactions using best
-            technologies.
-          </p>
-        </div>
-
-        <div
-          class="cadifytribe__content--cards container-md mt-5 d-flex flex-column flex-md-row align-items-center"
-        >
-          <div class="cadifytribe__content--cards__1 col-md-4 py-5">
-            <h1 class="text-big">30k+</h1>
-            <p class="fs-3 mt-5">Verified Users</p>
-          </div>
-          <div class="cadifytribe__content--cards__2 col-md-4 py-5">
-            <h1 class="text-big">10+</h1>
-            <p class="fs-3 mt-5">Assets Supported</p>
-          </div>
-          <div class="cadifytribe__content--cards__3 col-md-4 py-5">
-            <h1 class="text-big">100k+</h1>
-            <p class="fs-3 mt-5">Executed</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="wallets">
-      <div class="wallets__content container bg-black">
-        <div class="wallets__content--typo">
-          <h3 class="text-center fw-bold">CARDIFY AFRICA WALLETS</h3>
-          <h1 class="text-center text-white my-4 fw-bolder">
-            Save, Spend & Exchange
-          </h1>
-          <p class="text-center text-white">
-            Unlock more ways to spend, save and exchange on Cardify Africa
-            wallets.
-          </p>
-        </div>
-
-        <div class="wallets__content--box d-flex flex-column flex-md-row justify-content-between">
-          <div class="wallets__content--box-typo d-flex flex-column">
-            <div class="">
-              <div class="d-flex align-items-center gap-4 py-5">
-                <div class="wallets--icons">
-                  <img
-                    src="images/2739090_briefcase_icon.svg"
-                    alt=""
-                    class="w-100"
-                  />
+            <div class="wallets__content--box-typo d-flex flex-column">
+              <div class="">
+                <div class="d-flex align-items-center gap-4 py-5">
+                  <div class="wallets--icons">
+                    <img
+                      src="images/2739090_briefcase_icon.svg"
+                      alt=""
+                      class="w-100"
+                    />
+                  </div>
+                  <span class="d-block fw-bold w-100">RECEIVE & SAVE</span>
                 </div>
-                <span class="d-block fw-bold w-100">RECEIVE & SAVE</span>
+                <p class="text-white">
+                  Cardify Africa NGN and USD wallets allow you receive, save
+                  across multiple digital wallets.
+                </p>
               </div>
-              <p class="text-white">
-                Cardify Africa NGN and USD wallets allow you receive, save
-                across multiple digital wallets.
-              </p>
-            </div>
-            <div class="">
-              <div class="d-flex align-items-center gap-4 py-5">
-                <div class="wallets--icons">
-                  <img
-                    src="images/9989497_diagram_bar_graph_graphic_pie_icon (1).svg"
-                    alt=""
-                    class="w-100"
-                  />
+              <div class="">
+                <div class="d-flex align-items-center gap-4 py-5">
+                  <div class="wallets--icons">
+                    <img
+                      src="images/9989497_diagram_bar_graph_graphic_pie_icon (1).svg"
+                      alt=""
+                      class="w-100"
+                    />
+                  </div>
+                  <span class="d-block fw-bold w-100">SEND WITH CARDIFY </span>
                 </div>
-                <span class="d-block fw-bold w-100">SEND WITH CARDIFY </span>
+                <p class="text-white">
+                  Leveraging various digital wallets, send funds to other
+                  cardify users as well as external wallets seamlessly.
+                </p>
               </div>
-              <p class="text-white">
-                Leveraging various digital wallets, send funds to other cardify
-                users as well as external wallets seamlessly.
-              </p>
-            </div>
-            <div class="">
-              <div class="d-flex align-items-center gap-4 py-5">
-                <div class="wallets--icons">
-                  <img
-                    src="images/2739090_briefcase_icon.svg"
-                    alt=""
-                    class="w-100"
-                  />
+              <div class="">
+                <div class="d-flex align-items-center gap-4 py-5">
+                  <div class="wallets--icons">
+                    <img
+                      src="images/2739090_briefcase_icon.svg"
+                      alt=""
+                      class="w-100"
+                    />
+                  </div>
+                  <span class="d-block fw-bold text-primary w-100"
+                    >SEND WITH CARDIFY
+                  </span>
                 </div>
-                <span class="d-block fw-bold text-primary w-100"
-                  >SEND WITH CARDIFY
-                </span>
+                <p class="text-white">
+                  Leveraging various digital wallets, send funds to other
+                  cardify users as well as external wallets seamlessly.
+                </p>
               </div>
-              <p class="text-white">
-                Leveraging various digital wallets, send funds to other cardify
-                users as well as external wallets seamlessly.
-              </p>
+            </div>
+
+            <div class="wallets__content--box--2">
+              <div class="wallets__content--box--gif">
+                <img src="images/Cardifyapp.gif" alt="" class="h-100" />
+              </div>
+
+              <a href="#" class="btn-secondary wallets--btn my-5 fw-bold"
+                >Get Started
+                <svg
+                  width="19"
+                  height="16"
+                  viewBox="0 0 19 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="svg1"
+                    d="M1 7.75H17.5"
+                    stroke="#0D0E10"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    class="svg2"
+                    d="M10.75 1L17.5 7.75L10.75 14.5"
+                    stroke="#0D0E10"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="wallets__content--box--2">
-            <div class="wallets__content--box--gif">
-              <img src="images/Cardifyapp.gif" alt="" class="h-100" />
+      <div
+        class="goto container-md d-flex flex-column flex-md-row align-items-md-center px-0"
+      >
+        <div class="goto__img w-100 w-md-50">
+          <img src="images/Cardifycards1.jpg" alt="" class="w-100 rounded-5" />
+        </div>
+        <div class="goto__typo w-100 w-md-50">
+          <div class="goto__typo--box">
+            <h1 class="goto__typo--heading text-medium fw-bold w-100">
+              Cardify Wallets
+            </h1>
+            <p class="goto__typo--text mb-4">
+              Leverage our fiat and digital wallet options to save, spend and
+              exchange.
+              <span class="d-block">Learn more about the wallets</span>
+            </p>
+
+            <div class="d-flex align-items-center mx-1 mx-md-0 mb-4 gap-4">
+              <img src="images/checked.svg" alt="" />
+              <p class="goto__typo--text">NGN Wallet</p>
+            </div>
+            <div class="d-flex align-items-center mx-1 mx-md-0 mb-4 gap-4">
+              <img src="images/checked.svg" alt="" />
+              <p class="goto__typo--text">USD Wallet</p>
+            </div>
+            <div class="d-flex align-items-center mx-1 mx-md-0 mb-4 gap-4">
+              <img src="images/checked.svg" alt="" />
+              <p class="goto__typo--text">GBP Wallet (Coming Soon)</p>
             </div>
 
-            <a href="#" class="btn-secondary wallets--btn my-5 fw-bold">Get Started
+            <a href="#" class="btn-tertiary goto__btn my-5 fw-bold"
+              >Goto Cardify Wallets
               <svg
                 width="19"
                 height="16"
@@ -451,433 +524,396 @@
           </div>
         </div>
       </div>
-    </section>
 
-    <div class="goto container-md d-flex flex-column flex-md-row align-items-md-center px-0">
-      <div class="goto__img w-100 w-md-50">
-        <img src="images/Cardifycards1.jpg" alt="" class="w-100 rounded-5" />
+      <div
+        class="goto container-md d-flex flex-column flex-md-row align-items-md-center px-0"
+      >
+        <div class="goto__typo w-100 w-md-50">
+          <div class="goto__typo--box">
+            <h1 class="goto__typo--heading text-medium fw-bold w-100">
+              Cardify Virtual Dollar Cards!!!
+            </h1>
+            <p class="goto__typo--text mb-4">
+              Pay for monthly subscriptions to services like Apple Music,
+              Spotify, and Netflix as well as shopping/paying at your preferred
+              online checkouts.
+            </p>
+
+            <div class="d-flex align-items-center mx-1 mx-md-0 mb-4 gap-4">
+              <img src="images/checked.svg" alt="" />
+              <p class="goto__typo--text">NGN & Stablecoins Funding</p>
+            </div>
+            <div class="d-flex align-items-center mx-1 mx-md-0 mb-4 gap-4">
+              <img src="images/checked.svg" alt="" />
+              <p class="goto__typo--text">Fund as low as 5USD</p>
+            </div>
+            <div class="d-flex align-items-center mx-1 mx-md-0 mb-4 gap-4">
+              <img src="images/checked.svg" alt="" />
+              <p class="goto__typo--text">Competitive Rates</p>
+            </div>
+
+            <a href="#" class="btn-tertiary goto__btn my-5 fw-bold"
+              >Goto Cardify Cards
+              <svg
+                width="19"
+                height="16"
+                viewBox="0 0 19 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="svg1"
+                  d="M1 7.75H17.5"
+                  stroke="#0D0E10"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  class="svg2"
+                  d="M10.75 1L17.5 7.75L10.75 14.5"
+                  stroke="#0D0E10"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="goto__img w-100 w-md-50">
+          <img src="images/Cardifycards2.png" alt="" class="w-100 rounded-5" />
+        </div>
       </div>
-      <div class="goto__typo w-100 w-md-50">
-        <div class="goto__typo--box">
-          <h1 class="goto__typo--heading text-medium fw-bold w-100">
-            Cardify Wallets
-          </h1>
-          <p class="goto__typo--text mb-4">
-            Leverage our fiat and digital wallet options to save, spend and
-            exchange. <span class="d-block">Learn more about the wallets</span>
-          </p>
 
-          <div class="d-flex align-items-center mx-1 mx-md-0 mb-4 gap-4">
-            <img src="images/checked.svg" alt="" />
-            <p class="goto__typo--text">NGN Wallet</p>
-          </div>
-          <div class="d-flex align-items-center mx-1 mx-md-0 mb-4 gap-4">
-            <img src="images/checked.svg" alt="" />
-            <p class="goto__typo--text">USD Wallet</p>
-          </div>
-          <div class="d-flex align-items-center mx-1 mx-md-0 mb-4 gap-4">
-            <img src="images/checked.svg" alt="" />
-            <p class="goto__typo--text">GBP Wallet (Coming Soon)</p>
-          </div>
+      <div
+        class="goto container-md d-flex flex-column flex-md-row align-items-md-center px-0"
+      >
+        <div class="goto__img w-100 w-md-50">
+          <img src="images/Cardifycards3.png" alt="" class="w-100 rounded-5" />
+        </div>
+        <div class="goto__typo w-100 w-md-50">
+          <div class="goto__typo--box">
+            <h1 class="goto__typo--heading text-medium fw-bold w-100">
+              Cardify Digital Business Cards
+            </h1>
+            <p class="goto__typo--text mb-4">
+              Create, customize, and instantly share digital business cards with
+              anyone, anywhere with a tap or scan.
+              <span class="d-block"
+                >Learn more about Cardigy digital cards</span
+              >
+            </p>
 
-          <a href="#" class="btn-tertiary goto__btn my-5 fw-bold"
-            >Goto Cardify Wallets
-            <svg
-              width="19"
-              height="16"
-              viewBox="0 0 19 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+            <div class="d-flex align-items-center mx-1 mx-md-0 mb-4 gap-4">
+              <img src="images/checked.svg" alt="" />
+              <p class="goto__typo--text">One Tap Magic</p>
+            </div>
+            <div class="d-flex align-items-center mx-1 mx-md-0 mb-4 gap-4">
+              <img src="images/checked.svg" alt="" />
+              <p class="goto__typo--text">QR Codes</p>
+            </div>
+            <div class="d-flex align-items-center mx-1 mx-md-0 mb-4 gap-4">
+              <img src="images/checked.svg" alt="" />
+              <p class="goto__typo--text">Dedicated Link/Page</p>
+            </div>
+
+            <a href="#" class="btn-tertiary goto__btn my-5 fw-bold"
+              >App Integrated Support
+              <svg
+                width="19"
+                height="16"
+                viewBox="0 0 19 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="svg1"
+                  d="M1 7.75H17.5"
+                  stroke="#0D0E10"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  class="svg2"
+                  d="M10.75 1L17.5 7.75L10.75 14.5"
+                  stroke="#0D0E10"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <section class="experience container">
+        <h1 class="experience--heading text-center fw-bold">
+          Experience freedom with Cardify Bills
+        </h1>
+
+        <div class="experience-layout d-flex flex-wrap text-center">
+          <div class="experience-layout__card col-12 col-lg-6 d-flex">
+            <div
+              class="experience-layout__card--icon align-self-start p-3 bg-black"
             >
-              <path
-                class="svg1"
-                d="M1 7.75H17.5"
-                stroke="#0D0E10"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                class="svg2"
-                d="M10.75 1L17.5 7.75L10.75 14.5"
-                stroke="#0D0E10"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="goto container-md d-flex flex-column flex-md-row align-items-md-center px-0">
-      <div class="goto__typo w-100 w-md-50">
-        <div class="goto__typo--box">
-          <h1 class="goto__typo--heading text-medium fw-bold w-100">
-            Cardify Virtual Dollar Cards!!!
-          </h1>
-          <p class="goto__typo--text mb-4">
-            Pay for monthly subscriptions to services like Apple Music, Spotify,
-            and Netflix as well as shopping/paying at your preferred online
-            checkouts.
-          </p>
-
-          <div class="d-flex align-items-center mx-1 mx-md-0 mb-4 gap-4">
-            <img src="images/checked.svg" alt="" />
-            <p class="goto__typo--text">NGN & Stablecoins Funding</p>
-          </div>
-          <div class="d-flex align-items-center mx-1 mx-md-0 mb-4 gap-4">
-            <img src="images/checked.svg" alt="" />
-            <p class="goto__typo--text">Fund as low as 5USD</p>
-          </div>
-          <div class="d-flex align-items-center mx-1 mx-md-0 mb-4 gap-4">
-            <img src="images/checked.svg" alt="" />
-            <p class="goto__typo--text">Competitive Rates</p>
-          </div>
-
-          <a href="#" class="btn-tertiary goto__btn my-5 fw-bold"
-            >Goto Cardify Cards
-            <svg
-              width="19"
-              height="16"
-              viewBox="0 0 19 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+              <img src="images/buycodes.svg" alt="" />
+            </div>
+            <div
+              class="experience-layout__card--box border rounded-5 text-start"
             >
-              <path
-                class="svg1"
-                d="M1 7.75H17.5"
-                stroke="#0D0E10"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                class="svg2"
-                d="M10.75 1L17.5 7.75L10.75 14.5"
-                stroke="#0D0E10"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </a>
-        </div>
-      </div>
-
-      <div class="goto__img w-100 w-md-50">
-        <img src="images/Cardifycards2.png" alt="" class="w-100 rounded-5" />
-      </div>
-    </div>
-
-    <div class="goto container-md d-flex flex-column flex-md-row align-items-md-center px-0">
-      <div class="goto__img w-100 w-md-50">
-        <img src="images/Cardifycards3.png" alt="" class="w-100 rounded-5" />
-      </div>
-      <div class="goto__typo w-100 w-md-50">
-        <div class="goto__typo--box">
-          <h1 class="goto__typo--heading text-medium fw-bold w-100">
-            Cardify Digital Business Cards
-          </h1>
-          <p class="goto__typo--text mb-4">
-            Create, customize, and instantly share digital business cards with
-            anyone, anywhere with a tap or scan.
-            <span class="d-block">Learn more about Cardigy digital cards</span>
-          </p>
-
-          <div class="d-flex align-items-center mx-1 mx-md-0 mb-4 gap-4">
-            <img src="images/checked.svg" alt="" />
-            <p class="goto__typo--text">One Tap Magic</p>
-          </div>
-          <div class="d-flex align-items-center mx-1 mx-md-0 mb-4 gap-4">
-            <img src="images/checked.svg" alt="" />
-            <p class="goto__typo--text">QR Codes</p>
-          </div>
-          <div class="d-flex align-items-center mx-1 mx-md-0 mb-4 gap-4">
-            <img src="images/checked.svg" alt="" />
-            <p class="goto__typo--text">Dedicated Link/Page</p>
+              <h1 class="experience-layout__card--heading mb-4">Buy Codes</h1>
+              <p class="experience-layout__card--text">
+                From Jumia codes to shoprite codes in Nigeria, from Uber to Just
+                Eat in the UK, use Cardify bills to buy a gift code on popular
+                platforms in Nigeria, ghana, South Africa, USA and UK.
+              </p>
+            </div>
           </div>
 
-          <a href="#" class="btn-tertiary goto__btn my-5 fw-bold"
-            >App Integrated Support
-            <svg
-              width="19"
-              height="16"
-              viewBox="0 0 19 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+          <div class="experience-layout__card col-12 col-lg-6 d-flex">
+            <div
+              class="experience-layout__card--icon align-self-start p-3 bg-black"
             >
-              <path
-                class="svg1"
-                d="M1 7.75H17.5"
-                stroke="#0D0E10"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                class="svg2"
-                d="M10.75 1L17.5 7.75L10.75 14.5"
-                stroke="#0D0E10"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <section class="experience container">
-      <h1 class="experience--heading text-center fw-bold">
-        Experience freedom with Cardify Bills
-      </h1>
-
-      <div class="experience-layout d-flex flex-wrap text-center">
-        <div class="experience-layout__card col-12 col-lg-6 d-flex">
-          <div
-            class="experience-layout__card--icon align-self-start p-3 bg-black"
-          >
-            <img src="images/buycodes.svg" alt="" />
+              <img src="images/vouchers.svg" alt="" />
+            </div>
+            <div
+              class="experience-layout__card--box border rounded-5 text-start"
+            >
+              <h1 class="experience-layout__card--heading mb-4">Vouchers</h1>
+              <p class="experience-layout__card--text">
+                Cardify Bills allow you purchase the vouchers you need, from mtn
+                to other network vouchers to lycamobile vouchers, we've got you
+                covered. Always!
+              </p>
+            </div>
           </div>
-          <div class="experience-layout__card--box border rounded-5 text-start">
-            <h1 class="experience-layout__card--heading mb-4">Buy Codes</h1>
-            <p class="experience-layout__card--text">
-              From Jumia codes to shoprite codes in Nigeria, from Uber to Just
-              Eat in the UK, use Cardify bills to buy a gift code on popular
-              platforms in Nigeria, ghana, South Africa, USA and UK.
+
+          <div class="experience-layout__card col-12 col-lg-6 d-flex">
+            <div
+              class="experience-layout__card--icon align-self-start p-3 bg-black"
+            >
+              <img src="images/directtopUp.svg" alt="" />
+            </div>
+            <div
+              class="experience-layout__card--box border rounded-5 text-start"
+            >
+              <h1 class="experience-layout__card--heading mb-4">
+                Direct Top Up
+              </h1>
+              <p class="experience-layout__card--text">
+                Topping up your lines for mobile data or recharge is seamless
+                with fiat and digital wallet payment options on Cardify Bills.
+                Tickets
+              </p>
+            </div>
+          </div>
+
+          <div class="experience-layout__card col-12 col-lg-6 d-flex">
+            <div
+              class="experience-layout__card--icon align-self-start p-3 bg-black"
+            >
+              <img src="images/tickets.svg" alt="" />
+            </div>
+            <div
+              class="experience-layout__card--box border rounded-5 text-start"
+            >
+              <h1 class="experience-layout__card--heading mb-4">Tickets</h1>
+              <p class="experience-layout__card--text">
+                A ticket round you is just around when you around Cardify bills.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="epay container">
+        <div class="epay__content d-flex flex-column flex-md-row">
+          <div class="epay__content--typo col-12 col-md-6">
+            <h1 class="epay__content--typo__heading fw-bolder">
+              Pay bills on the go
+            </h1>
+            <p class="epay__content--typo__text">
+              Cardify Bills allow you buy digital items or bills with both Naira
+              and Digital Currencies, Buy vouchers, gift codes, top up airtime
+              in Nigeria, Ghana, South Africa, United Kingdom, United States
+              with Naira and Digital Currencies.
             </p>
+            <div class="epay__content--btn">get started</div>
+          </div>
+          <div class="">
+            <img src="images/epay.png" alt="" class="epay__content--pic" />
           </div>
         </div>
+      </section>
 
-        <div class="experience-layout__card col-12 col-lg-6 d-flex">
-          <div
-            class="experience-layout__card--icon align-self-start p-3 bg-black"
-          >
-            <img src="images/vouchers.svg" alt="" />
-          </div>
-          <div class="experience-layout__card--box border rounded-5 text-start">
-            <h1 class="experience-layout__card--heading mb-4">Vouchers</h1>
-            <p class="experience-layout__card--text">
-              Cardify Bills allow you purchase the vouchers you need, from mtn
-              to other network vouchers to lycamobile vouchers, we've got you
-              covered. Always!
-            </p>
-          </div>
-        </div>
-
-        <div class="experience-layout__card col-12 col-lg-6 d-flex">
-          <div
-            class="experience-layout__card--icon align-self-start p-3 bg-black"
-          >
-            <img src="images/directtopUp.svg" alt="" />
-          </div>
-          <div class="experience-layout__card--box border rounded-5 text-start">
-            <h1 class="experience-layout__card--heading mb-4">Direct Top Up</h1>
-            <p class="experience-layout__card--text">
-              Topping up your lines for mobile data or recharge is seamless with
-              fiat and digital wallet payment options on Cardify Bills. Tickets
-            </p>
-          </div>
-        </div>
-
-        <div class="experience-layout__card col-12 col-lg-6 d-flex">
-          <div
-            class="experience-layout__card--icon align-self-start p-3 bg-black"
-          >
-            <img src="images/tickets.svg" alt="" />
-          </div>
-          <div class="experience-layout__card--box border rounded-5 text-start">
-            <h1 class="experience-layout__card--heading mb-4">Tickets</h1>
-            <p class="experience-layout__card--text">
-              A ticket round you is just around when you around Cardify bills.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="epay container">
-      <div class="epay__content d-flex flex-column flex-md-row">
-        <div class="epay__content--typo col-12 col-md-6">
-          <h1 class="epay__content--typo__heading fw-bolder">
-            Pay bills on the go
-          </h1>
-          <p class="epay__content--typo__text">
-            Cardify Bills allow you buy digital items or bills with both Naira
-            and Digital Currencies, Buy vouchers, gift codes, top up airtime in
-            Nigeria, Ghana, South Africa, United Kingdom, United States with
-            Naira and Digital Currencies.
-          </p>
-          <div class="epay__content--btn">get started</div>
-        </div>
-        <div class="">
-          <img src="images/epay.png" alt="" class="epay__content--pic" />
-        </div>
-      </div>
-    </section>
-
-    <section class="faq container">
-      <div class="faq__content d-flex flex-column flex-lg-row align-items-lg-center">
-        <div class="faq__content--context w-100 w-lg-50">
-          <h1 class="fw-bold">Frequently asked questions</h1>
-          <span class="d-block"
-            >For questions not covered here, kindly check our how to articles or
-            contact support.</span
-          >
-          <iframe width="560" height="315"
-            src="https://www.youtube.com/embed/jqJjJE8bO5c"
-            title="Cardify Africa x Google Developers Fest 2022 Osogbo Highlights"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        </div>
-
+      <section class="faq container">
         <div
-          class="faq__content--accordion accordion w-100 w-lg-50"
-          id="accordionExample"
+          class="faq__content d-flex flex-column flex-lg-row align-items-lg-center"
         >
-          <div class="faq__content--accordion__item accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="faq__content--accordion__button accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="false"
-                aria-controls="collapseOne"
-              >
-                What is Cardify Bills?
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
+          <div class="faq__content--context w-100 w-lg-50">
+            <h1 class="fw-bold">Frequently asked questions</h1>
+            <span class="d-block"
+              >For questions not covered here, kindly check our how to articles
+              or contact support.</span
             >
-              <div class="faq__content--accordion__body accordion-body">
-                <p>
-                  Cardify Bills allow you buy digital items or pay bills with
-                  both Naira and digital currencies, Buy vouchers, gift codes,
-                  top up airtime in Nigeria, Ghana, South Africa, United
-                  Kingdom, United States leveraging several wallets.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="faq__content--accordion__item accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="faq__content--accordion__button accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                Which currencies does Cardify support ?
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="faq__content--accordion__body accordion-body">
-                <p>
-                  Every wallet that works is supported since you have to send
-                  the digital asset to the wallet address we generate for you.
-                </p>
-              </div>
-            </div>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/jqJjJE8bO5c"
+              title="Cardify Africa x Google Developers Fest 2022 Osogbo Highlights"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
           </div>
 
-          <div class="faq__content--accordion__item accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="faq__content--accordion__button accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
+          <div
+            class="faq__content--accordion accordion w-100 w-lg-50"
+            id="accordionExample"
+          >
+            <div class="faq__content--accordion__item accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="faq__content--accordion__button accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  What is Cardify Bills?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
               >
-                Which wallets or exchanges do you support?
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="faq__content--accordion__body accordion-body">
-                <p>
-                  Every wallet that works is supported since you have to send
-                  the digital asset to the wallet address we generate for you.
-                </p>
+                <div class="faq__content--accordion__body accordion-body">
+                  <p>
+                    Cardify Bills allow you buy digital items or pay bills with
+                    both Naira and digital currencies, Buy vouchers, gift codes,
+                    top up airtime in Nigeria, Ghana, South Africa, United
+                    Kingdom, United States leveraging several wallets.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="faq__content--accordion__item accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="faq__content--accordion__button accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFour"
-                aria-expanded="false"
-                aria-controls="collapseFour"
+            <div class="faq__content--accordion__item accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="faq__content--accordion__button accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Which currencies does Cardify support ?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
               >
-                Must i be a Cardify user to use Cardify Bills?
-              </button>
-            </h2>
-            <div
-              id="collapseFour"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="faq__content--accordion__body accordion-body">
-                <p>
-                  No, you don't have to be a Cardify user, you can buy digital
-                  items or bills with both Naira and digital wallets without
-                  registering on the platform.
-                </p>
+                <div class="faq__content--accordion__body accordion-body">
+                  <p>
+                    Every wallet that works is supported since you have to send
+                    the digital asset to the wallet address we generate for you.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="faq__content--accordion__item accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="faq__content--accordion__button accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFive"
-                aria-expanded="false"
-                aria-controls="collapseFive"
+            <div class="faq__content--accordion__item accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="faq__content--accordion__button accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Which wallets or exchanges do you support?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
               >
-                Does Cardify Bills have a reward program
-              </button>
-            </h2>
-            <div
-              id="collapseFive"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="faq__content--accordion__body accordion-body">
-                Yes, for every transaction you complete on Cardify Bills, you
-                get a point. Although, points can be redeemed by only users of
-                the Cardify platform.
+                <div class="faq__content--accordion__body accordion-body">
+                  <p>
+                    Every wallet that works is supported since you have to send
+                    the digital asset to the wallet address we generate for you.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq__content--accordion__item accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="faq__content--accordion__button accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  Must i be a Cardify user to use Cardify Bills?
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="faq__content--accordion__body accordion-body">
+                  <p>
+                    No, you don't have to be a Cardify user, you can buy digital
+                    items or bills with both Naira and digital wallets without
+                    registering on the platform.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq__content--accordion__item accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="faq__content--accordion__button accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  Does Cardify Bills have a reward program
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="faq__content--accordion__body accordion-body">
+                  Yes, for every transaction you complete on Cardify Bills, you
+                  get a point. Although, points can be redeemed by only users of
+                  the Cardify platform.
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
     <footer class="footer bg-black">
       <div class="footer__card container text-center text-white">
@@ -1031,19 +1067,42 @@
     </footer>
 
     <!-- SCROLL TO UP BUTTON -->
-    <a href="#" onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()" class="btn-scroll">
-      <?xml version="1.0" ?><svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M11.9999 5L17.9999 11M11.9999 5L5.99988 11M11.9999 5L11.9999 19" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+    <a
+      href="#"
+      onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()"
+      class="btn-scroll"
+    >
+      <?xml version="1.0" ?><svg
+        fill="none"
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11.9999 5L17.9999 11M11.9999 5L5.99988 11M11.9999 5L11.9999 19"
+          stroke=""
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+        />
+      </svg>
     </a>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12">
-      var typed = new Typed(".auto-type",{
-        strings : ["Save.", "Spend.", "Exchange."],
-        typeSpeed : 150, 
-        backSpeed : 150,
-        loop : true
-      })
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: ["Save.", "Spend.", "Exchange."],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true,
+      });
     </script>
-    <script defer src="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

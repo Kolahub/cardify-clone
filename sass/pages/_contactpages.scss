@@ -9,6 +9,14 @@
     &--email {
       gap: 5rem;
     }
+
+    &--typo {
+      @include respond(lg) { 
+        p {
+          font-size: 1.7rem !important;
+        }
+      }
+    }
     @include respond(md) {
       @include fullWidthMargin;
     }
