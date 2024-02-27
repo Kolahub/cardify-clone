@@ -1,5 +1,4 @@
-@media only screen and (min-width: 48em) {
-  .reg {
+.reg {
     background: $color-white;
     display: flex;
     justify-content: center;
@@ -11,23 +10,39 @@
       background-color: #ffffff;
       border-radius: 10px;
       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-        0 10px 10px rgba(0, 0, 0, 0.22);
+      0 10px 10px rgba(0, 0, 0, 0.22);
       position: relative;
       overflow: hidden;
-      min-height: 66rem;
+      min-height: 68rem;
+      @include respond(md) { 
+        min-height: 80rem;
+      }
       &--typo {
         &__heading {
           font-size: 4rem;
           font-weight: 600;
-
-          @include respond(lg) {
+          &--overlay {
             font-size: 4rem;
+          }
+          @include respond(lg) {
+            font-size: 4.1rem;
+            &--overlay {
+              font-size: 4.1rem;
+            }
+          }
+          @include respond(md) {
+            &--overlay {
+              font-size: 2.2rem;
+            }
           }
         }
 
         &__primary {
           font-size: 1.6rem;
           font-weight: 600;
+          @include respond(lg) {
+            font-size: 1.8rem;
+          }
         }
       }
       &--signUp {
@@ -35,12 +50,18 @@
         width: 50%;
         opacity: 0;
         z-index: 1;
+        @include respond(md) { 
+          width: 80%;
+        }
       }
 
       &--signIn {
         left: 0;
         width: 50%;
         z-index: 2;
+        @include respond(md) { 
+          width: 80%;
+        }
       }
 
       &--formbox {
@@ -55,8 +76,12 @@
         gap: 1.5rem;
         justify-content: center;
         flex-direction: column;
-        padding: 5rem 5rem;
+        padding: 5rem;
         height: 100%;
+
+        @include respond(md) {  
+          padding: 2rem;
+        }
 
         &__google {
           padding: 1rem 0;
@@ -92,6 +117,14 @@
           &--ghost {
             background-color: transparent;
             border-color: #ffffff;
+            @include respond(md) { 
+              padding: 1.5rem 4.2rem;
+            }
+            @include respond(sm) { 
+            padding: 1rem;
+            border-radius: 0;
+            font-size: 1.6rem;
+            }
           }
           &:focus {
             outline: none;
@@ -107,18 +140,25 @@
         opacity: 1;
         z-index: 5;
         animation: show 0.6s;
+        @include respond(md) { 
+          transform: translateX(0);
+        }
       }
       &.right-panel-active &--signIn {
         transform: translateX(100%);
       }
       &.right-panel-active &--overlay {
         transform: translateX(-100%);
+        @include respond(md) { 
+          transform: translateX(0);
+        }
       }
       &.right-panel-active &--overlay--layout {
         transform: translateX(50%);
       }
       &.right-panel-active &--overlay--left {
         transform: translateX(0);
+
       }
       &.right-panel-active &--overlay--right {
         transform: translateX(20%);
@@ -126,12 +166,19 @@
       &--overlay {
         position: absolute;
         top: 0;
-        left: 50%;
+        right: 0;
         width: 50%;
         height: 100%;
         overflow: hidden;
         transition: transform 0.6s ease-in-out;
         z-index: 100;
+
+        @include respond(md) {
+          width: 20%;
+          right: 0;
+          top: 0;
+          bottom: 0;
+        }
 
         &--layout {
           background: $green;
@@ -160,6 +207,14 @@
             width: 50%;
             transform: translateX(0);
             transition: transform 0.6s ease-in-out;
+            @include respond(md) { 
+              padding: 0 1rem;
+            }
+            @include respond(sm) {
+              padding: 0 .1rem 5rem .1rem; 
+              // padding-bottom:5rem;
+              justify-content: end;
+            }
           }
         }
 
@@ -175,20 +230,24 @@
       @include respond(lg) {
         @include fullWidthMargin;
       }
+      @include respond(sm) {  
+        max-width: calc(100% - 1rem);
+        margin: 0 .5rem;
+      }
     }
   }
-}
 
-@include respond (md) {
-.reg {
-  &__content {
 
-    @include respond(md) {
-      @include fullWidthMargin;
-    }
-  }
-  }
-  }
+// @include respond (md) {
+// .reg {
+//   &__content {
+
+//     @include respond(md) {
+//       @include fullWidthMargin;
+//     }
+//   }
+//   }
+//   }
 
 p {
   margin-bottom: 0;

@@ -21,18 +21,6 @@ listBtns.forEach((listBtn) => {
   });
 });
 
-const signUpButton = document.getElementById("signUp");
-const signInButton = document.getElementById("signIn");
-const container = document.getElementById("container");
 
-signUpButton.addEventListener("click", () => {
-  container.classList.add("right-panel-active");
-});
 
-signInButton.addEventListener("click", () => {
-  container.classList.remove("right-panel-active");
-});
 
-var map = L.map('map').setView([7.3870801,3.822658], 13);
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-L.marker([51.5, -0.09]).addTo(map);
