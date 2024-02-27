@@ -1515,7 +1515,7 @@ body {
               padding: 0 1rem; } }
           @media only screen and (max-width: 36em) {
             .reg__content--overlay--layout__panel {
-              padding: 0 .1rem 5rem .1rem;
+              padding: 0 .1rem 8rem .1rem;
               justify-content: end; } }
       .reg__content--overlay--left {
         transform: translateX(-20%); }

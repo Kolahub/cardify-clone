@@ -211,8 +211,7 @@
               padding: 0 1rem;
             }
             @include respond(sm) {
-              padding: 0 .1rem 5rem .1rem; 
-              // padding-bottom:5rem;
+              padding: 0 .1rem 8rem .1rem; 
               justify-content: end;
             }
           }
@@ -236,18 +235,6 @@
       }
     }
   }
-
-
-// @include respond (md) {
-// .reg {
-//   &__content {
-
-//     @include respond(md) {
-//       @include fullWidthMargin;
-//     }
-//   }
-//   }
-//   }
 
 p {
   margin-bottom: 0;
