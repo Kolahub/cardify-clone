@@ -40,8 +40,14 @@
         &__primary {
           font-size: 1.6rem;
           font-weight: 600;
+          &--overlay {
+            font-size: 1.6rem;
+          }
           @include respond(lg) {
             font-size: 1.8rem;
+            &--overlay {
+              font-size: 1.8rem;
+            }
           }
         }
       }
