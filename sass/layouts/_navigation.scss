@@ -35,6 +35,7 @@
       top: 0;
       bottom: 0;
       background-color: rgba(0, 0, 0, 0.3);
+      z-index: 1000;
     }
   }
   &__nav {
@@ -181,6 +182,7 @@
   }
 }
 
+// SECOND NAVIGATION USED IN VIRUAL CARDS PAGE
 .nav2 {
   &__checkbox {
     display: none;
@@ -222,6 +224,7 @@
       top: 0;
       bottom: 0;
       background-color: rgba(0, 0, 0, 0.3);
+      z-index: 1000;
     }
   }
 
@@ -236,9 +239,6 @@
       align-items: start;
       padding: 1.8rem 0 1.3rem 0;
     }
-  }
-
-  &__lists {
   }
 
   &__links {
@@ -261,6 +261,7 @@
     font-weight: 600;
     padding: 1.6rem 0;
     border-radius: 10rem;
+    cursor: pointer;
     @include respond(md) {
       font-size: 2.1rem;
       width: 25rem;
@@ -269,8 +270,11 @@
 
   @include respond(md) {
     &__checkbox:checked ~ &__trigger {
-      // position: fixed;
+        position: fixed;
+        top: 25px;
+        right: 21px;
     }
+
     &__checkbox:checked ~ &__background {
       display: block !important;
     }
@@ -303,18 +307,18 @@
       & &--bottom {
         stroke-dasharray: 40 172;
       }
-
-      &.active &--top {
-        stroke-dashoffset: -132px;
-      }
-
-      &.active &--middle {
-        stroke-dashoffset: -71px;
-      }
-
-      &.active &--bottom {
-        stroke-dashoffset: -132px;
-      }
     }
+
+    &__checkbox:checked + &__trigger &__bars--top {
+        stroke-dashoffset: -132px;
+    }
+
+    &__checkbox:checked + &__trigger &__bars--middle {
+      stroke-dashoffset: -71px;
+  }
+
+  &__checkbox:checked + &__trigger &__bars--bottom {
+    stroke-dashoffset: -132px;
+}
   }
 }

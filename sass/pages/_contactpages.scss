@@ -24,12 +24,16 @@
 }
 
 #map {
-  height: 250px;
+  height: 350px;
   margin: 0 auto 4rem auto;
   @include respond(md) {
     @include fullWidthMargin;
     margin: 0 auto 4rem auto;
   }
+}
+.leaflet-popup-content {
+  padding: .5rem 1rem;
+  font-size: 1.8rem !important;
 }
 
 .contact-message {

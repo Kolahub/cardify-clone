@@ -1,0 +1,82 @@
+.faq {
+    &__content {
+      column-gap: 5rem;
+      padding: 0 1.5rem;
+      h1 {
+        font-size: 3rem;
+        @include respond(lg) {
+          font-size: 3.2rem;
+        }
+      }
+  
+      span {
+        font-size: 1.6rem;
+        margin-top: 1.5rem;
+        margin-bottom: 4rem;
+        @include respond(lg) {
+          font-size: 2rem;
+        }
+      }
+      
+      &--context {
+        iframe {
+          width: 93%;
+          aspect-ratio: 16/9;
+          border-radius: 8px 0 0 8px;
+          @include respond(lg) {
+            width: 85%;
+          }
+          @media only screen and (max-width: 38em) {
+            width: 100%;
+            border-radius: 8px;
+          }
+        }
+        margin-right: 1.5rem;
+      }
+  
+      &--accordion {
+        --bs-accordion-bg: transparent;
+        --bs-accordion-btn-icon-width: 2.2rem;
+        --bs-accordion-border-color: none;
+        --bs-accordion-border-width: none;
+        --bs-accordion-border-radius: none;
+        --bs-accordion-inner-border-radius: none;
+        --bs-accordion-btn-padding-x: 1.6rem;
+        --bs-accordion-btn-padding-y: 1.6rem;
+        --bs-accordion-btn-focus-border-color: none;
+        --bs-accordion-btn-focus-box-shadow: none;
+  
+        &__item:not(:last-child) &__button {
+          border-bottom: 2px solid $grey-light;
+          &:focus {
+            border-bottom: 2px solid $grey-light;
+          }
+        }
+        &__button {
+          font-size: 1.55rem;
+          font-weight: 500;
+          &:not(.collapsed) {
+            color: $blue;
+          }
+  
+          @include respond(lg) {
+            font-size: 2.2rem;
+          }
+        }
+  
+        &__body {
+          padding: 2rem;
+          font-size: 1.48rem;
+          font-weight: 500;
+  
+          @include respond(lg) {
+            font-size: 1.9rem;
+          }
+        }
+      }
+  
+      @include respond(lg) {
+        row-gap: 5rem;
+      }
+    }
+  }

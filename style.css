@@ -269,7 +269,6 @@ body {
   height: 6rem;
   border-radius: 50%;
   background-color: #18cc3f;
-  z-index: 1000;
   box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.2); }
   .btn-scroll svg {
     position: absolute;
@@ -382,6 +381,68 @@ body {
       padding-left: 11px;
       top: 8%;
       transform: translateY(-8%); }
+
+.faq__content {
+  column-gap: 5rem;
+  padding: 0 1.5rem; }
+  .faq__content h1 {
+    font-size: 3rem; }
+    @media only screen and (max-width: 62em) {
+      .faq__content h1 {
+        font-size: 3.2rem; } }
+  .faq__content span {
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem; }
+    @media only screen and (max-width: 62em) {
+      .faq__content span {
+        font-size: 2rem; } }
+  .faq__content--context {
+    margin-right: 1.5rem; }
+    .faq__content--context iframe {
+      width: 93%;
+      aspect-ratio: 16/9;
+      border-radius: 8px 0 0 8px; }
+      @media only screen and (max-width: 62em) {
+        .faq__content--context iframe {
+          width: 85%; } }
+      @media only screen and (max-width: 38em) {
+        .faq__content--context iframe {
+          width: 100%;
+          border-radius: 8px; } }
+  .faq__content--accordion {
+    --bs-accordion-bg: transparent;
+    --bs-accordion-btn-icon-width: 2.2rem;
+    --bs-accordion-border-color: none;
+    --bs-accordion-border-width: none;
+    --bs-accordion-border-radius: none;
+    --bs-accordion-inner-border-radius: none;
+    --bs-accordion-btn-padding-x: 1.6rem;
+    --bs-accordion-btn-padding-y: 1.6rem;
+    --bs-accordion-btn-focus-border-color: none;
+    --bs-accordion-btn-focus-box-shadow: none; }
+    .faq__content--accordion__item:not(:last-child) .faq__content--accordion__button {
+      border-bottom: 2px solid #ececec; }
+      .faq__content--accordion__item:not(:last-child) .faq__content--accordion__button:focus {
+        border-bottom: 2px solid #ececec; }
+    .faq__content--accordion__button {
+      font-size: 1.55rem;
+      font-weight: 500; }
+      .faq__content--accordion__button:not(.collapsed) {
+        color: #145aff; }
+      @media only screen and (max-width: 62em) {
+        .faq__content--accordion__button {
+          font-size: 2.2rem; } }
+    .faq__content--accordion__body {
+      padding: 2rem;
+      font-size: 1.48rem;
+      font-weight: 500; }
+      @media only screen and (max-width: 62em) {
+        .faq__content--accordion__body {
+          font-size: 1.9rem; } }
+  @media only screen and (max-width: 62em) {
+    .faq__content {
+      row-gap: 5rem; } }
 
 .faq2 {
   padding: 14rem 0 10rem 0; }
@@ -641,68 +702,6 @@ body {
           position: static;
           width: 100%; } }
 
-.faq__content {
-  column-gap: 5rem;
-  padding: 0 1.5rem; }
-  .faq__content h1 {
-    font-size: 3rem; }
-    @media only screen and (max-width: 62em) {
-      .faq__content h1 {
-        font-size: 3.2rem; } }
-  .faq__content span {
-    font-size: 1.6rem;
-    margin-top: 1.5rem;
-    margin-bottom: 4rem; }
-    @media only screen and (max-width: 62em) {
-      .faq__content span {
-        font-size: 2rem; } }
-  .faq__content--context {
-    margin-right: 1.5rem; }
-    .faq__content--context iframe {
-      width: 93%;
-      aspect-ratio: 16/9;
-      border-radius: 8px 0 0 8px; }
-      @media only screen and (max-width: 62em) {
-        .faq__content--context iframe {
-          width: 85%; } }
-      @media only screen and (max-width: 38em) {
-        .faq__content--context iframe {
-          width: 100%;
-          border-radius: 8px; } }
-  .faq__content--accordion {
-    --bs-accordion-bg: transparent;
-    --bs-accordion-btn-icon-width: 2.2rem;
-    --bs-accordion-border-color: none;
-    --bs-accordion-border-width: none;
-    --bs-accordion-border-radius: none;
-    --bs-accordion-inner-border-radius: none;
-    --bs-accordion-btn-padding-x: 1.6rem;
-    --bs-accordion-btn-padding-y: 1.6rem;
-    --bs-accordion-btn-focus-border-color: none;
-    --bs-accordion-btn-focus-box-shadow: none; }
-    .faq__content--accordion__item:not(:last-child) .faq__content--accordion__button {
-      border-bottom: 2px solid #ececec; }
-      .faq__content--accordion__item:not(:last-child) .faq__content--accordion__button:focus {
-        border-bottom: 2px solid #ececec; }
-    .faq__content--accordion__button {
-      font-size: 1.55rem;
-      font-weight: 500; }
-      .faq__content--accordion__button:not(.collapsed) {
-        color: #145aff; }
-      @media only screen and (max-width: 62em) {
-        .faq__content--accordion__button {
-          font-size: 2.2rem; } }
-    .faq__content--accordion__body {
-      padding: 2rem;
-      font-size: 1.48rem;
-      font-weight: 500; }
-      @media only screen and (max-width: 62em) {
-        .faq__content--accordion__body {
-          font-size: 1.9rem; } }
-  @media only screen and (max-width: 62em) {
-    .faq__content {
-      row-gap: 5rem; } }
-
 .footer {
   padding-bottom: 1.3rem; }
   .footer__card {
@@ -938,7 +937,8 @@ body {
         left: 0;
         top: 0;
         bottom: 0;
-        background-color: rgba(0, 0, 0, 0.3); } }
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1000; } }
   @media only screen and (max-width: 48em) {
     .navigation__nav {
       position: fixed;
@@ -1075,7 +1075,8 @@ body {
       left: 0;
       top: 0;
       bottom: 0;
-      background-color: rgba(0, 0, 0, 0.3); } }
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 1000; } }
 
 .nav2__items {
   display: flex;
@@ -1107,13 +1108,18 @@ body {
   color: white;
   font-weight: 600;
   padding: 1.6rem 0;
-  border-radius: 10rem; }
+  border-radius: 10rem;
+  cursor: pointer; }
   @media only screen and (max-width: 48em) {
     .nav2__btn {
       font-size: 2.1rem;
       width: 25rem; } }
 
 @media only screen and (max-width: 48em) {
+  .nav2__checkbox:checked ~ .nav2__trigger {
+    position: fixed;
+    top: 25px;
+    right: 21px; }
   .nav2__checkbox:checked ~ .nav2__background {
     display: block !important; }
   .nav2__checkbox:checked ~ .nav2__nav {
@@ -1135,12 +1141,12 @@ body {
       stroke-dasharray: 40 111; }
     .nav2__bars .nav2__bars--bottom {
       stroke-dasharray: 40 172; }
-    .nav2__bars.active .nav2__bars--top {
-      stroke-dashoffset: -132px; }
-    .nav2__bars.active .nav2__bars--middle {
-      stroke-dashoffset: -71px; }
-    .nav2__bars.active .nav2__bars--bottom {
-      stroke-dashoffset: -132px; } }
+  .nav2__checkbox:checked + .nav2__trigger .nav2__bars--top {
+    stroke-dashoffset: -132px; }
+  .nav2__checkbox:checked + .nav2__trigger .nav2__bars--middle {
+    stroke-dashoffset: -71px; }
+  .nav2__checkbox:checked + .nav2__trigger .nav2__bars--bottom {
+    stroke-dashoffset: -132px; } }
 
 .cardify-story {
   background-color: #f1f3f6;
@@ -1308,13 +1314,17 @@ body {
         margin: 0 2rem; } }
 
 #map {
-  height: 250px;
+  height: 350px;
   margin: 0 auto 4rem auto; }
   @media only screen and (max-width: 48em) {
     #map {
       max-width: calc(100% - 4rem);
       margin: 0 2rem;
       margin: 0 auto 4rem auto; } }
+
+.leaflet-popup-content {
+  padding: .5rem 1rem;
+  font-size: 1.8rem !important; }
 
 @media only screen and (max-width: 48em) {
   .contact-message__content {
@@ -1742,7 +1752,11 @@ p {
       @media only screen and (max-width: 62em) {
         .home2__content--btn__1 {
           width: 38rem;
-          font-size: 2.1rem; } }
+          font-size: 2.1rem; }
+          .home2__content--btn__1--sub {
+            margin-left: 1rem; }
+            .home2__content--btn__1--sub img {
+              width: 2rem; } }
     .home2__content--typo {
       text-align: center; }
       .home2__content--typo__heading {
@@ -1776,11 +1790,12 @@ p {
 
 .payments__main {
   background-color: #fffbf2;
-  border-radius: 6rem 6rem 0 0;
-  margin-top: -6rem; }
+  margin-top: -6rem;
+  border-radius: 6rem 6rem 0 0; }
 
 .payments__content--typo {
   background-color: #f8dacf;
+  border-radius: 6rem 6rem 0 0;
   padding-top: 6rem; }
   .payments__content--typo__heading {
     font-size: 5.3rem;
