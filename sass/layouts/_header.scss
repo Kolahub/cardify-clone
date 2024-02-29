@@ -2,13 +2,13 @@
   background-color: $lighter-green;
   font-size: 1.7rem;
   border-radius: 1.6rem;
-  @include respond(lg) { 
+  @include respond(lg) {
     font-size: 2.1rem;
   }
   &__logo {
     img {
       width: 130px;
-      @include respond (xs) {
+      @include respond(xs) {
         width: 100%;
       }
     }
@@ -16,7 +16,7 @@
 
   &__form {
     &--login {
-      @include respond (md) {
+      @include respond(md) {
         display: none;
       }
     }
@@ -25,30 +25,46 @@
       padding: 1.58rem 0;
       width: 10rem;
       border: none;
-      @include respond(lg) { 
+      @include respond(lg) {
         font-size: 2.3rem;
         width: 15rem;
       }
 
-      @include respond (sm) { 
+      @include respond(sm) {
         width: 12rem;
       }
     }
-    button:nth-child(1) { 
+    button:nth-child(1) {
       background-color: transparent;
     }
     button:nth-child(2) {
       background-color: $green;
-      transition: all .3s ease;
+      transition: all 0.3s ease;
       &:hover {
         transform: scale(1.06);
         background-color: green;
       }
     }
-
   }
 
   @include respond(md) {
-    @include fullWidthMargin;;
+    @include fullWidthMargin;
+  }
+}
+
+.header2 {
+  &__content {
+    background-color: $color-white;
+    border-radius: 12rem;
+    padding: 10px 40px;
+    box-shadow: -0.2rem 0.2rem .5rem rgba(0, 0, 0, 0.2);
+    &--logo {
+      width: 130px;
+    }
+
+    @include respond(md) {
+      padding: 10px 20px;
+      @include fullWidthMargin;
+    }
   }
 }

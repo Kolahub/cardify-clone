@@ -1,0 +1,114 @@
+.home2 {
+  padding: 8rem 0;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    &--btn {
+      &__1 {
+        border: none;
+        background-image: linear-gradient(
+          to right,
+          $light-blue-2,
+          $light-pink-2
+        );
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 12px 0;
+        padding-left: 22px;
+        width: 29rem;
+        border-radius: 10rem;
+        &--sub {
+          margin-left: 1.5rem;
+          background-color: rgb(248, 218, 207);
+          padding: 0.9rem 1.1rem;
+          border-radius: 50%;
+          img {
+            width: 1.5rem;
+          }
+        }
+        @include respond(lg) {
+          width: 38rem;
+          font-size: 2.1rem;
+        }
+      }
+    }
+
+    &--typo {
+      text-align: center;
+      &__heading {
+        font-size: 6.5rem;
+        font-weight: 900;
+      }
+
+      &__subheading {
+        font-size: 2.3rem;
+        font-weight: 500;
+      }
+
+      @include respond(lg) {
+        &__heading {
+          font-size: 5rem;
+        }
+
+        &__subheading {
+          font-size: 2.1rem;
+        }
+      }
+    }
+
+    &--cards {
+      max-width: 60% !important;
+      margin: 0 auto;
+      @include respond(md) {
+        max-width: 100% !important;
+      }
+    }
+
+    @include respond(md) {
+      @include fullWidthMargin;
+    }
+  }
+}
+
+.payments {
+  &__marque {
+    border-radius: 6rem 6rem 0 0;
+    height: 15rem;
+    img {
+      width: 20px;
+      margin-right: 5px;
+    }
+  }
+
+  &__main {
+    background-color: $light-pink;
+    border-radius: 6rem 6rem 0 0;
+    margin-top: -6rem;
+  }
+
+  &__content {
+    &--typo {
+        background-color: rgb(248, 218, 207);
+        padding-top: 6rem;
+      &__heading {
+        font-size: 5.3rem;
+        font-weight: 900;
+        color: $grey-dark;
+        @include respond(lg) {
+          text-align: justify;
+          font-size: 3.6rem;
+        }
+     @include respond(md) {
+      @include fullWidthMargin;
+    }
+      }
+    }
+  }
+}
+.text-green {
+    color: green;
+}

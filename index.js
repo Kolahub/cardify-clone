@@ -1,5 +1,6 @@
 const listBtns = document.querySelectorAll(".navigation__lists");
 const infotipsOverlay = document.querySelectorAll('.infotips__overlay')
+
 listBtns.forEach((infotips) =>
   infotips.addEventListener("click", function () {
     infotips.classList.toggle("activeInfo");
@@ -20,7 +21,3 @@ listBtns.forEach((listBtn) => {
     listBtn.classList.toggle("active");
   });
 });
-
-
-
-

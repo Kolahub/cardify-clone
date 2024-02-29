@@ -24,6 +24,8 @@
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
       crossorigin=""
     />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+
     <script
       defer
       src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
@@ -31,7 +33,7 @@
       crossorigin=""
     ></script>
     <script defer src="contact.js"></script>
-    <script defer src="index.js"></script>
+    <script src="index.js"></script>
     <title>Cardify Clone Contact Us</title>
   </head>
 
@@ -95,7 +97,7 @@
                       <img src="images/2 (1).png" alt="" />
                     </div>
                     <div class="">
-                      <a href="/">Virtual Cards</a>
+                      <a href="virtualcards.html">Virtual Cards</a>
                       <p>
                         Make payments the way you want with virtual cards made
                         just for you.
@@ -275,11 +277,12 @@
               </button>
             </ul>
           </div>
+          
           <div class="header__form d-flex justify-content-end">
-            <button class="header__form--login text-black fw-semibold">
+            <button onclick="window.location.href='reg.html'" class="header__form--login text-black fw-semibold">
               Log in
             </button>
-            <button class="fw-semibold text-white flex-grow-1">Sign up</button>
+            <button onclick="window.location.href='reg.html'" class="fw-semibold text-white flex-grow-1">Sign up</button>
           </div>
         </nav>
       </div>
