@@ -493,27 +493,6 @@ body {
           outline: none; }
         .reg__content--form__btn:active {
           transform: scale(0.95); }
-    .reg__content.right-panel-active .reg__content--signUp {
-      transform: translateX(100%);
-      opacity: 1;
-      z-index: 5;
-      animation: show 0.6s; }
-      @media only screen and (max-width: 48em) {
-        .reg__content.right-panel-active .reg__content--signUp {
-          transform: translateX(0); } }
-    .reg__content.right-panel-active .reg__content--signIn {
-      transform: translateX(100%); }
-    .reg__content.right-panel-active .reg__content--overlay {
-      transform: translateX(-100%); }
-      @media only screen and (max-width: 48em) {
-        .reg__content.right-panel-active .reg__content--overlay {
-          transform: translateX(0); } }
-    .reg__content.right-panel-active .reg__content--overlay--layout {
-      transform: translateX(50%); }
-    .reg__content.right-panel-active .reg__content--overlay--left {
-      transform: translateX(0); }
-    .reg__content.right-panel-active .reg__content--overlay--right {
-      transform: translateX(20%); }
     .reg__content--overlay {
       position: absolute;
       top: 0;
@@ -567,6 +546,27 @@ body {
       .reg__content--overlay--right {
         right: 0;
         transform: translateX(0); }
+    .reg__content.right-panel-active .reg__content--signUp {
+      transform: translateX(100%);
+      opacity: 1;
+      z-index: 5;
+      animation: show 0.6s; }
+      @media only screen and (max-width: 48em) {
+        .reg__content.right-panel-active .reg__content--signUp {
+          transform: translateX(0); } }
+    .reg__content.right-panel-active .reg__content--signIn {
+      transform: translateX(100%); }
+    .reg__content.right-panel-active .reg__content--overlay {
+      transform: translateX(-100%); }
+      @media only screen and (max-width: 48em) {
+        .reg__content.right-panel-active .reg__content--overlay {
+          transform: translateX(0); } }
+    .reg__content.right-panel-active .reg__content--overlay--layout {
+      transform: translateX(50%); }
+    .reg__content.right-panel-active .reg__content--overlay--left {
+      transform: translateX(0); }
+    .reg__content.right-panel-active .reg__content--overlay--right {
+      transform: translateX(20%); }
     @media only screen and (max-width: 62em) {
       .reg__content {
         max-width: calc(100% - 4rem);
